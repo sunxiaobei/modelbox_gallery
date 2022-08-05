@@ -1,0 +1,25 @@
+# Copyright (C) 2020 Huawei Technologies Co., Ltd. All rights reserved.
+
+[base]
+name = "MODULENAME"
+device = "sdc"
+version = "1.0.0"
+description = "your description"
+entry = "./model.wk"  # model file path, use relative path
+type = "inference" 
+virtual_type = "nnie" # inference engine type: sdc now only support nnie now
+group_type = "Inference"  # flowunit group attribution, do not change
+is_input_contiguous = "false" # sdc do not support memory combine, fix, do not change
+
+# Input ports description
+[input]
+[input.input1]  # input port number, Format is input.input[N]
+name = "Input"  # input port name
+type = "float"  # input port data type ,e.g. float or uint8
+device = "sdc"  # input buffer type: use sdc for zero-copy
+
+# Output ports description
+[output]
+[output.output1] # output port number, Format is output.output[N]
+name = "Output"  # output port name
+type = "float"   # output port data type ,e.g. float or uint8

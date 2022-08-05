@@ -1,0 +1,85 @@
+#!/bin/bash
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+BASE_PATH=$(cd $(dirname $0);pwd)
+MODELBOX_DEFAULT_PORT=1104
+MODELBOX_EDITOR_IS_RUN=0
+
+showhelp() {
+    echo " -s            setup modelbox develop enviroment."
+    echo "  --port       setup develop modelbox port, default is 1104."
+    echo " -q            develop modelbox status."
+    echo " -h            show this help message."
+    echo ""
+}
+
+develop_status() {
+    if [ -e ${BASE_PATH}/../../editor/editor_server_nohup.pid ]; then
+        pid_num=`cat ${BASE_PATH}/../../editor/editor_server_nohup.pid`
+        pid_num_name=`ps -A | grep ${pid_num} | awk '{print $1}'`
+        if [ "${pid_num_name}" = "${pid_num}" ]; then
+            MODELBOX_EDITOR_IS_RUN=1
+        fi
+    fi
+    if [ "${MODELBOX_EDITOR_IS_RUN}" = "1" ]; then
+        echo "ModelBox Editor Service Status: RUNNING"
+    else
+        echo "ModelBox Editor Service Status: STOP"
+    fi
+}
+
+setup_develop_mode() {
+    mkdir -p ${BASE_PATH}/../../editor/task/log
+    develop_status
+    if [ "${MODELBOX_EDITOR_IS_RUN}" = "0" ]; then
+        nohup `python3 ${BASE_PATH}/../../create.py -t editor -i 192.168.2.111:${MODELBOX_DEFAULT_PORT}` > ${BASE_PATH}/../../editor/editor_server_nohup.log 2>&1& echo $! > ${BASE_PATH}/../../editor/editor_server_nohup.pid
+        develop_status
+    fi
+}
+
+main() {
+    OPTS=`getopt -o siqh --long home:,port: \
+        -n  "" -- "$@"`
+
+    if [ $# -lt 1 ]; then showhelp; exit 1; fi
+    if [ $? != 0 ] ; then echo "Terminating..." >&2 ; exit 1 ; fi
+
+    # Note the quotes around `$TEMP': they are essential!
+    eval set -- "$OPTS"
+    action="NONE"
+
+    while true; do
+        case "$1" in
+        -s | --on)
+            action="setup"
+            shift ;;
+        --home)
+            MODELBOX_USER_HOME="$2"
+            shift 2;;
+        --port)
+            MODELBOX_DEFAULT_PORT="$2"
+            shift 2;;
+        -q)
+            action="query"
+            shift ;;
+        -h)
+            showhelp
+            exit 0
+            shift ;;
+        -- ) shift; break ;;
+        * ) break ;;
+          esac
+    done
+
+    if [ "$action" = "setup" ]; then
+        setup_develop_mode
+    elif [ "$action" = "query" ]; then
+        develop_status
+    else 
+        showhelp
+    fi
+
+    return $?
+}
+
+main $@

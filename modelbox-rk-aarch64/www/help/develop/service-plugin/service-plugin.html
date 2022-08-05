@@ -1,0 +1,1463 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>服务插件开发 · ModelBox User Refference</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="CE">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../style.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../sdk/sdk.html" />
+    
+    
+    <link rel="prev" href="../flowunit/exception.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ModelBox介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../use-modelbox/use-modelbox.html">
+            
+                <a href="../../use-modelbox/use-modelbox.html">
+            
+                    
+                    如何使用ModelBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../first-app/first-app.html">
+            
+                <a href="../first-app/first-app.html">
+            
+                    
+                    第一个应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../server/summary.html">
+            
+                <a href="../../server/summary.html">
+            
+                    
+                    ModelBox服务运行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../server/server.html">
+            
+                <a href="../../server/server.html">
+            
+                    
+                    服务使用流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../server/editor.html">
+            
+                <a href="../../server/editor.html">
+            
+                    
+                    可视化编排服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../server/run-flow.html">
+            
+                <a href="../../server/run-flow.html">
+            
+                    
+                    服务配置安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../summary.html">
+            
+                <a href="../summary.html">
+            
+                    
+                    应用开发与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../develop.html">
+            
+                <a href="../develop.html">
+            
+                    
+                    AI应用开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../flow/flow.html">
+            
+                <a href="../flow/flow.html">
+            
+                    
+                    流程图开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../flowunit/flowunit.html">
+            
+                <a href="../flowunit/flowunit.html">
+            
+                    
+                    功能单元开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../flowunit/inference.html">
+            
+                <a href="../flowunit/inference.html">
+            
+                    
+                    推理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../flowunit/python.html">
+            
+                <a href="../flowunit/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../flowunit/c++.html">
+            
+                <a href="../flowunit/c++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../flowunit/exception.html">
+            
+                <a href="../flowunit/exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="service-plugin.html">
+            
+                <a href="service-plugin.html">
+            
+                    
+                    服务插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../sdk/sdk.html">
+            
+                <a href="../sdk/sdk.html">
+            
+                    
+                    SDK API集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../sdk/c++.html">
+            
+                <a href="../sdk/c++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../sdk/python.html">
+            
+                <a href="../sdk/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../modelbox-tool/modelbox-tool.html">
+            
+                <a href="../modelbox-tool/modelbox-tool.html">
+            
+                    
+                    ModelBox Tool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../debug/debug.html">
+            
+                <a href="../debug/debug.html">
+            
+                    
+                    调试定位
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" data-path="../debug/code-debug.html">
+            
+                <a href="../debug/code-debug.html">
+            
+                    
+                    代码调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" data-path="../debug/log.html">
+            
+                <a href="../debug/log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../debug/profiling.html">
+            
+                <a href="../debug/profiling.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../device/device.html">
+            
+                <a href="../device/device.html">
+            
+                    
+                    设备接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.9.1" data-path="../device/ascend.html">
+            
+                <a href="../device/ascend.html">
+            
+                    
+                    Ascend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9.2" data-path="../device/cuda.html">
+            
+                <a href="../device/cuda.html">
+            
+                    
+                    Nvidia Cuda
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../solution/solution.html">
+            
+                <a href="../../solution/solution.html">
+            
+                    
+                    案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../solution/car-detect.html">
+            
+                <a href="../../solution/car-detect.html">
+            
+                    
+                    车辆检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../solution/mnist-on-sbc.html">
+            
+                <a href="../../solution/mnist-on-sbc.html">
+            
+                    
+                    树莓派开发板Mnist识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../framework-conception/framework-conception.html">
+            
+                <a href="../../framework-conception/framework-conception.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../framework-conception/graph.html">
+            
+                <a href="../../framework-conception/graph.html">
+            
+                    
+                    图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../framework-conception/flowunit.html">
+            
+                <a href="../../framework-conception/flowunit.html">
+            
+                    
+                    功能单元
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../framework-conception/stream.html">
+            
+                <a href="../../framework-conception/stream.html">
+            
+                    
+                    数据流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../framework-conception/buffer.html">
+            
+                <a href="../../framework-conception/buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../compile/compile.html">
+            
+                <a href="../../compile/compile.html">
+            
+                    
+                    编译安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../api/api.html">
+            
+                <a href="../../api/api.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../api/c++.html">
+            
+                <a href="../../api/c++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../api/python.html">
+            
+                <a href="../../api/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../../api/python/modelbox_buffer.html">
+            
+                <a href="../../api/python/modelbox_buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../../api/python/modelbox_bufferlist.html">
+            
+                <a href="../../api/python/modelbox_bufferlist.html">
+            
+                    
+                    BufferList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="../../api/python/modelbox_configuration.html">
+            
+                <a href="../../api/python/modelbox_configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="../../api/python/modelbox_datacontext.html">
+            
+                <a href="../../api/python/modelbox_datacontext.html">
+            
+                    
+                    DataContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.5" data-path="../../api/python/modelbox_datameta.html">
+            
+                <a href="../../api/python/modelbox_datameta.html">
+            
+                    
+                    DataMeta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.6" data-path="../../api/python/modelbox_device.html">
+            
+                <a href="../../api/python/modelbox_device.html">
+            
+                    
+                    Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.7" data-path="../../api/python/modelbox_externaldata.html">
+            
+                <a href="../../api/python/modelbox_externaldata.html">
+            
+                    
+                    ExternalData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.8" data-path="../../api/python/modelbox_externaldatamap.html">
+            
+                <a href="../../api/python/modelbox_externaldatamap.html">
+            
+                    
+                    ExternalDataMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.9" data-path="../../api/python/modelbox_extoutputbufferlist.html">
+            
+                <a href="../../api/python/modelbox_extoutputbufferlist.html">
+            
+                    
+                    ExtOutputBufferList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.10" data-path="../../api/python/modelbox_flow.html">
+            
+                <a href="../../api/python/modelbox_flow.html">
+            
+                    
+                    Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.11" data-path="../../api/python/modelbox_flowunit.html">
+            
+                <a href="../../api/python/modelbox_flowunit.html">
+            
+                    
+                    Flowunit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.12" data-path="../../api/python/modelbox_flowuniterror.html">
+            
+                <a href="../../api/python/modelbox_flowuniterror.html">
+            
+                    
+                    FlowunitError
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.13" data-path="../../api/python/modelbox_flowunitevent.html">
+            
+                <a href="../../api/python/modelbox_flowunitevent.html">
+            
+                    
+                    FlowunitEvent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.14" data-path="../../api/python/modelbox_log.html">
+            
+                <a href="../../api/python/modelbox_log.html">
+            
+                    
+                    Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.15" data-path="../../api/python/modelbox_sessioncontext.html">
+            
+                <a href="../../api/python/modelbox_sessioncontext.html">
+            
+                    
+                    SessionContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.16" data-path="../../api/python/modelbox_status.html">
+            
+                <a href="../../api/python/modelbox_status.html">
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../api/rest.html">
+            
+                <a href="../../api/rest.html">
+            
+                    
+                    REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../flowunits/flowunits.html">
+            
+                <a href="../../flowunits/flowunits.html">
+            
+                    
+                    预置功能单元
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../faq/faq.html">
+            
+                <a href="../../faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../faq/container-usage.html">
+            
+                <a href="../../faq/container-usage.html">
+            
+                    
+                    容器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >服务插件开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="modelbox&#x670D;&#x52A1;&#x63D2;&#x4EF6;">ModelBox&#x670D;&#x52A1;&#x63D2;&#x4EF6;</h1>
+<h2 id="modelbox&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x4ECB;&#x7ECD;">ModelBox&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x4ECB;&#x7ECD;</h2>
+<h3 id="&#x4EC0;&#x4E48;&#x662F;modelbox&#x670D;&#x52A1;&#x63D2;&#x4EF6;">&#x4EC0;&#x4E48;&#x662F;ModelBox&#x670D;&#x52A1;&#x63D2;&#x4EF6;</h3>
+<p>&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x662F;&#x6307;&#x57FA;&#x4E8E;ModelBox&#x6846;&#x67B6;&#x5BF9;&#x5916;&#x4EA4;&#x4E92;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4F5C;&#x4E3A;AI&#x5E94;&#x7528;&#x548C;&#x5468;&#x8FB9;&#x7CFB;&#x7EDF;&#x5BF9;&#x63A5;&#x7684;&#x6865;&#x6881;&#x3002;ModelBox&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x548C;&#x6269;&#x5C55;&#x5F00;&#x53D1;&#x80FD;&#x529B;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5B9A;&#x5236;&#x5316;&#x5F00;&#x53D1;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x4E1A;&#x52A1;&#x7684;&#x63D2;&#x4EF6;&#x6765;&#x5BF9;&#x63A5;&#x7B2C;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#xFF0C;ModelBox&#x6846;&#x67B6;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x52A0;&#x8F7D;&#x5E76;&#x8FD0;&#x884C;&#x3002;&#x5728;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5185;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x6D41;&#x7A0B;&#x56FE;&#x7684;&#x52A0;&#x8F7D;&#x548C;&#x8FD0;&#x884C;&#x3001;&#x4EFB;&#x52A1;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x542F;&#x505C;&#xFF0C;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x7684;&#x6536;&#x96C6;&#x7B49;&#x3002;&#x540C;&#x65F6;&#xFF0C;ModelBox&#x6846;&#x67B6;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;&#x3002;</p>
+<h3 id="&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x4F7F;&#x7528;&#x573A;&#x666F;">&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x4F7F;&#x7528;&#x573A;&#x666F;</h3>
+<p>&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5728;&#x89C6;&#x9891;&#x573A;&#x666F;&#x4F7F;&#x7528;&#x8F83;&#x4E3A;&#x666E;&#x904D;&#xFF0C;&#x5178;&#x578B;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E3A;&#xFF1A;&#x89C6;&#x9891;&#x5206;&#x6790;&#x4EFB;&#x52A1;&#x9700;&#x8981;&#x4ECE;&#x5916;&#x90E8;&#x5E73;&#x53F0;&#x6216;&#x8005;&#x7EC4;&#x4EF6;&#x4E0B;&#x53D1;&#x5230;ModelBox&#x6846;&#x67B6;&#x8FDB;&#x884C;&#x4EFB;&#x52A1;&#x5206;&#x6790;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x6765;&#x63A5;&#x53D7;&#x5916;&#x90E8;&#x7684;&#x8BF7;&#x6C42;&#x5E76;&#x8F6C;&#x5316;&#x4E3A;ModelBox&#x6846;&#x67B6;&#x91CC;&#x7684;&#x5206;&#x6790;&#x4EFB;&#x52A1;&#x8FDB;&#x884C;&#x4E1A;&#x52A1;&#x5206;&#x6790;&#x3002;&#x540C;&#x65F6;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7684;&#x6536;&#x96C6;&#x5E76;&#x53D1;&#x9001;&#x7ED9;&#x5916;&#x90E8;&#x8FD0;&#x7EF4;&#x5E73;&#x53F0;&#xFF0C;&#x5B9E;&#x73B0;&#x4E0E;&#x5916;&#x90E8;&#x7CFB;&#x7EDF;&#x7684;&#x5BF9;&#x63A5;&#x3002;</p>
+<p>ModelBox&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x9884;&#x7F6E;&#x7684;&#x670D;&#x52A1;&#x63D2;&#x4EF6;ModelBox Plugin&#xFF0C;&#x63D0;&#x4F9B;&#x6D41;&#x7A0B;&#x56FE;&#x7684;&#x52A0;&#x8F7D;&#x548C;&#x8FD0;&#x884C;, &#x89C1;<a href="../../server/run-flow.html">&#x8FD0;&#x884C;&#x6D41;&#x7A0B;&#x56FE;</a>&#x7AE0;&#x8282;&#x3002;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;ModelBox Plugin&#x5B8C;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#xFF0C;&#x5F53;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;ModelBox Plugin&#x529F;&#x80FD;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#xFF0C;&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x7684;&#x5177;&#x4F53;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;&#x3002;</p>
+<h2 id="&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;">&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;</h2>
+<p>&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x6574;&#x4F53;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="../../assets/images/figure/develop/server-plugin--dev-flow.png" alt="server-plugin--dev-flow alt rect_w_500"></p>
+<h2 id="&#x670D;&#x52A1;&#x63D2;&#x4EF6;api">&#x670D;&#x52A1;&#x63D2;&#x4EF6;API</h2>
+<p><img src="../../assets/images/figure/api/api-modelbox-server.png" alt="api-modelbox-server alt rect_w_900"></p>
+<p>ModelBox API&#x6309;&#x7167;&#x7C7B;&#x578B;&#x5305;&#x542B;&#xFF1A;</p>
+<h3 id="plugin-&#x63D2;&#x4EF6;&#x521B;&#x5EFA;&#x548C;&#x542F;&#x505C;&#x7B49;&#x91CD;&#x8F7D;&#x63A5;&#x53E3;&#xFF0C;&#x6B64;&#x63A5;&#x53E3;&#x9700;&#x8981;&#x7531;&#x7528;&#x6237;&#x5B9E;&#x73B0;">Plugin: &#x63D2;&#x4EF6;&#x521B;&#x5EFA;&#x548C;&#x542F;&#x505C;&#x7B49;&#x91CD;&#x8F7D;&#x63A5;&#x53E3;&#xFF0C;&#x6B64;&#x63A5;&#x53E3;&#x9700;&#x8981;&#x7531;&#x7528;&#x6237;&#x5B9E;&#x73B0;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x63A5;&#x53E3;</th>
+<th>&#x63A5;&#x53E3;&#x529F;&#x80FD;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreatePlugin</td>
+<td>&#x7528;&#x6237;&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED9;ModelBox&#x6846;&#x67B6;</td>
+<td>ModelBox&#x6846;&#x67B6;&#x542F;&#x52A8;&#x65F6;&#x52A0;&#x8F7D;&#x53C2;&#x52A0;&#x65F6;&#x8C03;&#x7528;</td>
+</tr>
+<tr>
+<td>Plugin::Init</td>
+<td>&#x7528;&#x6237;&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x903B;&#x8F91;&#xFF0C;&#x63D0;&#x4F9B;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#xFF0C;&#x63D2;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8C03;&#x7528;</td>
+<td>ModelBox&#x6846;&#x67B6;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x5728;CreatePlugin&#x6210;&#x529F;&#x540E;&#x63D2;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x8C03;&#x7528;&#xFF1B;&#x4E0D;&#x80FD;&#x5B58;&#x5728;&#x963B;&#x585E;&#x64CD;&#x4F5C;</td>
+</tr>
+<tr>
+<td>Plugin::Start</td>
+<td>&#x7528;&#x6237;&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x542F;&#x52A8;&#x903B;&#x8F91;&#xFF0C;&#x63D2;&#x4EF6;&#x542F;&#x52A8;&#x65F6;&#x8C03;&#x7528;</td>
+<td>&#x63D2;&#x4EF6;&#x542F;&#x52A8;&#x65F6;&#x8C03;&#x7528;</td>
+</tr>
+<tr>
+<td>Plugin::Stop</td>
+<td>&#x7528;&#x6237;&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x505C;&#x6B62;&#x903B;&#x8F91;&#xFF0C;&#x63D2;&#x4EF6;&#x505C;&#x6B62;&#x65F6;&#x8C03;&#x7528;</td>
+<td>ModelBox&#x6846;&#x67B6;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x65F6;&#x63D2;&#x4EF6;&#x505C;&#x6B62;&#x65F6;&#x8C03;&#x7528;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="job&#xFF1A;-&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;">Job&#xFF1A; &#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;</h3>
+<p>&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;&#x4EFB;&#x52A1;&#x7684;&#x6DFB;&#x52A0;&#xFF0C;&#x5220;&#x9664;&#xFF0C;&#x67E5;&#x8BE2;&#x3002;ModelBox&#x6846;&#x67B6;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x5B58;&#x5728;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x5BF9;&#x8C61;&#x6982;&#x5FF5;&#xFF1A;</p>
+<ul>
+<li>Job&#xFF1A;&#x7B97;&#x6CD5;&#x670D;&#x52A1;&#x5C42;&#x9762;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4E00;&#x4E2A;Job&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x6D41;&#x7A0B;&#x56FE;&#x3002;</li>
+<li>JobManager&#xFF1A;Job&#x7684;&#x7BA1;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;Job&#x5BF9;&#x8C61;&#x3002;</li>
+<li>Task&#xFF1A;&#x5904;&#x7406;&#x6570;&#x636E;&#x6E90;&#x5C42;&#x9762;&#x7684;&#x4F5C;&#x4E1A;&#xFF0C;&#x4E00;&#x4E2A;Task&#x5373;&#x5BF9;&#x5E94;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x8DEF;&#x89C6;&#x9891;&#x6D41;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x89C6;&#x9891;&#x6587;&#x4EF6;&#x7684;&#x5206;&#x6790;&#x3002;Task&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x8F93;&#x5165;&#x5230;&#x6D41;&#x7A0B;&#x56FE;(&#x9700;&#x8981;&#x914D;&#x5408;Input&#x8282;&#x70B9;&#x4F7F;&#x7528;)&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x5230;&#x529F;&#x80FD;&#x5355;&#x5143;&#x3002;</li>
+<li>TaskManager&#xFF1A;Task&#x7684;&#x7BA1;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;Task&#x5BF9;&#x8C61;&#x3002;</li>
+<li>OneShotTask: &#x7EE7;&#x627F;&#x81EA;Task&#xFF0C;&#x4E00;&#x6B21;task&#xFF0C;&#x4E13;&#x6307;&#x53EA;&#x6709;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x8F93;&#x5165;&#x5230;&#x6D41;&#x7A0B;&#x56FE;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6BD4;&#x5982;&#x8F93;&#x5165;&#x4E3A;&#x4E00;&#x8DEF;&#x89C6;&#x9891;&#x6D41;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x4F20;&#x9012;&#x7ED9;&#x6D41;&#x7A0B;&#x56FE;&#xFF0C;&#x800C;&#x540E;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x3002;&#x6240;&#x4EE5;OneShotTask&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;task&#x72B6;&#x6001;&#x53D8;&#x5316;&#x7684;&#x56DE;&#x8C03;&#x6CE8;&#x518C;&#x63A5;&#x53E3;&#x3002;</li>
+<li>Session&#xFF1A;&#x4F1A;&#x8BDD;&#x4FE1;&#x606F;&#xFF0C;&#x4E00;&#x4E2A;Task&#x5BF9;&#x5E94;&#x5B58;&#x5728;&#x4E00;&#x4E2A;Session&#xFF0C;Session&#x4E2D;&#x7684;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x540C;&#x529F;&#x80FD;&#x5355;&#x5143;&#x5171;&#x4EAB;&#x8BBF;&#x95EE;&#x3002;</li>
+</ul>
+<p>&#x5177;&#x4F53;&#x63A5;&#x53E3;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x63A5;&#x53E3;</th>
+<th>&#x63A5;&#x53E3;&#x529F;&#x80FD;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JobManager::CreateJob</td>
+<td>&#x521B;&#x5EFA;Job</td>
+<td></td>
+</tr>
+<tr>
+<td>JobManager::DeleteJob</td>
+<td>&#x5220;&#x9664;Job</td>
+<td></td>
+</tr>
+<tr>
+<td>JobManager::GetJob</td>
+<td>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;Job&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>JobManager::GetJobList</td>
+<td>&#x83B7;&#x53D6;&#x5168;&#x90E8;Job&#x5BF9;&#x8C61;&#x5217;&#x8868;</td>
+<td></td>
+</tr>
+<tr>
+<td>JobManager::QueryJobStatus</td>
+<td>&#x67E5;&#x8BE2;&#x67D0;&#x4E2A;Job&#x72B6;&#x6001;</td>
+<td></td>
+</tr>
+<tr>
+<td>JobManager::GetJobErrorMsg</td>
+<td>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x5F02;&#x5E38;Job&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+<td></td>
+</tr>
+<tr>
+<td>Job::Init</td>
+<td>&#x521D;&#x59CB;&#x5316;Job&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>Job::Build</td>
+<td>Job&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7533;&#x8BF7;</td>
+<td></td>
+</tr>
+<tr>
+<td>Job::Run</td>
+<td>&#x8FD0;&#x884C;Job&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>Job::Stop</td>
+<td>&#x505C;&#x6B62;Job&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>Job::GetJobStatus</td>
+<td>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;Job&#x72B6;&#x6001;</td>
+<td></td>
+</tr>
+<tr>
+<td>Job::CreateTaskManger</td>
+<td>&#x521B;&#x5EFA;TaskManger</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::Start</td>
+<td>&#x542F;&#x52A8;TaskManager</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::Stop</td>
+<td>&#x505C;&#x6B62;TaskManager</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::CreateTask</td>
+<td>&#x521B;&#x5EFA;Task</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::DeleteTaskById</td>
+<td>&#x5220;&#x9664;&#x67D0;&#x4E2A;Task</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::GetTaskById</td>
+<td>&#x83B7;&#x53D6;&#x67D0;&#x4E2A;Task&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::GetTaskCount</td>
+<td>&#x83B7;&#x53D6;Task&#x4E2A;&#x6570;</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::GetAllTasks</td>
+<td>&#x83B7;&#x53D6;&#x6240;&#x6709;Task&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>TaskManager::SetTaskNumLimit</td>
+<td>&#x8BBE;&#x7F6E;&#x540C;&#x65F6;&#x5E76;&#x53D1;&#x7684;Task&#x6700;&#x5927;&#x4E2A;&#x6570;</td>
+<td>&#x8D85;&#x8FC7;&#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x4E2A;&#x6570;&#x65F6;&#xFF0C;ModelBox&#x5185;&#x90E8;&#x4F1A;&#x6392;&#x961F;&#x5904;&#x7406;</td>
+</tr>
+<tr>
+<td>Task::Start</td>
+<td>&#x542F;&#x52A8;Task</td>
+<td></td>
+</tr>
+<tr>
+<td>Task::Stop</td>
+<td>&#x505C;&#x6B62;Task</td>
+<td></td>
+</tr>
+<tr>
+<td>Task::GetUUID</td>
+<td>&#x83B7;&#x53D6;Task id</td>
+<td></td>
+</tr>
+<tr>
+<td>Task::CreateBufferList</td>
+<td>&#x521B;&#x5EFA;&#x8F93;&#x5165;&#x7684;buffer&#x6570;&#x636E;&#x5BF9;&#x8C61;</td>
+<td></td>
+</tr>
+<tr>
+<td>Task::GetLastError</td>
+<td>&#x83B7;&#x53D6;Task&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+<td></td>
+</tr>
+<tr>
+<td>Task::GetTaskStatus</td>
+<td>&#x83B7;&#x53D6;Task&#x72B6;&#x6001;</td>
+<td></td>
+</tr>
+<tr>
+<td>Task::GetSessionConfig</td>
+<td>&#x83B7;&#x53D6;Session&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</td>
+<td>&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x540E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#x5355;&#x5143;&#x8BFB;&#x53D6;</td>
+</tr>
+<tr>
+<td>OneShotTask::FillData</td>
+<td>&#x53D1;&#x9001;&#x6570;&#x636E;&#x6307;&#x6D41;&#x7A0B;&#x56FE;</td>
+<td></td>
+</tr>
+<tr>
+<td>OneShotTask::RegisterStatusCallback</td>
+<td>&#x6CE8;&#x518C;&#x4EFB;&#x52A1;&#x72B6;&#x6001;&#x56DE;&#x8C03;&#x51FD;&#x6570;,&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#x6216;&#x5F02;&#x5E38;&#x65F6;&#x4F1A;&#x8C03;&#x7528;</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="config&#xFF1A;-&#x914D;&#x7F6E;&#x5BF9;&#x8C61;">Config&#xFF1A; &#x914D;&#x7F6E;&#x5BF9;&#x8C61;</h3>
+<p>&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4ECE;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+<h3 id="listener&#xFF1A;httphttps&#x76D1;&#x542C;&#x7EC4;&#x4EF6;">Listener&#xFF1A;http/https&#x76D1;&#x542C;&#x7EC4;&#x4EF6;</h3>
+<p>Listener&#x76D1;&#x542C;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x6CE8;&#x518C;http&#x670D;&#x52A1;&#xFF0C;&#x76D1;&#x542C;&#x76F8;&#x5173;&#x7684;URI</p>
+<h3 id="timer&#xFF1A;-&#x5B9A;&#x65F6;&#x5668;&#x7EC4;&#x4EF6;">Timer&#xFF1A; &#x5B9A;&#x65F6;&#x5668;&#x7EC4;&#x4EF6;</h3>
+<p>&#x5B9A;&#x65F6;&#x5668;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x542F;&#x52A8;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;</p>
+<h2 id="&#x5F00;&#x53D1;&#x4F8B;&#x5B50;">&#x5F00;&#x53D1;&#x4F8B;&#x5B50;</h2>
+<h3 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h3>
+<p>&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x524D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#xFF1A;</p>
+<ol>
+<li>ModelBox Server&#x6B63;&#x786E;&#x5B89;&#x88C5;&#x5E76;&#x8FD0;&#x884C;&#x3002;</li>
+<li>ModelBox Server Develop&#x5B89;&#x88C5;&#x5305;&#x6B63;&#x786E;&#x5B89;&#x88C5;&#x3002;</li>
+</ol>
+<h3 id="&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x6A21;&#x677F;">&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x6A21;&#x677F;</h3>
+<p>&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;modelbox-tool&#x547D;&#x540D;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x6A21;&#x677F;&#x5DE5;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x521B;&#x5EFA;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-shell">modelbox-tool template -service-plugin -name PluginName
+</code></pre>
+<h3 id="&#x7F16;&#x5199;&#x63D2;&#x4EF6;&#x5165;&#x53E3;&#x51FD;&#x6570;">&#x7F16;&#x5199;&#x63D2;&#x4EF6;&#x5165;&#x53E3;&#x51FD;&#x6570;</h3>
+<h4 id="&#x63D2;&#x4EF6;&#x5165;&#x53E3;&#x6D41;&#x7A0B;">&#x63D2;&#x4EF6;&#x5165;&#x53E3;&#x6D41;&#x7A0B;</h4>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">ifndef</span> MODELBOX_MODELBOX_EXAMPLE_PLUGIN_H_</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MODELBOX_MODELBOX_EXAMPLE_PLUGIN_H_</span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;modelbox/server/plugin.h&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;memory&gt;</span></span>
+
+<span class="hljs-comment">// &#x63D2;&#x4EF6;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;</span>
+<span class="hljs-keyword">class</span> ModelBoxExamplePlugin : <span class="hljs-keyword">public</span> Plugin {
+ <span class="hljs-keyword">public</span>:
+  ModelBoxExamplePlugin(){};
+  ~ModelBoxExamplePlugin(){};
+
+  <span class="hljs-comment">// &#x63D2;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8C03;&#x7528;&#x3002;</span>
+  <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Init</span><span class="hljs-params">(<span class="hljs-built_in">std</span>::<span class="hljs-built_in">shared_ptr</span>&lt;modelbox::Configuration&gt; config)</span> override</span>;
+  <span class="hljs-comment">// &#x63D2;&#x4EF6;&#x5F00;&#x5DE5;&#x542F;&#x52A8;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x975E;&#x963B;&#x585E;&#x3002;</span>
+  <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Start</span><span class="hljs-params">()</span> override</span>;
+  <span class="hljs-comment">// &#x63D2;&#x4EF6;&#x505C;&#x6B62;&#x65F6;&#x8C03;&#x7528;&#x3002;</span>
+  <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">Stop</span><span class="hljs-params">()</span> override</span>;
+};
+
+<span class="hljs-comment">// &#x63D2;&#x4EF6;&#x521B;&#x5EFA;&#x63A5;&#x53E3;</span>
+<span class="hljs-keyword">extern</span> <span class="hljs-string">&quot;C&quot;</span> {
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">shared_ptr</span>&lt;Plugin&gt; CreatePlugin() {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">std</span>::make_shared&lt;ModelBoxExamplePlugin&gt;();
+};
+}
+</code></pre>
+<p>ModelBox&#x52A0;&#x8F7D;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><p>ModelBox Server&#x5148;&#x8C03;&#x7528;&#x63D2;&#x4EF6;&#x4E2D;&#x7684;<code>CreatePlugin</code>&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x63D2;&#x4EF6;&#x5BF9;&#x8C61;&#x3002;</p>
+<p> &#x63D2;&#x4EF6;&#x9700;&#x8981;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x63D2;&#x4EF6;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x667A;&#x80FD;&#x6307;&#x9488;&#x3002;</p>
+</li>
+<li><p>&#x518D;&#x8C03;&#x7528;<code>Plugin::Init()</code>&#x521D;&#x59CB;&#x5316;&#x63D2;&#x4EF6;&#xFF0C;&#x5165;&#x53C2;&#x4E3A;TOML&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x3002;</p>
+<p> &#x63D2;&#x4EF6;&#x53EF;&#x5728;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x63D2;&#x4EF6;&#x81EA;&#x8EAB;&#x7684;&#x521D;&#x59CB;&#x5316;&#x529F;&#x80FD;&#x3002;</p>
+</li>
+<li><p>&#x518D;&#x8C03;&#x7528;<code>Plugin::Start()</code>&#x542F;&#x52A8;&#x63D2;&#x4EF6;&#x3002;</p>
+<p> &#x63D2;&#x4EF6;&#x5728;Start&#x51FD;&#x6570;&#x4E2D;&#x542F;&#x52A8;&#x63D2;&#x4EF6;&#x670D;&#x52A1;&#xFF0C;&#x7533;&#x8BF7;&#x76F8;&#x5173;&#x7684;&#x8D44;&#x6E90;&#xFF1B;&#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x963B;&#x585E;&#x3002;</p>
+</li>
+<li><p>&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x65F6;&#xFF0C;&#x8C03;&#x7528;<code>Plugin::Stop()</code>&#x505C;&#x6B62;&#x63D2;&#x4EF6;&#x529F;&#x80FD;&#x3002;</p>
+<p> &#x63D2;&#x4EF6;&#x5728;Stop&#x51FD;&#x6570;&#x4E2D;&#x505C;&#x6B62;&#x63D2;&#x4EF6;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x91CA;&#x653E;&#x76F8;&#x5173;&#x7684;&#x8D44;&#x6E90;&#x3002;</p>
+</li>
+<li><p>&#x8C03;&#x7528;ModelBox Server&#xFF0C;ModelBox Library&#x76F8;&#x5173;&#x63A5;&#x53E3;&#x3002;</p>
+<p> &#x63D2;&#x4EF6;&#x8C03;&#x7528;ModelBox Server&#xFF0C;&#x4EE5;&#x53CA;ModelBox Library&#x7684;API&#x8FDB;&#x884C;&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x548C;&#x8FD0;&#x884C;&#x3002;&#x5177;&#x4F53;&#x53C2;&#x8003;&#x76F8;&#x5173;&#x7684;API&#x3002;</p>
+</li>
+</ol>
+<h4 id="job&#x521B;&#x5EFA;&#x6D41;&#x7A0B;">Job&#x521B;&#x5EFA;&#x6D41;&#x7A0B;</h4>
+<p>&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E3A;&#x6D41;&#x7A0B;&#x56FE;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x5916;&#x90E8;&#x7ED9;&#x5176;&#x8F93;&#x5165;&#xFF0C;&#x76F4;&#x63A5;&#x52A0;&#x8F7D;&#x56FE;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#x8FD0;&#x884C;&#x573A;&#x666F;&#x3002;&#x5982;&#x56FE;&#x7247;&#x63A8;&#x7406;&#x670D;&#x52A1;&#xFF0C;&#x6570;&#x636E;&#x6D41;&#x53EF;&#x7531;&#x6D41;&#x7A0B;&#x56FE;&#x4E2D;&#x7684;HTTP&#x529F;&#x80FD;&#x5355;&#x5143;&#x4EA7;&#x751F;&#x6570;&#x636E;&#xFF0C;&#x518D;&#x6BD4;&#x5982;&#x6D41;&#x7A0B;&#x56FE;&#x4E2D;&#x8BFB;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x6E90;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<pre><code class="lang-c++">   Job job_;
+   JobManager job_manager_;
+
+  <span class="hljs-keyword">bool</span> ModelBoxExamplePlugin::Init(<span class="hljs-built_in">std</span>::<span class="hljs-built_in">shared_ptr</span>&lt;modelbox::Configuration&gt; config)
+  {
+     <span class="hljs-comment">//&#x521B;&#x5EFA;JobManager</span>
+     job_manager_ = <span class="hljs-built_in">std</span>::make_shared&lt;JobManager&gt;();
+     <span class="hljs-comment">//&#x4ECE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x83B7;&#x53D6;&#x56FE;&#x914D;&#x7F6E;&#xFF0C;config&#x5BF9;&#x8C61;&#x4E3A;&#x8FD0;&#x884C;&#x65F6;&#x4F20;&#x5165;&#x7684;conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x4E3A;/usr/local/etc/modelbox/modelbox.conf</span>
+     <span class="hljs-keyword">auto</span> graph_path = config-&gt;GetString(<span class="hljs-string">&quot;server.flow_path&quot;</span>);
+     <span class="hljs-comment">//&#x521B;&#x5EFA;Job</span>
+     job_ = job_manager_-&gt;CreateJob(<span class="hljs-string">&quot;my_job&quot;</span>, graph_path);
+
+     <span class="hljs-keyword">auto</span> ret = job_-&gt;Init();
+     <span class="hljs-keyword">return</span> ret;
+  }
+
+  <span class="hljs-keyword">bool</span> ModelBoxExamplePlugin::Start()
+  {
+     job_-&gt;Build();
+     job_-&gt;Run();
+     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+  }
+
+
+  <span class="hljs-keyword">bool</span> ModelBoxExamplePlugin::Stop()
+  {
+     <span class="hljs-keyword">auto</span> ret = job_-&gt;Stop();
+     ret = job_manager_-&gt;DeleteJob(<span class="hljs-string">&quot;my_job&quot;</span>);
+     <span class="hljs-keyword">return</span> ret; 
+  }
+</code></pre>
+<h4 id="task&#x521B;&#x5EFA;&#x6D41;&#x7A0B;">Task&#x521B;&#x5EFA;&#x6D41;&#x7A0B;</h4>
+<p>&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E3A;&#x6D41;&#x7A0B;&#x56FE;&#x8FD0;&#x884C;&#x4F9D;&#x8D56;&#x4E0E;&#x5916;&#x90E8;&#x8F93;&#x5165;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5982;&#x5206;&#x6790;&#x7684;&#x89C6;&#x9891;&#x6D41;&#x4FE1;&#x606F;&#x9700;&#x8981;&#x7531;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#xFF0C;&#x518D;&#x7528;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x521B;&#x5EFA;Task&#xFF0C;&#x5E76;&#x628A;&#x76F8;&#x5E94;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x6570;&#x636E;&#x4F20;&#x9012;&#x5230;&#x6D41;&#x7A0B;&#x56FE;&#x3002;</p>
+<pre><code class="lang-c++">  <span class="hljs-keyword">void</span> ModelBoxExamplePlugin::ModelBoxTaskStatusCallback(modelbox::OneShotTask *task,
+                                     modelbox::TaskStatus status) {
+    <span class="hljs-comment">//&#x5B9E;&#x73B0;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#x6216;&#x8005;&#x4EFB;&#x52A1;&#x5F02;&#x5E38;&#x65F6;&#x5904;&#x7406;&#x903B;&#x8F91;</span>
+    <span class="hljs-keyword">return</span>;
+  }
+  <span class="hljs-keyword">bool</span> ModelBoxExamplePlugin::Start()
+  {
+      job_-&gt;Build();
+      job_-&gt;Run();
+      <span class="hljs-comment">//&#x521B;&#x5EFA;task manager&#xFF0C;&#x643A;&#x5E26;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;</span>
+      <span class="hljs-keyword">auto</span> task_manager = job-&gt;CreateTaskManger(<span class="hljs-number">10</span>);
+      task_manager-&gt;start();
+
+      <span class="hljs-comment">//&#x521B;&#x5EFA;task</span>
+      <span class="hljs-keyword">auto</span> task = task_manager-&gt;CreateTask(modelbox::TASK_ONESHOT);
+      <span class="hljs-keyword">auto</span> oneshot_task = <span class="hljs-built_in">std</span>::dynamic_pointer_cast&lt;OneShotTask&gt;(task);
+      <span class="hljs-comment">//&#x521B;&#x5EFA;buff&#x6570;&#x636E;&#x5E76;&#x53D1;&#x9001;&#x7ED9;&#x6D41;&#x7A0B;&#x56FE;        </span>
+      <span class="hljs-keyword">auto</span> buff_list = oneshot_task-&gt;CreateBufferList();
+      <span class="hljs-keyword">auto</span> input_cfg = <span class="hljs-string">&quot;{\&quot;url\&quot;&#xFF1A;\&quot;xxxx\&quot;}&quot;</span>;  <span class="hljs-comment">//&#x8F93;&#x5165;&#x9700;&#x8981;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x7531;&#x6D41;&#x7A0B;&#x56FE;&#x4E2D;&#x8F93;&#x5165;&#x8282;&#x70B9;&#x51B3;&#x5B9A;</span>
+      <span class="hljs-keyword">auto</span> status = buff_list-&gt;Build({input_cfg.size()});
+      <span class="hljs-keyword">if</span> (status != modelbox::STATUS_OK) {
+          <span class="hljs-keyword">return</span> status;
+      }
+      <span class="hljs-keyword">auto</span> buff = buff_list-&gt;At(<span class="hljs-number">0</span>);
+      <span class="hljs-keyword">auto</span> ret = memcpy_s(buff-&gt;MutableData(), buff-&gt;GetBytes(), input_cfg.data(),
+                          input_cfg.size());
+      buff-&gt;Set(<span class="hljs-string">&quot;source_type&quot;</span>, <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>(<span class="hljs-string">&quot;url&quot;</span>)); <span class="hljs-comment">//&#x8F93;&#x5165;&#x9700;&#x8981;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x7531;&#x6D41;&#x7A0B;&#x56FE;&#x4E2D;&#x8F93;&#x5165;&#x8282;&#x70B9;&#x51B3;&#x5B9A;</span>
+      <span class="hljs-built_in">std</span>::<span class="hljs-built_in">unordered_map</span>&lt;<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>, <span class="hljs-built_in">std</span>::<span class="hljs-built_in">shared_ptr</span>&lt;BufferList&gt;&gt; datas;
+      datas.emplace(<span class="hljs-string">&quot;input1&quot;</span>, buff_list);<span class="hljs-comment">//&#x8F93;&#x5165;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x7531;&#x6D41;&#x7A0B;&#x56FE;&#x51B3;&#x5B9A;</span>
+      status = oneshot_task-&gt;FillData(datas);
+      <span class="hljs-keyword">if</span> (status != modelbox::STATUS_OK) {
+          <span class="hljs-keyword">return</span> status;
+      }
+      <span class="hljs-comment">//&#x586B;&#x5145;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;</span>
+      <span class="hljs-keyword">auto</span> config = oneshot_task-&gt;GetSessionConfig();
+      config-&gt;SetProperty(<span class="hljs-string">&quot;nodes.{key}&quot;</span>, <span class="hljs-string">&quot;{vaule}&quot;</span>);<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;</span>
+      <span class="hljs-comment">//&#x6CE8;&#x518C;Task&#x72B6;&#x6001;&#x53D8;&#x66F4;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
+      oneshot_task-&gt;RegisterStatusCallback(
+      [&amp;](OneShotTask *task, TaskStatus status) {
+          t-&gt;ModelBoxTaskStatusCallback(task, status);
+          <span class="hljs-keyword">return</span>;
+      });
+
+      status = oneshot_task-&gt;Start();
+      <span class="hljs-keyword">if</span> (status != modelbox::STATUS_OK) {
+          <span class="hljs-keyword">return</span> status;
+      }
+      <span class="hljs-comment">//&#x7B49;&#x5F85;task&#x6267;&#x884C;&#x7ED3;&#x675F;</span>
+      <span class="hljs-keyword">auto</span> task_status = iva_task-&gt;GetTaskStatus();
+      <span class="hljs-keyword">while</span> (task_status != TaskStatus::STOPPED &amp;&amp;
+          task_status != TaskStatus::ABNORMAL &amp;&amp; 
+          task_status != TaskStatus::FINISHED) {
+          sleep(<span class="hljs-number">1</span>);
+          task_status = iva_task-&gt;GetTaskStatus();
+      }
+      task_manager-&gt;DeleteTaskById(oneshot_task-&gt;GetTaskId());
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+</code></pre>
+<h3 id="&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x914D;&#x7F6E;&#x4F7F;&#x7528;">&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x914D;&#x7F6E;&#x4F7F;&#x7528;</h3>
+<p>&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x7F16;&#x8BD1;&#x4E3A;SO&#x6587;&#x4EF6;&#x3002;&#x9700;&#x8981;&#x5C06;&#x63D2;&#x4EF6;&#x52A0;&#x5165;ModelBox Server&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;<code>plugin.files</code>&#x914D;&#x7F6E;&#x9879;&#x63D2;&#x4EF6;&#x914D;&#x7F6E;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x5373;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x4E3A;<code>/usr/local/etc/modelbox/modelbox.conf</code>&#x7684;<code>plugin.files</code>&#x914D;&#x7F6E;&#x9879;&#x3002;</p>
+<pre><code class="lang-toml">[plugin]
+files = [
+    &quot;/usr/local/lib/modelbox-plugin.so&quot;,   #&#x7531;&#x4E8E;&#x4E0D;&#x540C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5B58;&#x5728;&#x5DEE;&#x5F02;&#xFF0C;&#x6B64;&#x8DEF;&#x5F84;&#x4E5F;&#x53EF;&#x80FD;&#x4E3A; /usr/local/lib64/modelbox-plugin.so
+    &quot;/xxx/xxx/example-plugin.so&quot; 
+]
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ol>
+<li>modelbox-plugin.so&#x4E3A;&#x7CFB;&#x7EDF;&#x9884;&#x7F6E;&#x63D2;&#x4EF6;&#xFF0C;&#x53EF;&#x6839;&#x636E;&#x9700;&#x8981;&#x6DFB;&#x52A0;</li>
+<li>&#x63D2;&#x4EF6;&#x6309;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x7684;&#x987A;&#x5E8F;&#x52A0;&#x8F7D;&#x3002;</li>
+<li>&#x82E5;&#x91C7;&#x7528;tar.gz&#x5305;&#x5B89;&#x88C5;&#x7684;&#x670D;&#x52A1;&#xFF0C;modelbox.conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;&#x5BF9;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x76EE;&#x5F55;&#x4E2D;&#x3002;</li>
+<li>&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x6269;&#x5C55;&#x589E;&#x52A0;toml&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x5728;ModelBoxExamplePlugin::Init&#x63A5;&#x53E3;&#x7684;configuration&#x5BF9;&#x8C61;&#x4E2D;&#x83B7;&#x53D6;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+<p>&#x63D2;&#x4EF6;&#x52A0;&#x5165;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x540E;&#xFF0C;<code>systemctl restart modelbox</code>&#x91CD;&#x542F;ModelBox Server&#x751F;&#x6548;&#xFF0C; &#x540C;&#x65F6;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x65E5;&#x5FD7;&#x5C06;&#x7EDF;&#x4E00;&#x6536;&#x96C6;&#x5230;ModelBox&#x65E5;&#x5FD7;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">&#xA9;2022 ModelBox Team all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-07-18 18:52:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"服务插件开发","level":"1.5.4","depth":2,"next":{"title":"SDK API集成","level":"1.5.5","depth":2,"path":"develop/sdk/sdk.md","ref":"develop/sdk/sdk.md","articles":[{"title":"C++","level":"1.5.5.1","depth":3,"path":"develop/sdk/c++.md","ref":"develop/sdk/c++.md","articles":[]},{"title":"Python","level":"1.5.5.2","depth":3,"path":"develop/sdk/python.md","ref":"develop/sdk/python.md","articles":[]}]},"previous":{"title":"异常处理","level":"1.5.3.4","depth":3,"path":"develop/flowunit/exception.md","ref":"develop/flowunit/exception.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","-sharing","book-summary-scroll-position-saver","expandable-chapters","search-plus","splitter","tbfed-pagefooter","back-to-top-button","yahei","katex","theme-api","link-checker","theme-comscore"],"styles":{"website":"style.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy;2022 ModelBox Team","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"link-checker":{"dieOnError":false,"fqdn":[]},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"msyh","size":2},"highlight":{},"theme-comscore":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"CE","pdf":{"pageNumbers":true,"fontSize":18,"fontFamily":"Arial","paperSize":"a3","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":30,"left":30,"top":30,"bottom":50},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ModelBox User Refference","language":"zh-hans","gitbook":"*","description":"ModelBox指导书"},"file":{"path":"develop/service-plugin/service-plugin.md","mtime":"2022-07-18T10:52:31.188Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-18T11:04:53.925Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,42 @@
+img {
+    display: block;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
+
+img[alt$="rect_w_1280"] {
+    width: 1280px;
+}
+
+img[alt$="rect_w_1000"] {
+    width: 1000px;
+}
+
+img[alt$="rect_w_900"] {
+    width: 900px;
+}
+
+img[alt$="rect_w_800"] {
+    width: 800px;
+}
+
+img[alt$="rect_w_600"] {
+    width: 600px;
+}
+
+img[alt$="rect_w_500"] {
+    width: 500px;
+}
+
+img[alt$="rect_w_400"] {
+    width: 400px;
+}
+
+img[alt$="rect_w_300"] {
+    width: 300px;
+}
+
+img[alt$="rect_w_280"] {
+    width: 280px;
+}

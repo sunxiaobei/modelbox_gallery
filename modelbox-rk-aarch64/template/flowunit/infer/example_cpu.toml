@@ -1,0 +1,24 @@
+# Copyright (C) 2020 Huawei Technologies Co., Ltd. All rights reserved.
+
+[base]
+name = "MODULENAME"
+device = "cpu"
+version = "1.0.0"
+description = "your description"
+entry = "./model.onnx"  # model file path, use relative path
+type = "inference" 
+virtual_type = "onnx" # inference engine type: win10 now only support onnx
+group_type = "Inference"  # flowunit group attribution, do not change
+
+# Input ports description
+[input]
+[input.input1]  # input port number, Format is input.input[N]
+name = "Input"  # input port name
+type = "float"  # input port data type ,e.g. float or uint8
+device = "cpu"  # input buffer type: cpu, win10 now copy input from cpu
+
+# Output ports description
+[output]
+[output.output1] # output port number, Format is output.output[N]
+name = "Output"  # output port name
+type = "float"   # output port data type ,e.g. float or uint8

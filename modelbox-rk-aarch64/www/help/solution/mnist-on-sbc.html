@@ -1,0 +1,1198 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>树莓派开发板Mnist识别 · ModelBox User Refference</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="CE">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../style.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../framework-conception/framework-conception.html" />
+    
+    
+    <link rel="prev" href="car-detect.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ModelBox介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../use-modelbox/use-modelbox.html">
+            
+                <a href="../use-modelbox/use-modelbox.html">
+            
+                    
+                    如何使用ModelBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../develop/first-app/first-app.html">
+            
+                <a href="../develop/first-app/first-app.html">
+            
+                    
+                    第一个应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../server/summary.html">
+            
+                <a href="../server/summary.html">
+            
+                    
+                    ModelBox服务运行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../server/server.html">
+            
+                <a href="../server/server.html">
+            
+                    
+                    服务使用流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../server/editor.html">
+            
+                <a href="../server/editor.html">
+            
+                    
+                    可视化编排服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../server/run-flow.html">
+            
+                <a href="../server/run-flow.html">
+            
+                    
+                    服务配置安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../develop/summary.html">
+            
+                <a href="../develop/summary.html">
+            
+                    
+                    应用开发与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../develop/develop.html">
+            
+                <a href="../develop/develop.html">
+            
+                    
+                    AI应用开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../develop/flow/flow.html">
+            
+                <a href="../develop/flow/flow.html">
+            
+                    
+                    流程图开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../develop/flowunit/flowunit.html">
+            
+                <a href="../develop/flowunit/flowunit.html">
+            
+                    
+                    功能单元开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../develop/flowunit/inference.html">
+            
+                <a href="../develop/flowunit/inference.html">
+            
+                    
+                    推理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../develop/flowunit/python.html">
+            
+                <a href="../develop/flowunit/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../develop/flowunit/c++.html">
+            
+                <a href="../develop/flowunit/c++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../develop/flowunit/exception.html">
+            
+                <a href="../develop/flowunit/exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../develop/service-plugin/service-plugin.html">
+            
+                <a href="../develop/service-plugin/service-plugin.html">
+            
+                    
+                    服务插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../develop/sdk/sdk.html">
+            
+                <a href="../develop/sdk/sdk.html">
+            
+                    
+                    SDK API集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../develop/sdk/c++.html">
+            
+                <a href="../develop/sdk/c++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../develop/sdk/python.html">
+            
+                <a href="../develop/sdk/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../develop/modelbox-tool/modelbox-tool.html">
+            
+                <a href="../develop/modelbox-tool/modelbox-tool.html">
+            
+                    
+                    ModelBox Tool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../develop/debug/debug.html">
+            
+                <a href="../develop/debug/debug.html">
+            
+                    
+                    调试定位
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" data-path="../develop/debug/code-debug.html">
+            
+                <a href="../develop/debug/code-debug.html">
+            
+                    
+                    代码调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" data-path="../develop/debug/log.html">
+            
+                <a href="../develop/debug/log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../develop/debug/profiling.html">
+            
+                <a href="../develop/debug/profiling.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../develop/device/device.html">
+            
+                <a href="../develop/device/device.html">
+            
+                    
+                    设备接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.9.1" data-path="../develop/device/ascend.html">
+            
+                <a href="../develop/device/ascend.html">
+            
+                    
+                    Ascend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9.2" data-path="../develop/device/cuda.html">
+            
+                <a href="../develop/device/cuda.html">
+            
+                    
+                    Nvidia Cuda
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="solution.html">
+            
+                <a href="solution.html">
+            
+                    
+                    案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="car-detect.html">
+            
+                <a href="car-detect.html">
+            
+                    
+                    车辆检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="mnist-on-sbc.html">
+            
+                <a href="mnist-on-sbc.html">
+            
+                    
+                    树莓派开发板Mnist识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../framework-conception/framework-conception.html">
+            
+                <a href="../framework-conception/framework-conception.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../framework-conception/graph.html">
+            
+                <a href="../framework-conception/graph.html">
+            
+                    
+                    图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../framework-conception/flowunit.html">
+            
+                <a href="../framework-conception/flowunit.html">
+            
+                    
+                    功能单元
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../framework-conception/stream.html">
+            
+                <a href="../framework-conception/stream.html">
+            
+                    
+                    数据流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../framework-conception/buffer.html">
+            
+                <a href="../framework-conception/buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../compile/compile.html">
+            
+                <a href="../compile/compile.html">
+            
+                    
+                    编译安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../api/api.html">
+            
+                <a href="../api/api.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../api/c++.html">
+            
+                <a href="../api/c++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../api/python.html">
+            
+                <a href="../api/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../api/python/modelbox_buffer.html">
+            
+                <a href="../api/python/modelbox_buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../api/python/modelbox_bufferlist.html">
+            
+                <a href="../api/python/modelbox_bufferlist.html">
+            
+                    
+                    BufferList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="../api/python/modelbox_configuration.html">
+            
+                <a href="../api/python/modelbox_configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="../api/python/modelbox_datacontext.html">
+            
+                <a href="../api/python/modelbox_datacontext.html">
+            
+                    
+                    DataContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.5" data-path="../api/python/modelbox_datameta.html">
+            
+                <a href="../api/python/modelbox_datameta.html">
+            
+                    
+                    DataMeta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.6" data-path="../api/python/modelbox_device.html">
+            
+                <a href="../api/python/modelbox_device.html">
+            
+                    
+                    Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.7" data-path="../api/python/modelbox_externaldata.html">
+            
+                <a href="../api/python/modelbox_externaldata.html">
+            
+                    
+                    ExternalData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.8" data-path="../api/python/modelbox_externaldatamap.html">
+            
+                <a href="../api/python/modelbox_externaldatamap.html">
+            
+                    
+                    ExternalDataMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.9" data-path="../api/python/modelbox_extoutputbufferlist.html">
+            
+                <a href="../api/python/modelbox_extoutputbufferlist.html">
+            
+                    
+                    ExtOutputBufferList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.10" data-path="../api/python/modelbox_flow.html">
+            
+                <a href="../api/python/modelbox_flow.html">
+            
+                    
+                    Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.11" data-path="../api/python/modelbox_flowunit.html">
+            
+                <a href="../api/python/modelbox_flowunit.html">
+            
+                    
+                    Flowunit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.12" data-path="../api/python/modelbox_flowuniterror.html">
+            
+                <a href="../api/python/modelbox_flowuniterror.html">
+            
+                    
+                    FlowunitError
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.13" data-path="../api/python/modelbox_flowunitevent.html">
+            
+                <a href="../api/python/modelbox_flowunitevent.html">
+            
+                    
+                    FlowunitEvent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.14" data-path="../api/python/modelbox_log.html">
+            
+                <a href="../api/python/modelbox_log.html">
+            
+                    
+                    Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.15" data-path="../api/python/modelbox_sessioncontext.html">
+            
+                <a href="../api/python/modelbox_sessioncontext.html">
+            
+                    
+                    SessionContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.16" data-path="../api/python/modelbox_status.html">
+            
+                <a href="../api/python/modelbox_status.html">
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../api/rest.html">
+            
+                <a href="../api/rest.html">
+            
+                    
+                    REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../flowunits/flowunits.html">
+            
+                <a href="../flowunits/flowunits.html">
+            
+                    
+                    预置功能单元
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../faq/container-usage.html">
+            
+                <a href="../faq/container-usage.html">
+            
+                    
+                    容器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >树莓派开发板Mnist识别</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6811;&#x8393;&#x6D3E;&#x5F00;&#x53D1;&#x677F;&#x4E2D;&#x8FD0;&#x884C;mnist&#x624B;&#x5199;&#x4F53;&#x8BC6;&#x522B;">&#x6811;&#x8393;&#x6D3E;&#x5F00;&#x53D1;&#x677F;&#x4E2D;&#x8FD0;&#x884C;mnist&#x624B;&#x5199;&#x4F53;&#x8BC6;&#x522B;</h1>
+<p>Modelbox&#x652F;&#x6301;&#x5F53;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x51E0;&#x79CD;&#x5F00;&#x53D1;&#x677F;&#xFF0C;&#x6BD4;&#x5982;&#x6811;&#x8393;&#x6D3E;4&#xFF0C;RK3399&#xFF0C;RK3568&#x82AF;&#x7247;&#x7684;Linux&#x7CFB;&#x7EDF;&#x3002;<br>&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x4E86;&#xFF0C;&#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x5982;&#x4F55;&#x4ECE;&#x6784;&#x5EFA;ModelBox&#x5F00;&#x59CB;&#xFF0C;&#x5230;&#x8BAD;&#x7EC3;&#x751F;&#x6210;&#x6A21;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x8FDB;&#x884C;&#x63A8;&#x7406;&#x7684;&#x5168;&#x6D41;&#x7A0B;&#x3002;</p>
+<p>mnist&#x4E3A;&#x4E00;&#x4E2A;REST-API&#x670D;&#x52A1;&#xFF0C;&#x901A;&#x8FC7;REST&#x8BF7;&#x6C42;&#xFF0C;&#x53D1;&#x9001;base64&#x7684;&#x624B;&#x5199;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x63A8;&#x7406;&#xFF0C;REST-API&#x7ED9;&#x51FA;&#x63A8;&#x7406;&#x7ED3;&#x679C;&#x3002;<br>&#x5173;&#x4E8E;ModelBox&#x4E2D;Mnist&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x53C2;&#x8003;<a href="../develop/first-app/first-app.html">&#x7B2C;&#x4E00;&#x4E2A;&#x5E94;&#x7528;</a></p>
+<h2 id="&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#x51C6;&#x5907;">&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#x51C6;&#x5907;</h2>
+<h3 id="&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x7684;&#x5F00;&#x53D1;&#x5E93;">&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x7684;&#x5F00;&#x53D1;&#x5E93;</h3>
+<pre><code class="lang-shell">apt-get update
+apt-get -y install cmake git wget build-essential npm curl
+apt-get -y install python3 python3-pip python-is-python3
+apt-get -y install libssl-dev libcpprest-dev libopencv-dev libgraphviz-dev python3-dev
+apt-get -y install libavfilter-dev libavdevice-dev libavcodec-dev
+pip install requests opencv-python
+</code></pre>
+<p>&#x5982;&#x4E0A;&#x8FF0;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;&#x6BD4;&#x8F83;&#x6162;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x7684;&#x955C;&#x50CF;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#xFF0C;&#x5177;&#x4F53;&#x955C;&#x50CF;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>pip&#x955C;&#x50CF;&#x4E0B;&#x8F7D;&#xFF1A;</p>
+<p>  &#x914D;&#x7F6E;&#x53C2;&#x8003;&#xFF1A;  </p>
+<p>  <a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/help/pypi/</a>  </p>
+<p>  &#x4E34;&#x65F6;&#x4F7F;&#x7528;&#x53C2;&#x8003;&#xFF1A;</p>
+<pre><code class="lang-shell">  pip -y install -i https://pypi.tuna.tsinghua.edu.cn/simple requests opencv-python
+</code></pre>
+</li>
+<li><p>apt&#x955C;&#x50CF;&#x4E0B;&#x8F7D;&#xFF1A;</p>
+<p>  &#x914D;&#x7F6E;&#x53C2;&#x8003;&#xFF1A;  </p>
+<p>  <a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/</a><br>  <a href="https://mirrors.tuna.tsinghua.edu.cn/help/debian/" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/help/debian/</a>  </p>
+</li>
+<li><p>npm&#x955C;&#x50CF;&#xFF1A;</p>
+<p>  &#x914D;&#x7F6E;&#x53C2;&#x8003;&#xFF1A;  </p>
+<pre><code class="lang-shell">  npm config set registry https://registry.npmmirror.com
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;mindspore-lite&#x63A8;&#x7406;&#x5F15;&#x64CE;">&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;MindSpore-Lite&#x63A8;&#x7406;&#x5F15;&#x64CE;</h3>
+<p>&#x4E0B;&#x8F7D;aarch64&#x7684;MindSporeLite&#xFF1A;</p>
+<pre><code class="lang-shell">wget https://ms-release.obs.cn-north-4.myhuaweicloud.com/1.7.0/MindSpore/lite/release/linux/aarch64/mindspore-lite-1.7.0-linux-aarch64.tar.gz
+tar xf mindspore-lite-1.7.0-linux-aarch64.tar.gz
+mv mindspore-lite-1.7.0-linux-aarch64 /usr/local/
+ln -s /usr/local/mindspore-lite-1.7.0-linux-aarch64 /usr/local/mindspore-lite
+</code></pre>
+<p>&#x5176;&#x4ED6;&#x7248;&#x672C;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A; <a href="https://www.mindspore.cn/lite" target="_blank">https://www.mindspore.cn/lite</a></p>
+<h2 id="&#x7F16;&#x8BD1;modelbox">&#x7F16;&#x8BD1;ModelBox</h2>
+<ol>
+<li><p>&#x4E0B;&#x8F7D;&#x5E76;&#x7F16;&#x8BD1;ModelBox</p>
+<p> &#x4E3B;&#x7AD9;&#xFF1A;</p>
+<pre><code class="lang-shell"> git clone https://github.com/modelbox-ai/modelbox.git
+</code></pre>
+<p> &#x56FD;&#x5185;&#x955C;&#x50CF;&#xFF1A;</p>
+<pre><code class="lang-shell"> git clone https://gitee.com/modelbox/modelbox.git
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x8BD1;ModelBox:</p>
+<pre><code class="lang-shell"> cd modelbox
+ mkdir build
+ cd build
+ cmake .. -DCMAKE_BUILD_TYPE=Debug 
+ make package -j4
+</code></pre>
+<p> &#x5982;&#x679C;&#x4E0B;&#x8F7D;&#x6162;&#xFF0C;&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x955C;&#x50CF;&#xFF1A;</p>
+<pre><code class="lang-shell"> cmake .. -DCMAKE_BUILD_TYPE=Debug -DUSE_CN_MIRROR=yes
+</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;ModelBox</p>
+<pre><code class="lang-shell"> dpkg -i release/*.deb
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x4F7F;&#x7528;modelbox&#x7F16;&#x6392;&#x5F00;&#x53D1;">&#x4F7F;&#x7528;ModelBox&#x7F16;&#x6392;&#x5F00;&#x53D1;</h2>
+<ol>
+<li><p>&#x542F;&#x52A8;ModelBox&#x7F16;&#x6392;&#x5F00;&#x53D1;&#x670D;&#x52A1;</p>
+<pre><code class="lang-shell"> modelbox-tool develop -s
+</code></pre>
+</li>
+<li><p>&#x94FE;&#x63A5;ModelBox&#x7F16;&#x6392;&#x670D;&#x52A1;</p>
+<p> &#x670D;&#x52A1;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x94FE;&#x63A5;&#x7F16;&#x6392;&#x670D;&#x52A1;&#xFF0C;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x67E5;&#x8BE2;&#xFF1A;</p>
+<pre><code class="lang-shell"> modelbox-tool develop -q
+</code></pre>
+<p> &#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x4E0A;&#x8FF0;&#x5730;&#x5740;&#x7684;1104&#x7AEF;&#x53E3;
+ &#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x6709;&#x6743;&#x9650;&#x95EE;&#x9898;&#xFF0C;&#x4FEE;&#x6539;conf/modelbox.conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;acl.allow&#x6570;&#x7EC4;&#xFF0C;&#x589E;&#x52A0;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x7684;IP&#x8303;&#x56F4;&#x3002;</li>
+<li>&#x63A8;&#x8350;&#x4F7F;&#x7528;vscode&#x7684;&#x8FDC;&#x7A0B;&#x94FE;&#x63A5;&#x7684;&#x7EC8;&#x7AEF;&#x64CD;&#x4F5C;&#xFF0C;vscode&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5EFA;&#x7ACB;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x3002;<a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;</a>  </li>
+</ul>
+</li>
+<li><p>&#x65B0;&#x5EFA;mnist&#x670D;&#x52A1;</p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x4EFB;&#x52A1;&#x7F16;&#x6392;</li>
+<li>&#x70B9;&#x51FB;&#x9879;&#x76EE;-&gt;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;</li>
+<li>&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF1A;<ul>
+<li>&#x8F93;&#x5165;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x7684;&#x540D;&#x79F0;:<code>mnist</code></li>
+<li>&#x8DEF;&#x5F84;: <code>/home/[user]</code></li>
+<li>&#x9879;&#x76EE;&#x6A21;&#x677F;&#x4E3A;: <code>mnist-mindspore</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x8BAD;&#x7EC3;&#x6A21;&#x578B;</p>
+<ul>
+<li><p>&#x4F7F;&#x7528;&#x5982;&#x4E0B;shell&#x547D;&#x4EE4;&#x6267;&#x884C;&#x8BAD;&#x7EC3;&#xFF1A;</p>
+<pre><code class="lang-shell">cd ~/mnist/src/flowunit/mnist_infer
+chmod +x train.sh
+./train.sh
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>&#x542F;&#x52A8;mnist&#x670D;&#x52A1;</p>
+<p> &#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x7F16;&#x6392;&#x754C;&#x9762;&#xFF0C;&#x6253;&#x5F00;mnist&#x9879;&#x76EE;&#xFF0C;&#x70B9;&#x51FB;&#x9879;&#x76EE;&#x4E0A;<code>&#x542F;&#x52A8;</code>&#x6309;&#x94AE;mnist&#x670D;&#x52A1;&#x3002;</p>
+<p> &#x6CE8;&#x610F;&#xFF1A;  </p>
+<ul>
+<li>&#x82E5;&#x542F;&#x52A8;&#x5931;&#x8D25;&#xFF0C;&#x8BF7;&#x6839;&#x636E;&#x754C;&#x9762;&#x7684;&#x63D0;&#x793A;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x63A8;&#x7406;&#x9A8C;&#x8BC1;&#xFF1A;</p>
+<ul>
+<li><p>&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5185;&#x7F6E;&#x7684;&#x63A8;&#x7406;&#x9A8C;&#x8BC1;</p>
+<pre><code class="lang-shell">cd ~/mnist/src/graph
+python test_mnist.py
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<footer class="page-footer"><span class="copyright">&#xA9;2022 ModelBox Team all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-07-18 18:52:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"树莓派开发板Mnist识别","level":"1.6.2","depth":2,"next":{"title":"基本概念","level":"1.7","depth":1,"path":"framework-conception/framework-conception.md","ref":"framework-conception/framework-conception.md","articles":[{"title":"图","level":"1.7.1","depth":2,"path":"framework-conception/graph.md","ref":"framework-conception/graph.md","articles":[]},{"title":"功能单元","level":"1.7.2","depth":2,"path":"framework-conception/flowunit.md","ref":"framework-conception/flowunit.md","articles":[]},{"title":"数据流","level":"1.7.3","depth":2,"path":"framework-conception/stream.md","ref":"framework-conception/stream.md","articles":[]},{"title":"Buffer","level":"1.7.4","depth":2,"path":"framework-conception/buffer.md","ref":"framework-conception/buffer.md","articles":[]}]},"previous":{"title":"车辆检测","level":"1.6.1","depth":2,"path":"solution/car-detect.md","ref":"solution/car-detect.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-livereload","-sharing","book-summary-scroll-position-saver","expandable-chapters","search-plus","splitter","tbfed-pagefooter","back-to-top-button","yahei","katex","theme-api","link-checker","theme-comscore"],"styles":{"website":"style.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy;2022 ModelBox Team","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"link-checker":{"dieOnError":false,"fqdn":[]},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"msyh","size":2},"highlight":{},"theme-comscore":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"CE","pdf":{"pageNumbers":true,"fontSize":18,"fontFamily":"Arial","paperSize":"a3","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":30,"left":30,"top":30,"bottom":50},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ModelBox User Refference","language":"zh-hans","gitbook":"*","description":"ModelBox指导书"},"file":{"path":"solution/mnist-on-sbc.md","mtime":"2022-07-18T10:52:31.188Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-18T11:04:53.925Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

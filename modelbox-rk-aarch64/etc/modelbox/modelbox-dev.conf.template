@@ -1,0 +1,37 @@
+[server]
+ip = "127.0.0.1"
+port = "1104"
+flow_path = "/usr/local/etc/modelbox/graph"
+
+[plugin]
+files = [
+    "/usr/local/lib64/modelbox-plugin.so",
+    "/usr/local/lib64/modelbox-plugin-editor.so"
+]
+
+[control]
+enable = true
+listen = "/var/run/modelbox/modelbox.sock"
+
+[acl]
+allow = [
+    "127.0.0.1/8",
+    # ADD CLIENT HOST HERE
+]
+
+[editor]
+enable = true
+# ip = "127.0.0.1"
+# port = "1104"
+root = "/usr/local/share/modelbox/www"
+demo_root = "/usr/local/share/modelbox/demo"
+
+[log]
+# log level, DEBUG, INFO, NOTICE, WARN, ERROR, FATAL, OFF
+# level = "INFO"
+
+# log archive number
+# num = 32
+
+# log file path
+path = "/var/log/modelbox/modelbox.log"

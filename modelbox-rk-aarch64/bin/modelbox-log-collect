@@ -1,0 +1,90 @@
+#!/bin/sh
+# Copyright (c) Huawei Technologies Co., Ltd. 2021-2022. All rights reserved.
+
+init() {
+    MODELBOX_LOG_COLLECT_PATH=/tmp/modelbox-log-collect
+    rm -rf ${MODELBOX_LOG_COLLECT_PATH} && mkdir ${MODELBOX_LOG_COLLECT_PATH}
+    return $?
+}
+
+get_cuda_info() {
+    NVIDIA_SMI=`find /usr -name "nvidia-smi"`
+    if [ ! -n $NVIDIA_SMI ];then
+        echo "can not get nvidia-smi, may not load nvidia driver."
+        return 1
+    fi
+
+    NVIDIA_SMI > ${MODELBOX_LOG_COLLECT_PATH}/gpu_info
+    find /usr -name "libcuda*" > ${MODELBOX_LOG_COLLECT_PATH}/cuda_so_info
+    return $?
+}
+
+get_stack_slab_info() {
+    echo "try to get stack and slab log."
+    for i in $(seq 1 10)  
+    do   
+        modelbox-tool server stack --all 2>&1 > ${MODELBOX_LOG_COLLECT_PATH}/stack_`date +%s`.log
+        if [ $? -ne 0 ];then
+            return 1
+        fi
+        
+        modelbox-tool server slab --device 2>&1 > ${MODELBOX_LOG_COLLECT_PATH}/slab_`date +%s`.log
+        echo "get stack and slab info: $i/10."
+        sleep 2
+    done
+    echo "get stack and slab finished."
+    return 0
+}
+
+get_lock_info() {
+    debugclient -c 10 -o ${MODELBOX_LOG_COLLECT_PATH}/lock_check.log
+    return $?
+}
+
+pack_log() {
+    cd ${MODELBOX_LOG_COLLECT_PATH} && tar -zcvf ./modelbox_runtime_log_`date +%s`.tar.gz --absolute-names /var/log/modelbox
+    cd /tmp && tar -zcvf ./modelbox_`date +%s`.tar.gz --absolute-names ${MODELBOX_LOG_COLLECT_PATH}
+    return $?
+}
+
+fini() {
+    rm -rf ${MODELBOX_LOG_COLLECT_PATH}
+    return $?
+}
+
+main() {
+    init
+    if [ $? -ne 0 ];then
+       echo "init failed."
+    fi
+
+    get_cuda_info
+    if [ $? -ne 0 ];then
+       echo "get cuda info failed."
+    fi
+
+    get_stack_slab_info
+    if [ $? -ne 0 ];then
+        echo "get stack and slab log failed."
+    fi
+
+    get_lock_info
+    if [ $? -ne 0 ];then
+        echo "get lock info failed."
+    fi
+
+    pack_log
+    if [ $? -ne 0 ];then
+        echo "pack log failed."
+    fi
+
+    fini
+    if [ $? -ne 0 ];then
+       echo "fini failed."
+    fi
+
+    return 0
+}
+
+main
+exit $?

@@ -1,0 +1,16 @@
+name: 'Pull Request'
+on:
+  pull_request:
+    branches:
+      - main  # trigger branch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout action
+      uses: actions/checkout@v2
+    - name: Gitbook Action                   
+      uses: modelbox-ai/gitbook-action@master
+      with:                                   
+        source_branch: main
+        pull_request: true

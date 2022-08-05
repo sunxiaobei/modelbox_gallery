@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IDE project files
+.idea
+*.iml
+.vscode
+*.ipr
+*.iws
+*.bin
+*.exe
+*.pyc
+
+
+out
+gen
+target
+_book
+build
+node_modules
+package-lock.json
+book.pdf

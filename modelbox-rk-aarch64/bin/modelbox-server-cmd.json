@@ -1,0 +1,10 @@
+{
+  "cmd-list": [
+      {
+          "name": "develop",
+          "exec": "./develop",
+          "desc": "Setup develop enviroment",
+          "help-cmd": "./develop --help"
+      }
+  ]
+}

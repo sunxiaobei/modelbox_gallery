@@ -1,0 +1,24 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+# Basic config
+[base]
+name = "input" # The FlowUnit name
+device = "cpu" # The flowunit runs on cpu
+version = "1.0.0" # The version of the flowunit
+type = "python" # Fixed value, do not change
+description = "server input" # The description of the flowunit
+entry = "input@inputFlowUnit" # Python flowunit entry function
+group_type = "input"  # flowunit group attribution, change as input/output/image ...
+
+# Flowunit Type
+stream = false # Whether the flowunit is a stream flowunit
+condition = false # Whether the flowunit is a condition flowunit
+collapse = false # Whether the flowunit is a collapse flowunit
+collapse_all = false # Whether the flowunit will collapse all the data
+expand = false #  Whether the flowunit is a expand flowunit
+
+# Output ports description
+[output]
+[output.output1] # Output port number, the format is output.output[N]
+name = "input" # Output port name
+type = "string" # Output port type

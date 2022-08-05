@@ -1,0 +1,12 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/modelbox/device/rknpu
+
+Name: libmodelbox-device-rknpu
+Description: modelbox rknpu device SDK
+Version: 1.0.0
+Libs: -L${libdir} -lmodelbox-device-rknpu
+Cflags: -I${includedir}

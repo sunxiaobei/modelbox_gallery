@@ -1,0 +1,16 @@
+#!/bin/sh
+export MALLOC_ARENA_MAX=2
+
+ldconfig
+
+if [ ! -d "/var/run/modelbox" ]; then
+  mkdir /var/run/modelbox
+fi
+
+MODELBOX_RUN="/usr/local/bin/modelbox -c /usr/local/etc/modelbox/modelbox.conf -f -V -p /var/run/modelbox/modelbox.pid"
+if [ "$MODELBOX_DEBUG_LOCK"x == "ON"x ]; then
+  LOCK_CHECK_COMMAND="DEST_PROGNAME=/usr/local/bin/modelbox LD_PRELOAD=/usr/local/lib64/liblktrace.so "
+fi
+
+CMD=$LOCK_CHECK_COMMAND$MODELBOX_RUN
+eval $CMD
