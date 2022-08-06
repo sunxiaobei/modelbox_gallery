@@ -1,0 +1,42 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+# Basic config
+[base]
+name = "yolox_post" # The FlowUnit name
+device = "cpu" # The flowunit runs on cpu
+version = "1.0.0" # The version of the flowunit
+type = "python" # Fixed value, do not change
+description = "description" # The description of the flowunit
+entry = "yolox_post@yolox_postFlowUnit" # Python flowunit entry function
+group_type = "generic"  # flowunit group attribution, change as input/output/image ...
+
+# Flowunit Type
+stream = false # Whether the flowunit is a stream flowunit
+condition = true # Whether the flowunit is a condition flowunit
+collapse = false # Whether the flowunit is a collapse flowunit
+collapse_all = false # Whether the flowunit will collapse all the data
+expand = false #  Whether the flowunit is a expand flowunit
+
+# The default Flowunit config
+[config]
+item = "value"
+
+# Input ports description
+[input]
+[input.input1] # Input port number, the format is input.input[N]
+name = "in_image" # Input port name
+type = "uint8"  # input port data type ,e.g. float or uint8
+device = "cpu"  # input buffer type
+[input.input2] # Input port number, the format is input.input[N]
+name = "in_feat" # Input port name
+type = "uint8"  # input port data type ,e.g. float or uint8
+device = "cpu"  # input buffer type
+
+# Output ports description
+[output]
+[output.output1] # Output port number, the format is output.output[N]
+name = "has_hand" # Output port name
+type = "float"  # output port data type ,e.g. float or uint8
+[output.output2] # Output port number, the format is output.output[N]
+name = "no_hand" # Output port name
+type = "float"  # output port data type ,e.g. float or uint8

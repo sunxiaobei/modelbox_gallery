@@ -1,0 +1,25 @@
+# Copyright (C) 2020 Huawei Technologies Co., Ltd. All rights reserved.
+
+[base]
+name = "pose_detection"
+device = "rknpu"
+version = "1.0.0"
+description = "your description"
+entry = "./handpose.rknn"  # model file path, use relative path
+type = "inference" 
+virtual_type = "rknpu2" # inference engine type: rockchip now support rknpu, rknpu2(if exist)
+group_type = "Inference"  # flowunit group attribution, do not change
+is_input_contiguous = "false" # rk do not support memory combine, fix, do not change
+
+# Input ports description
+[input]
+[input.input1] # Input port number, the format is input.input[N]
+name = "input" # Input port name
+type = "int"  # input port data type ,e.g. float or uint8
+device = "rknpu"  # input buffer type
+
+# Output ports description
+[output]
+[output.output1] # Output port number, the format is output.output[N]
+name = "output" # Output port name
+type = "float"  # output port data type ,e.g. float or uint8
