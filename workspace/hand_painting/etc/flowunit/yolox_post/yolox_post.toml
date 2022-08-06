@@ -10,6 +10,7 @@ description = "description" # The description of the flowunit
 entry = "yolox_post@yolox_postFlowUnit" # Python flowunit entry function
 group_type = "generic"  # flowunit group attribution, change as input/output/image ...
 
+
 # Flowunit Type
 stream = false # Whether the flowunit is a stream flowunit
 condition = true # Whether the flowunit is a condition flowunit
@@ -19,7 +20,11 @@ expand = false #  Whether the flowunit is a expand flowunit
 
 # The default Flowunit config
 [config]
-item = "value"
+net_h = 320
+net_w = 320
+num_classes = 2
+conf_threshold = 0.5
+iou_threshold = 0.5
 
 # Input ports description
 [input]
@@ -27,16 +32,18 @@ item = "value"
 name = "in_image" # Input port name
 type = "uint8"  # input port data type ,e.g. float or uint8
 device = "cpu"  # input buffer type
+
 [input.input2] # Input port number, the format is input.input[N]
 name = "in_feat" # Input port name
-type = "uint8"  # input port data type ,e.g. float or uint8
+type = "float"  # input port data type ,e.g. float or uint8
 device = "cpu"  # input buffer type
 
 # Output ports description
 [output]
 [output.output1] # Output port number, the format is output.output[N]
 name = "has_hand" # Output port name
-type = "float"  # output port data type ,e.g. float or uint8
+type = "uint8"  # output port data type ,e.g. float or uint8
+
 [output.output2] # Output port number, the format is output.output[N]
 name = "no_hand" # Output port name
-type = "float"  # output port data type ,e.g. float or uint8
+type = "uint8"  # output port data type ,e.g. float or uint8
