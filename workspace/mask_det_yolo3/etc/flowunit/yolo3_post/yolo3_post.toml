@@ -1,0 +1,49 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+# Basic config
+[base]
+name = "yolo3_post" # The FlowUnit name
+device = "cpu" # The device the flowunit runs on，cpu，cuda，ascend。
+version = "1.0.0" # The version of the flowunit
+description = "description" # The description of the flowunit
+entry = "yolo3_post@yolo3_postFlowUnit" # Python flowunit entry function
+type = "python" # Fixed value
+
+# Flowunit Type
+stream = false # Whether the flowunit is a stream flowunit
+condition  = false # Whether the flowunit is a condition flowunit
+collapse = false # Whether the flowunit is a collapse flowunit
+collapse_all = false # Whether the flowunit will collapse all the data
+expand = false #  Whether the flowunit is a expand flowunit
+
+[config]
+# yolo3 config for mask detection
+net_h = 288
+net_w = 512
+labels = ["head", "face", "mask"]
+strides = ["8", "16", "32"]
+anchors = ["12","12", "24","26", "36","37",   "64","64", "76","82", "96","104",  "124","132", "156","198", "208","224"]
+conf_threshold = 0.3
+iou_threshold = 0.4
+flag_hwc = "true"
+
+
+# Input ports description
+[input]
+[input.input1]
+name = "in_feat1"
+type = "float"
+
+[input.input2]
+name = "in_feat2"
+type = "float"
+
+[input.input3]
+name = "in_feat3"
+type = "float"
+
+# Output ports description
+[output]
+[output.output1]
+name = "out_data"
+type = "string"
