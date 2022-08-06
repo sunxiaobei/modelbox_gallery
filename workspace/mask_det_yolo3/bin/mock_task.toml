@@ -11,10 +11,12 @@ content = "{\"param_str\":\"string param\",\"param_int\":10,\"param_float\":10.5
 # 其它用"url"，比如可以是本地文件地址, 或者httpserver的地址，(摄像头 url = "0")
 [input]
 type = "url"
-url = "../data/mask_test.mp4"  # "0"  # 
+# url = "../data/mask_test.mp4" 
+url = "0"
 
 # 任务输出,目前仅支持"webhook", 和本地输出"local"(输出到屏幕,url="0", 输出到rtsp，填写rtsp地址)
 # (local 还可以输出到本地文件，这个时候注意，文件可以是相对路径，是相对这个mock_task.toml文件本身)
 [output]
 type = "local"
-url = "../hilens_data_dir/mask_test_result.mp4"  # "rtsp://192.168.2.2:8554/outstream"  # 
+# url = "../hilens_data_dir/mask_test_result.mp4"  
+url = "rtsp://192.168.3.3:8554/outstream"
