@@ -12,7 +12,8 @@ content = "{\"param_str\":\"string param\",\"param_int\":10,\"param_float\":10.5
 [input]
 type = "url"
 # url = "NONE_VALUE"
-url = "../data/car_test_video.mp4"
+# url = "../data/car_test_video.mp4"
+url ="0"
 
 # 任务输出,目前仅支持"webhook", 和本地输出"local"(输出到屏幕,url="0", 输出到rtsp，填写rtsp地址)
 # (local 还可以输出到本地文件，这个时候注意，文件可以是相对路径，是相对这个mock_task.toml文件本身)
@@ -20,4 +21,5 @@ url = "../data/car_test_video.mp4"
 # type = "webhook"
 # url = "NONE_VALUE"
 type = "local"
-url = "../hilens_data_dir/hello.mp4"
+# url = "../hilens_data_dir/hello.mp4"
+url = "rtsp://192.168.3.18:8554/outstream"
