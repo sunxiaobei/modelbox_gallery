@@ -211,3 +211,233 @@
 [2022-08-06 05:11:30,924][ INFO][    iva_plugin.cc:46  ] IvaPlugin Stop success.
 [2022-08-06 05:11:30,924][ INFO][  stack_plugin.cc:85  ] StackPlugin Stop success.
 [2022-08-06 05:11:30,924][ INFO][          main.cc:382 ] exit modelbox process
+[2022-08-06 06:11:55,190][ INFO][          main.cc:374 ] modelbox config path : /home/rock/ModelBox/modelbox/workspace/hello_world/bin/../graph/modelbox.conf
+[2022-08-06 06:11:55,190][ INFO][        server.cc:110 ] plugin list:
+[2022-08-06 06:11:55,190][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/hello_world/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-08-06 06:11:55,190][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/hello_world/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-08-06 06:11:55,305][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-08-06 06:11:55,305][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-08-06 06:11:55,305][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-08-06 06:11:55,305][ INFO][    iva_config.cc:225 ] load env config success
+[2022-08-06 06:11:55,306][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-08-06 06:11:55,306][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-08-06 06:11:55,306][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-08-06 06:11:55,306][ INFO][    iva_config.cc:146 ] load config success
+[2022-08-06 06:11:55,306][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/ModelBox/modelbox/workspace/hello_world/bin/../graph/hello_world_camera.toml
+[2022-08-06 06:11:55,306][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-08-06 06:11:55,306][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-08-06 06:11:55,306][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-08-06 06:11:55,306][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-08-06 06:11:55,306][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-08-06 06:11:55,306][ INFO][mock_communicate.cc:395 ] MockCommunicate Init . 
+[2022-08-06 06:11:55,397][ INFO][mock_communicate.cc:454 ] mock communicate init success.
+[2022-08-06 06:11:55,398][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-08-06 06:11:55,420][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-08-06 06:11:55,428][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-08-06 06:11:55,428][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-08-06 06:11:55,428][ WARN][        driver.cc:370 ] /home/rock/ModelBox/modelbox/workspace/hello_world/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-08-06 06:11:55,429][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-08-06 06:11:55,450][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/hello_world/bin/../etc/flowunit/draw_text/draw_text.toml success
+[2022-08-06 06:11:55,463][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-08-06 06:11:55,466][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-08-06 06:11:55,478][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-08-06 06:11:56,193][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-06 06:11:56,193][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-06 06:11:56,195][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-08-06 06:11:56,195][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-08-06 06:11:56,195][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-08-06 06:11:56,195][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-08-06 06:11:56,195][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-08-06 06:11:56,195][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-08-06 06:11:56,195][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-08-06 06:11:56,195][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-08-06 06:11:56,199][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-08-06 06:11:56,199][ INFO][        server.cc:59  ] app server start
+[2022-08-06 06:11:56,199][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-08-06 06:11:56,199][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-08-06 06:11:56,200][ INFO][         graph.cc:121 ] Build graph name:hello_world, id:b7e7df5f-beba-4c2a-ba69-5884d18bebcd
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:217 ] node name : draw_text
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:222 ] input port : in_1
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:228 ] output port : out_1
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:228 ] output port : input
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:217 ] node name : local_camera
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:222 ] input port : in_camera_packet
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:228 ] output port : out_camera_frame
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-08-06 06:11:56,200][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-08-06 06:11:56,200][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-08-06 06:11:56,202][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-08-06 06:11:56,202][ INFO][         graph.cc:690 ] begin build node draw_text
+[2022-08-06 06:11:56,207][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-06 06:11:56,208][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-06 06:11:56,208][ INFO][         graph.cc:697 ] build node draw_text success
+[2022-08-06 06:11:56,208][ INFO][         graph.cc:690 ] begin build node input1
+[2022-08-06 06:11:56,208][ INFO][         graph.cc:697 ] build node input1 success
+[2022-08-06 06:11:56,208][ INFO][         graph.cc:690 ] begin build node local_camera
+[2022-08-06 06:11:56,210][ INFO][         graph.cc:697 ] build node local_camera success
+[2022-08-06 06:11:56,210][ INFO][         graph.cc:690 ] begin build node video_out
+[2022-08-06 06:11:56,211][ INFO][         graph.cc:697 ] build node video_out success
+[2022-08-06 06:11:56,211][ INFO][         graph.cc:373 ] add link, data_source_parser:out_video_url -> local_camera:in_camera_packet
+[2022-08-06 06:11:56,211][ INFO][         graph.cc:373 ] add link, draw_text:out_1 -> video_out:in_video_frame
+[2022-08-06 06:11:56,211][ INFO][         graph.cc:373 ] add link, input1:input1 -> data_source_parser:in_data
+[2022-08-06 06:11:56,211][ INFO][         graph.cc:373 ] add link, local_camera:out_camera_frame -> draw_text:in_1
+[2022-08-06 06:11:56,212][ INFO][local_camera_flowunit.cc:35  ] RKNPU local-camera with bgr
+[2022-08-06 06:11:56,221][ INFO][flowunit_group.cc:418 ] node: video_out get batch size is 1
+[2022-08-06 06:11:56,231][ INFO][flowunit_group.cc:418 ] node: local_camera get batch size is 1
+[2022-08-06 06:11:56,235][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : obs
+[2022-08-06 06:11:56,243][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : restful
+[2022-08-06 06:11:56,248][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : url
+[2022-08-06 06:11:56,256][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : vis
+[2022-08-06 06:11:56,256][ INFO][flowunit_group.cc:418 ] node: data_source_parser get batch size is 1
+[2022-08-06 06:11:57,435][ INFO][flowunit_group.cc:418 ] node: draw_text get batch size is 1
+[2022-08-06 06:11:57,439][ INFO][         graph.cc:930 ] node: data_source_parser #0
+[2022-08-06 06:11:57,439][ INFO][         graph.cc:930 ] node: draw_text #0
+[2022-08-06 06:11:57,439][ INFO][         graph.cc:930 ] node: input1 #0
+[2022-08-06 06:11:57,439][ INFO][         graph.cc:930 ] node: local_camera #0
+[2022-08-06 06:11:57,439][ INFO][         graph.cc:930 ] node: video_out #0
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1135] topo index: 0, input1
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1135] topo index: 1, data_source_parser
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1135] topo index: 2, local_camera
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1135] topo index: 3, draw_text
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1135] topo index: 4, video_out
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:951 ] set priority. node: data_source_parser port: in_data priority: 1
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:951 ] set priority. node: local_camera port: in_camera_packet priority: 2
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:951 ] set priority. node: draw_text port: in_1 priority: 3
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:951 ] set priority. node: video_out port: in_video_frame priority: 4
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1156] port connect, input1:input1 -> data_source_parser:in_data
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1156] port connect, local_camera:out_camera_frame -> draw_text:in_1
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1156] port connect, draw_text:out_1 -> video_out:in_video_frame
+[2022-08-06 06:11:57,440][ INFO][         graph.cc:1156] port connect, data_source_parser:out_video_url -> local_camera:in_camera_packet
+[2022-08-06 06:11:57,441][ INFO][flow_scheduler.cc:69  ] init scheduler with 10 threads, max 320
+[2022-08-06 06:11:57,442][ INFO][mock_communicate.cc:462 ] mock communicate start.
+[2022-08-06 06:11:57,443][ INFO][iva_task_manager.cc:831 ] IvaUpload Start success.
+[2022-08-06 06:11:57,443][ INFO][   iva_manager.cc:210 ] IvaManager::Start: Start end . 
+[2022-08-06 06:11:57,443][ INFO][    iva_plugin.cc:36  ] IvaPlugin Start success.
+[2022-08-06 06:11:57,443][ INFO][  stack_plugin.cc:76  ] StackPlugin Start . 
+[2022-08-06 06:11:57,444][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T06:11:57Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-08-06 06:11:58,449][ INFO][mock_communicate.cc:276 ] {"streams":[{"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"0"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"rtsp://192.168.3.3:8554/outstream"},"type":"webhook"}]}],"taskId":"20b78455-f388-4f19-a9c2-7376fc695836"}
+[2022-08-06 06:11:58,449][ INFO][iva_task_manager.cc:33  ] IvaMicroTask::Parse, {"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"0"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"rtsp://192.168.3.3:8554/outstream"},"type":"webhook"}]}
+[2022-08-06 06:11:58,449][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"url":"0"},"type":"url"}
+[2022-08-06 06:11:58,450][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type url
+[2022-08-06 06:11:58,450][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:1
+[2022-08-06 06:11:58,450][ INFO][iva_task_manager.cc:49  ] IvaMicroTask::Parse, parse input success finished.
+[2022-08-06 06:11:58,450][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"headers":{},"url":"rtsp://192.168.3.3:8554/outstream"},"type":"webhook"}
+[2022-08-06 06:11:58,450][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type webhook
+[2022-08-06 06:11:58,450][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:0
+[2022-08-06 06:11:58,450][ INFO][iva_task_manager.cc:62  ] IvaMicroTask::Parse, parse outputs success.
+[2022-08-06 06:11:58,450][ INFO][iva_task_manager.cc:162 ] Parse, stream group success
+[2022-08-06 06:11:58,450][ INFO][iva_task_manager.cc:179 ] Parse, task group success
+[2022-08-06 06:11:58,450][ INFO][session_context.cc:37  ] session context start se id:96200c30-7be9-475f-a56f-02a4bada6790
+[2022-08-06 06:11:58,451][ INFO][      iva_task.cc:604 ] IvaTask Run CreateTask . task_name_: 20b78455-f388-4f19-a9c2-7376fc695836_1659766318 modelbox_task_id: 96200c30-7be9-475f-a56f-02a4bada6790
+[2022-08-06 06:11:58,451][ INFO][      iva_task.cc:229 ] source_type: url
+[2022-08-06 06:11:58,452][ INFO][      iva_task.cc:230 ] input_cfg: {"url":"0","url_type":"file"}
+[2022-08-06 06:11:58,454][ INFO][      iva_task.cc:262 ] output_cfg: {"brokers":[{"cfg":"{\"headers\":null,\"url\":\"rtsp://192.168.3.3:8554/outstream\"}","name":"webhook","type":"webhook"}]}
+[2022-08-06 06:11:58,454][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-06 06:11:58,454][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-06 06:11:58,454][ INFO][      iva_task.cc:356 ] common:{"param_float":10.5,"param_int":10,"param_str":"string param"}
+[2022-08-06 06:11:58,454][ INFO][      iva_task.cc:357 ] svc_config:{"algorithm":{"multiTask":"no","algType":"mock"},"mockFile":"/home/rock/ModelBox/modelbox/workspace/hello_world/bin/mock_task.toml","svcInstanceId":"modelbox-instance-mock"}
+[2022-08-06 06:11:58,455][ INFO][      iva_task.cc:358 ] input:{"auth":null,"data":{"url":"0"},"type":"url"}
+[2022-08-06 06:11:58,455][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-06 06:11:58,456][ INFO][      iva_task.cc:360 ] output:{"auth":null,"data":{"headers":{},"url":"rtsp://192.168.3.3:8554/outstream"},"type":"webhook"}
+[2022-08-06 06:11:58,456][ INFO][      iva_task.cc:362 ] task_id:20b78455-f388-4f19-a9c2-7376fc695836
+[2022-08-06 06:11:58,456][ INFO][      iva_task.cc:628 ] IvaTask Run success.. task_name_: 20b78455-f388-4f19-a9c2-7376fc695836_1659766318modelbox_task_id: 96200c30-7be9-475f-a56f-02a4bada6790
+[2022-08-06 06:11:58,457][ INFO][iva_task_manager.cc:215 ] TaskGroup::CreateIvaTasks , task Run, TaskName: 20b78455-f388-4f19-a9c2-7376fc695836_1659766318
+[2022-08-06 06:11:58,458][ INFO][iva_task_manager.cc:224 ] CreateIvaTasks complete
+[2022-08-06 06:11:58,458][ INFO][iva_task_manager.cc:574 ] create iva task success. taskid: 20b78455-f388-4f19-a9c2-7376fc695836
+[2022-08-06 06:11:58,458][ INFO][mock_communicate.cc:381 ] mock task: finish. httpStatus: 201 body:{}
+[2022-08-06 06:11:58,458][ INFO][iva_task_manager.cc:464 ] CreateTaskPostProcess begin
+[2022-08-06 06:11:58,458][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-06T06:11:58Z","curRunningNumber":1,"failStreamNumber":0,"id":"20b78455-f388-4f19-a9c2-7376fc695836","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-06 06:11:58,459][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-08-06T06:11:58Z","curRunningNumber":1,"failStreamNumber":0,"id":"20b78455-f388-4f19-a9c2-7376fc695836","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}
+[2022-08-06 06:11:58,459][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-08-06 06:11:58,459][ INFO][mock_communicate.cc:391 ] mock task success. 
+[2022-08-06 06:11:58,459][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T06:11:58Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-06T06:11:58Z","curRunningNumber":1,"failStreamNumber":0,"id":"20b78455-f388-4f19-a9c2-7376fc695836","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-06 06:11:58,460][ INFO][  match_stream.cc:512 ] node data_source_parser, port in_data, inherit backward level 0
+[2022-08-06 06:11:58,462][ INFO][data_source_parser_flowunit.cc:94  ] Try parse input config url for 96200c30-7be9-475f-a56f-02a4bada6790
+[2022-08-06 06:11:58,464][ INFO][data_source_parser_flowunit.cc:111 ] parse input config ok for 96200c30-7be9-475f-a56f-02a4bada6790
+[2022-08-06 06:11:58,465][ INFO][          node.cc:678 ] node: data_source_parser, sess id: 96200c30-7be9-475f-a56f-02a4bada6790, data ctx finished
+[2022-08-06 06:11:58,467][ INFO][  match_stream.cc:512 ] node local_camera, port in_camera_packet, inherit backward level 0
+[2022-08-06 06:11:59,119][ INFO][local_camera_flowunit.cc:98  ] rknpu open local camera url = 0 (w,h)=1280,720
+[2022-08-06 06:11:59,182][ INFO][  match_stream.cc:512 ] node draw_text, port in_1, inherit backward level 0
+[2022-08-06 06:11:59,253][ INFO][  match_stream.cc:512 ] node video_out, port in_video_frame, inherit backward level 0
+[2022-08-06 06:11:59,255][ INFO][video_out_flowunit.cc:305 ] video_out url is rtsp://192.168.3.3:8554/outstream
+[2022-08-06 06:11:59,255][ INFO][video_out_flowunit.cc:266 ] videoout url=rtsp://192.168.3.3:8554/outstream
+[2022-08-06 06:11:59,265][ INFO][ ffmpeg_writer.cc:55  ] Open url rtsp://192.168.3.3:8554/outstream, format rtsp success
+[2022-08-06 06:12:00,909][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:00,909][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:03,151][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:03,151][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:03,153][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:03,153][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:04,617][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:04,617][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:07,123][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:07,123][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:07,127][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:07,128][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:10,727][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:10,727][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:11,933][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:11,933][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:12,636][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:12,636][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:12,844][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:12,845][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:14,560][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:14,561][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:15,692][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:15,692][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:19,214][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:19,214][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:19,376][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:19,376][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:19,379][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:19,379][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:19,431][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:19,431][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:19,847][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:19,847][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:20,438][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:20,438][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:21,288][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:21,288][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:23,984][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:23,984][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:24,519][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:24,519][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:26,161][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:26,161][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:26,436][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:26,436][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:26,836][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:26,836][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:28,789][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:28,789][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:28,978][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:28,978][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:29,973][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:29,973][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:30,512][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:30,512][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:30,514][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:30,514][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:32,570][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:32,570][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:33,032][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:33,032][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:34,914][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:34,914][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:35,385][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:35,385][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:36,750][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:36,750][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:37,122][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:37,122][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:39,097][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:39,097][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+[2022-08-06 06:12:40,089][ERROR][     rknpu_api.cc:44  ] MppBuffer is invalid.
+[2022-08-06 06:12:40,089][ERROR][     rknpu_api.cc:189 ] create mpp img failed.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
