@@ -1,0 +1,41 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+[driver]
+dir = ["${HILENS_APP_ROOT}/etc/flowunit",
+"${HILENS_APP_ROOT}/etc/flowunit/cpp",
+"${HILENS_APP_ROOT}/model",
+"${HILENS_MB_SDK_PATH}/flowunit"]
+skip-default = true
+[profile]
+profile=false
+trace=false
+dir="${HILENS_DATA_DIR}/mb_profile"
+[graph]
+format = "graphviz"
+graphconf = """digraph car_det {
+    node [shape=Mrecord]
+    queue_size = 4
+    batch_size = 1
+    input1[type=input,flowunit=input,device=cpu,deviceid=0]
+    
+    data_source_parser[type=flowunit, flowunit=data_source_parser, device=cpu, deviceid=0]
+    video_demuxer[type=flowunit, flowunit=video_demuxer, device=cpu, deviceid=0]
+    video_decoder[type=flowunit, flowunit=video_decoder, device=rknpu, deviceid=0, pix_fmt=bgr]
+    image_resize[type=flowunit, flowunit=resize, device=rknpu, deviceid=0, image_width=512, image_height=288]
+    car_detection[type=flowunit, flowunit=yolox_infer, device=rknpu, deviceid=0]
+    yolox_post[type=flowunit, flowunit=yolox_post, device=cpu, deviceid=0]
+    draw_car_bbox[type=flowunit, flowunit=draw_car_bbox, device=cpu, deviceid=0]
+    video_out[type=flowunit, flowunit=video_out, device=rknpu, deviceid=0]
+    
+    input1:input -> data_source_parser:in_data
+    data_source_parser:out_video_url -> video_demuxer:in_video_url
+    video_demuxer:out_video_packet -> video_decoder:in_video_packet
+    video_decoder:out_video_frame -> image_resize:in_image
+    image_resize:out_image -> car_detection:input
+    car_detection:output -> yolox_post:in_feat
+    video_decoder:out_video_frame -> draw_car_bbox:in_image
+    yolox_post:out_data -> draw_car_bbox:in_bbox
+    draw_car_bbox:out_image -> video_out:in_video_frame
+}"""
+[flow]
+desc = "car_det run in modelbox-rk-aarch64"

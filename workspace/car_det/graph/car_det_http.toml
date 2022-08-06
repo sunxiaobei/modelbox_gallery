@@ -1,0 +1,36 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+[driver]
+dir = ["${HILENS_APP_ROOT}/etc/flowunit",
+"${HILENS_APP_ROOT}/etc/flowunit/cpp",
+"${HILENS_APP_ROOT}/model",
+"${HILENS_MB_SDK_PATH}/flowunit"]
+skip-default = true
+[profile]
+profile=false
+trace=false
+dir="${HILENS_DATA_DIR}/mb_profile"
+[graph]
+format = "graphviz"
+graphconf = """digraph car_det {
+    node [shape=Mrecord]
+    queue_size = 4
+    batch_size = 1
+    input1[type=input,flowunit=input,device=cpu,deviceid=0]
+    
+    httpserver_sync_receive[type=flowunit, flowunit=httpserver_sync_receive_v2, device=cpu, deviceid=0, time_out_ms=5000, endpoint="http://0.0.0.0:8083/v1/car_det", max_requests=100]
+    image_decoder[type=flowunit, flowunit=image_decoder, device=rknpu, deviceid=0, key="image_base64"]
+    image_resize[type=flowunit, flowunit=resize, device=rknpu, deviceid=0, image_width=512, image_height=288]
+    car_detection[type=flowunit, flowunit=yolox_infer, device=rknpu, deviceid=0]
+    yolox_post[type=flowunit, flowunit=yolox_post, device=cpu, deviceid=0]
+    httpserver_sync_reply[type=flowunit, flowunit=httpserver_sync_reply_v2, device=cpu, deviceid=0]
+    
+    input1:input -> httpserver_sync_receive:in_url
+    httpserver_sync_receive:out_request_info -> image_decoder:in_encoded_image
+    image_decoder:out_image -> image_resize:in_image
+    image_resize:out_image -> car_detection:input
+    car_detection:output -> yolox_post:in_feat
+    yolox_post:out_data -> httpserver_sync_reply:in_reply_info
+}"""
+[flow]
+desc = "car_det run in modelbox-rk-aarch64"
