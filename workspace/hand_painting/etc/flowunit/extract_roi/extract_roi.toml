@@ -17,19 +17,14 @@ collapse = false # Whether the flowunit is a collapse flowunit
 collapse_all = false # Whether the flowunit will collapse all the data
 expand = false #  Whether the flowunit is a expand flowunit
 
-# The default Flowunit config
-[config]
-item = "value"
-
 # Input ports description
 [input]
 [input.input1] # Input port number, the format is input.input[N]
 name = "in_data" # Input port name
-type = "uint8"  # input port data type ,e.g. float or uint8
-device = "cpu"  # input buffer type
+type = "uint8" # Input port type
 
 # Output ports description
 [output]
 [output.output1] # Output port number, the format is output.output[N]
-name = "output1" # Output port name
-type = "float"  # output port data type ,e.g. float or uint8
+name = "roi_image" # Output port name
+type = "uint8" # Output port type

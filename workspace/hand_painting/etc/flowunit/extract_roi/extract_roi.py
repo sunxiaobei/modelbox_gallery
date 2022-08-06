@@ -3,47 +3,49 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import _flowunit as modelbox
+import numpy as np
+
 
 class extract_roiFlowUnit(modelbox.FlowUnit):
-    # Derived from modelbox.FlowUnit
     def __init__(self):
         super().__init__()
 
     def open(self, config):
-        # Open the flowunit to obtain configuration information
         return modelbox.Status.StatusCode.STATUS_SUCCESS
 
     def process(self, data_context):
-        # Process the data
-        in_data = data_context.input("in_1")
-        out_data = data_context.output("out_1")
+        in_data = data_context.input("in_data")
+        out_image = data_context.output("roi_image")
 
-        # extract_roi process code.
-        # Remove the following code and add your own code here.
-        for buffer in in_data:
-            response = "Hello World " + buffer.as_object()
-            result = response.encode('utf-8').strip()
-            add_buffer = modelbox.Buffer(self.get_bind_device(), result)
-            out_data.push_back(add_buffer)
+        for buffer_img in in_data:
+            modelbox.info("ExtractROI")
+            width = buffer_img.get('width')
+            height = buffer_img.get('height')
+            channel = buffer_img.get('channel')
+
+            img_data = np.array(buffer_img.as_object(), dtype=np.uint8, copy=False)
+            img_data = img_data.reshape(height, width, channel)
+
+            box = buffer_img.get("bboxes")
+            box = np.array(box).reshape(4,)
+            img_roi = self.crop_bbox_img(box, img_data)
+            h, w, _ = img_roi.shape
+            img_roi = img_roi.flatten()
+            img_buffer = modelbox.Buffer(self.get_bind_device(), img_roi)
+            img_buffer.copy_meta(buffer_img)
+            img_buffer.set("pix_fmt", "bgr")
+            img_buffer.set("width", w)
+            img_buffer.set("height", h)
+            img_buffer.set("width_stride", w * 3)
+            img_buffer.set("height_stride", h)
+            out_image.push_back(img_buffer)
 
         return modelbox.Status.StatusCode.STATUS_SUCCESS
+    
+    def crop_bbox_img(self, bbox, image):
+        x1, y1, x2, y2 = bbox
+        bbox_img = image[y1:y2, x1:x2, :].copy()
+        return bbox_img
 
     def close(self):
-        # Close the flowunit
-        return modelbox.Status()
-
-    def data_pre(self, data_context):
-        # Before streaming data starts
-        return modelbox.Status()
-
-    def data_post(self, data_context):
-        # After streaming data ends
-        return modelbox.Status()
-
-    def data_group_pre(self, data_context):
-        # Before all streaming data starts
-        return modelbox.Status()
-
-    def data_group_post(self, data_context):
-        # After all streaming data ends
         return modelbox.Status()
