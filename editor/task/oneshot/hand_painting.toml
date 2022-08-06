@@ -1,0 +1,47 @@
+# Copyright (C) 2020 Huawei Technologies Co., Ltd. All rights reserved.
+
+[driver]
+dir = ["${HILENS_APP_ROOT}/etc/flowunit",
+"${HILENS_APP_ROOT}/etc/flowunit/cpp",
+"${HILENS_APP_ROOT}/model",
+"${HILENS_MB_SDK_PATH}/flowunit"]
+skip-default = true
+[profile]
+profile=false
+trace=false
+dir="${HILENS_DATA_DIR}/mb_profile"
+[graph]
+format = "graphviz"
+graphconf = """digraph hand_painting {
+    node [shape=Mrecord]
+    queue_size = 4
+    batch_size = 1
+    input1[type=input]
+    extract_roi1 [ type=flowunit flowunit=extract_roi device=cpu deviceid="0"]
+    painting2 [ type=flowunit flowunit=painting device=cpu deviceid="0"]
+    yolox_post3 [ type=flowunit flowunit=yolox_post device=cpu deviceid="0"]
+    resize4 [ type=flowunit flowunit=resize device=rknpu deviceid="0" image_width=320, image_height=320]
+    resize5 [ type=flowunit flowunit=resize device=cpu deviceid="0" image_width=256, image_height=256]
+    data_source_parser6 [ type=flowunit flowunit=data_source_parser device=cpu deviceid="0"]
+    video_decoder7 [ type=flowunit flowunit=video_decoder device=rknpu, deviceid="0", pix_fmt=bgr]
+    video_demuxer8 [ type=flowunit flowunit=video_demuxer device=cpu deviceid="0"]
+    video_out9 [ type=flowunit flowunit=video_out device=rknpu deviceid="0"]
+    hand_detection11 [ type=flowunit flowunit=hand_detection device=rknpu deviceid="0"]
+    pose_detection12 [ type=flowunit flowunit=pose_detection device=rknpu deviceid="0"]
+    input1 -> data_source_parser6:"in_data"
+    data_source_parser6:"out_video_url" -> video_demuxer8:"in_video_url"
+    video_demuxer8:"out_video_packet" -> video_decoder7:"in_video_packet"
+    video_decoder7:"out_video_frame" -> resize4:"in_image"
+    resize4:"out_image" -> hand_detection11:"input"
+    hand_detection11:"output" -> yolox_post3:"in_feat"
+    video_decoder7:"out_video_frame" -> yolox_post3:"in_image"
+    yolox_post3:"no_hand" -> video_out9:"in_video_frame"
+    yolox_post3:"has_hand" -> extract_roi1:"in_data"
+    extract_roi1:"roi_image" -> resize5:"in_image"
+    resize5:"out_image" -> pose_detection12:"input"
+    pose_detection12:"output" -> painting2:"in_pose"
+    yolox_post3:"has_hand" -> painting2:"in_image"
+    painting2:"out_paint" -> video_out9:"in_video_frame"
+}"""
+[flow]
+desc = "hand_painting run in modelbox-rk-aarch64"
