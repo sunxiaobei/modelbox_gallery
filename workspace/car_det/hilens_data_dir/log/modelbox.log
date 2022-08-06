@@ -1050,4 +1050,193 @@ sp: 0x0000007fac0b94f8		pc: 0x0000000060001000		pstate: 0x0000007f9c058678	fault
 [2022-08-06 07:07:55,276][ INFO][video_out_flowunit.cc:305 ] video_out url is /home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4
 [2022-08-06 07:07:55,276][ INFO][video_out_flowunit.cc:266 ] videoout url=/home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4
 [2022-08-06 07:07:55,296][ INFO][ ffmpeg_writer.cc:55  ] Open url /home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4, format mp4 success
-                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                               [2022-08-06 07:52:36,778][ INFO][          main.cc:374 ] modelbox config path : /home/rock/ModelBox/modelbox/workspace/car_det/bin/../graph/modelbox.conf
+[2022-08-06 07:52:36,779][ INFO][        server.cc:110 ] plugin list:
+[2022-08-06 07:52:36,779][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/car_det/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-08-06 07:52:36,779][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/car_det/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-08-06 07:52:37,103][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-08-06 07:52:37,103][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-08-06 07:52:37,103][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-08-06 07:52:37,108][ INFO][    iva_config.cc:225 ] load env config success
+[2022-08-06 07:52:37,108][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-08-06 07:52:37,108][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-08-06 07:52:37,108][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-08-06 07:52:37,108][ INFO][    iva_config.cc:146 ] load config success
+[2022-08-06 07:52:37,108][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/ModelBox/modelbox/workspace/car_det/bin/../graph/car_det_http.toml
+[2022-08-06 07:52:37,108][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-08-06 07:52:37,109][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-08-06 07:52:37,109][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-08-06 07:52:37,109][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-08-06 07:52:37,109][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-08-06 07:52:37,109][ INFO][mock_communicate.cc:395 ] MockCommunicate Init . 
+[2022-08-06 07:52:37,211][ INFO][mock_communicate.cc:454 ] mock communicate init success.
+[2022-08-06 07:52:37,212][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-08-06 07:52:37,241][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-08-06 07:52:37,246][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-08-06 07:52:37,246][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-08-06 07:52:37,246][ WARN][        driver.cc:370 ] /home/rock/ModelBox/modelbox/workspace/car_det/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-08-06 07:52:37,247][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-08-06 07:52:37,272][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/car_det/bin/../model/my_model/my_model.toml success
+[2022-08-06 07:52:37,277][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/car_det/bin/../model/yolox_infer/yolox_infer.toml success
+[2022-08-06 07:52:37,294][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/car_det/bin/../etc/flowunit/yolox_post/yolox_post.toml success
+[2022-08-06 07:52:37,298][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/car_det/bin/../etc/flowunit/draw_car_bbox/draw_car_bbox.toml success
+[2022-08-06 07:52:37,334][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-08-06 07:52:37,351][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-08-06 07:52:37,393][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-08-06 07:52:39,116][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-06 07:52:39,116][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-06 07:52:39,123][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-06 07:52:39,123][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-06 07:52:39,134][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-08-06 07:52:39,134][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-08-06 07:52:39,134][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-08-06 07:52:39,134][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-08-06 07:52:39,134][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-08-06 07:52:39,134][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-08-06 07:52:39,134][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-08-06 07:52:39,134][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-08-06 07:52:39,141][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-08-06 07:52:39,141][ INFO][        server.cc:59  ] app server start
+[2022-08-06 07:52:39,141][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-08-06 07:52:39,141][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-08-06 07:52:39,143][ INFO][         graph.cc:121 ] Build graph name:car_det, id:c041140c-4752-4d31-9191-91734a10a25a
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : car_detection
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:222 ] input port : input
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:228 ] output port : output
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : httpserver_sync_receive
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:222 ] input port : in_url
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:228 ] output port : out_request_info
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : httpserver_sync_reply
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:222 ] input port : in_reply_info
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : image_decoder
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:222 ] input port : in_encoded_image
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:228 ] output port : input
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:217 ] node name : yolox_post
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:222 ] input port : in_feat
+[2022-08-06 07:52:39,143][ INFO][ graph_manager.cc:228 ] output port : out_data
+[2022-08-06 07:52:39,143][ INFO][         graph.cc:690 ] begin build node car_detection
+[2022-08-06 07:52:39,155][ INFO][         graph.cc:697 ] build node car_detection success
+[2022-08-06 07:52:39,155][ INFO][         graph.cc:690 ] begin build node httpserver_sync_receive
+[2022-08-06 07:52:39,156][ INFO][         graph.cc:697 ] build node httpserver_sync_receive success
+[2022-08-06 07:52:39,156][ INFO][         graph.cc:690 ] begin build node httpserver_sync_reply
+[2022-08-06 07:52:39,157][ INFO][         graph.cc:697 ] build node httpserver_sync_reply success
+[2022-08-06 07:52:39,157][ INFO][         graph.cc:690 ] begin build node image_decoder
+[2022-08-06 07:52:39,158][ INFO][         graph.cc:697 ] build node image_decoder success
+[2022-08-06 07:52:39,158][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-08-06 07:52:39,159][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-08-06 07:52:39,160][ INFO][         graph.cc:690 ] begin build node input1
+[2022-08-06 07:52:39,160][ INFO][         graph.cc:697 ] build node input1 success
+[2022-08-06 07:52:39,160][ INFO][         graph.cc:690 ] begin build node yolox_post
+[2022-08-06 07:52:39,167][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-06 07:52:39,167][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-06 07:52:39,168][ INFO][         graph.cc:697 ] build node yolox_post success
+[2022-08-06 07:52:39,168][ INFO][         graph.cc:373 ] add link, car_detection:output -> yolox_post:in_feat
+[2022-08-06 07:52:39,168][ INFO][         graph.cc:373 ] add link, httpserver_sync_receive:out_request_info -> image_decoder:in_encoded_image
+[2022-08-06 07:52:39,168][ INFO][         graph.cc:373 ] add link, image_decoder:out_image -> image_resize:in_image
+[2022-08-06 07:52:39,169][ INFO][         graph.cc:373 ] add link, image_resize:out_image -> car_detection:input
+[2022-08-06 07:52:39,169][ INFO][         graph.cc:373 ] add link, input1:input1 -> httpserver_sync_receive:in_url
+[2022-08-06 07:52:39,169][ INFO][         graph.cc:373 ] add link, yolox_post:out_data -> httpserver_sync_reply:in_reply_info
+[2022-08-06 07:52:39,170][ INFO][flowunit_group.cc:418 ] node: httpserver_sync_receive get batch size is 1
+[2022-08-06 07:52:39,171][ INFO][flowunit_group.cc:418 ] node: httpserver_sync_reply get batch size is 1
+[2022-08-06 07:52:39,172][ INFO][flowunit_group.cc:418 ] node: image_resize get batch size is 1
+[2022-08-06 07:52:39,194][ INFO][flowunit_group.cc:418 ] node: image_decoder get batch size is 1
+[2022-08-06 07:52:39,328][ INFO][flowunit_group.cc:418 ] node: car_detection get batch size is 1
+[2022-08-06 07:52:40,704][ INFO][flowunit_group.cc:418 ] node: yolox_post get batch size is 1
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: car_detection #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: httpserver_sync_receive #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: httpserver_sync_reply #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: image_decoder #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: image_resize #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: input1 #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:930 ] node: yolox_post #0
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 0, input1
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 1, httpserver_sync_receive
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 2, image_decoder
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 3, image_resize
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 4, car_detection
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 5, yolox_post
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1135] topo index: 6, httpserver_sync_reply
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:951 ] set priority. node: httpserver_sync_receive port: in_url priority: 1
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:951 ] set priority. node: image_decoder port: in_encoded_image priority: 2
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:951 ] set priority. node: image_resize port: in_image priority: 3
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:951 ] set priority. node: car_detection port: input priority: 4
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:951 ] set priority. node: yolox_post port: in_feat priority: 5
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:951 ] set priority. node: httpserver_sync_reply port: in_reply_info priority: 6
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1156] port connect, image_resize:out_image -> car_detection:input
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1156] port connect, input1:input1 -> httpserver_sync_receive:in_url
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1156] port connect, yolox_post:out_data -> httpserver_sync_reply:in_reply_info
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1156] port connect, httpserver_sync_receive:out_request_info -> image_decoder:in_encoded_image
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1156] port connect, image_decoder:out_image -> image_resize:in_image
+[2022-08-06 07:52:40,706][ INFO][         graph.cc:1156] port connect, car_detection:output -> yolox_post:in_feat
+[2022-08-06 07:52:40,708][ INFO][flow_scheduler.cc:69  ] init scheduler with 14 threads, max 448
+[2022-08-06 07:52:40,709][ INFO][mock_communicate.cc:462 ] mock communicate start.
+[2022-08-06 07:52:40,709][ INFO][iva_task_manager.cc:831 ] IvaUpload Start success.
+[2022-08-06 07:52:40,709][ INFO][   iva_manager.cc:210 ] IvaManager::Start: Start end . 
+[2022-08-06 07:52:40,709][ INFO][    iva_plugin.cc:36  ] IvaPlugin Start success.
+[2022-08-06 07:52:40,709][ INFO][  stack_plugin.cc:76  ] StackPlugin Start . 
+[2022-08-06 07:52:40,711][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T07:52:40Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-08-06 07:52:41,717][ INFO][mock_communicate.cc:276 ] {"streams":[{"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../data/car_test_video.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4"},"type":"webhook"}]}],"taskId":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc"}
+[2022-08-06 07:52:41,717][ INFO][iva_task_manager.cc:33  ] IvaMicroTask::Parse, {"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../data/car_test_video.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4"},"type":"webhook"}]}
+[2022-08-06 07:52:41,717][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../data/car_test_video.mp4"},"type":"url"}
+[2022-08-06 07:52:41,717][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type url
+[2022-08-06 07:52:41,717][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:1
+[2022-08-06 07:52:41,717][ INFO][iva_task_manager.cc:49  ] IvaMicroTask::Parse, parse input success finished.
+[2022-08-06 07:52:41,717][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4"},"type":"webhook"}
+[2022-08-06 07:52:41,717][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type webhook
+[2022-08-06 07:52:41,717][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:0
+[2022-08-06 07:52:41,717][ INFO][iva_task_manager.cc:62  ] IvaMicroTask::Parse, parse outputs success.
+[2022-08-06 07:52:41,717][ INFO][iva_task_manager.cc:162 ] Parse, stream group success
+[2022-08-06 07:52:41,717][ INFO][iva_task_manager.cc:179 ] Parse, task group success
+[2022-08-06 07:52:41,718][ INFO][session_context.cc:37  ] session context start se id:b163b8d7-0f95-4754-96d3-50ae01068833
+[2022-08-06 07:52:41,718][ INFO][      iva_task.cc:604 ] IvaTask Run CreateTask . task_name_: 59d05b0e-528b-4196-84d7-8bcce0dd8cfc_1659772361 modelbox_task_id: b163b8d7-0f95-4754-96d3-50ae01068833
+[2022-08-06 07:52:41,719][ INFO][      iva_task.cc:229 ] source_type: url
+[2022-08-06 07:52:41,723][ INFO][      iva_task.cc:230 ] input_cfg: {"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../data/car_test_video.mp4","url_type":"file"}
+[2022-08-06 07:52:41,724][ INFO][      iva_task.cc:262 ] output_cfg: {"brokers":[{"cfg":"{\"headers\":null,\"url\":\"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4\"}","name":"webhook","type":"webhook"}]}
+[2022-08-06 07:52:41,724][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-06 07:52:41,724][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-06 07:52:41,725][ INFO][      iva_task.cc:356 ] common:{"param_float":10.5,"param_int":10,"param_str":"string param"}
+[2022-08-06 07:52:41,725][ INFO][      iva_task.cc:357 ] svc_config:{"algorithm":{"multiTask":"no","algType":"mock"},"mockFile":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/mock_task.toml","svcInstanceId":"modelbox-instance-mock"}
+[2022-08-06 07:52:41,726][ INFO][      iva_task.cc:358 ] input:{"auth":null,"data":{"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../data/car_test_video.mp4"},"type":"url"}
+[2022-08-06 07:52:41,726][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-06 07:52:41,726][ INFO][      iva_task.cc:360 ] output:{"auth":null,"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/car_det/bin/../hilens_data_dir/car_test_result.mp4"},"type":"webhook"}
+[2022-08-06 07:52:41,726][ INFO][      iva_task.cc:362 ] task_id:59d05b0e-528b-4196-84d7-8bcce0dd8cfc
+[2022-08-06 07:52:41,727][ INFO][      iva_task.cc:628 ] IvaTask Run success.. task_name_: 59d05b0e-528b-4196-84d7-8bcce0dd8cfc_1659772361modelbox_task_id: b163b8d7-0f95-4754-96d3-50ae01068833
+[2022-08-06 07:52:41,727][ INFO][iva_task_manager.cc:215 ] TaskGroup::CreateIvaTasks , task Run, TaskName: 59d05b0e-528b-4196-84d7-8bcce0dd8cfc_1659772361
+[2022-08-06 07:52:41,728][ INFO][iva_task_manager.cc:224 ] CreateIvaTasks complete
+[2022-08-06 07:52:41,728][ INFO][iva_task_manager.cc:574 ] create iva task success. taskid: 59d05b0e-528b-4196-84d7-8bcce0dd8cfc
+[2022-08-06 07:52:41,728][ INFO][mock_communicate.cc:381 ] mock task: finish. httpStatus: 201 body:{}
+[2022-08-06 07:52:41,728][ INFO][iva_task_manager.cc:464 ] CreateTaskPostProcess begin
+[2022-08-06 07:52:41,729][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-06T07:52:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-06 07:52:41,730][ INFO][  match_stream.cc:512 ] node httpserver_sync_receive, port in_url, inherit backward level 0
+[2022-08-06 07:52:41,731][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-08-06T07:52:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}
+[2022-08-06 07:52:41,732][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-08-06 07:52:41,733][ INFO][httpserver_sync_receive.cc:188 ] Start server at http://0.0.0.0:8083/v1/car_det
+[2022-08-06 07:52:41,734][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T07:52:41Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-06T07:52:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-06 07:52:41,734][ INFO][mock_communicate.cc:391 ] mock task success. 
+[2022-08-06 07:53:41,734][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T07:53:41Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-06T07:53:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-06 07:54:40,749][ INFO][  match_stream.cc:512 ] node image_decoder, port in_encoded_image, inherit backward level 0
+[2022-08-06 07:54:40,789][ INFO][  match_stream.cc:512 ] node image_resize, port in_image, inherit backward level 0
+[2022-08-06 07:54:40,796][ INFO][  match_stream.cc:512 ] node car_detection, port input, inherit backward level 0
+[2022-08-06 07:54:41,066][ INFO][  match_stream.cc:512 ] node yolox_post, port in_feat, inherit backward level 0
+[2022-08-06 07:54:41,099][ INFO][  match_stream.cc:512 ] node httpserver_sync_reply, port in_reply_info, inherit backward level 0
+[2022-08-06 07:54:41,736][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T07:54:41Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-06T07:54:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-06 07:55:41,738][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T07:55:41Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-06T07:55:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-06 07:56:41,740][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-06T07:56:41Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-06T07:56:41Z","curRunningNumber":1,"failStreamNumber":0,"id":"59d05b0e-528b-4196-84d7-8bcce0dd8cfc","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-06 07:56:43,610][ INFO][        server.cc:91  ] app server stop
+[2022-08-06 07:56:43,610][ INFO][iva_task_manager.cc:825 ] IvaUpload thread Stop.
+[2022-08-06 07:56:43,611][ INFO][iva_task_manager.cc:852 ] IvaUpload Stop notify.
+[2022-08-06 07:56:43,716][ INFO][mock_communicate.cc:475 ] mock communicate stop.
+[2022-08-06 07:56:43,717][ INFO][flow_scheduler.cc:397 ] shutdown flow scheduler.
+[2022-08-06 07:56:43,717][ERROR][flow_scheduler.cc:377 ] the scheduler caught an error : Stop operation
+[2022-08-06 07:56:43,875][ INFO][rknpu2_inference_flowunit.cc:73  ] rknn2 inference close
+[2022-08-06 07:56:43,896][ INFO][   job_manager.cc:82  ] delete job : IVA_JOB
+[2022-08-06 07:56:43,896][ INFO][    iva_plugin.cc:46  ] IvaPlugin Stop success.
+[2022-08-06 07:56:43,896][ INFO][  stack_plugin.cc:85  ] StackPlugin Stop success.
+[2022-08-06 07:56:43,896][ INFO][          main.cc:382 ] exit modelbox process
+[2022-08-06 07:56:43,905][ INFO][       session.cc:99  ] session b163b8d7-0f95-4754-96d3-50ae01068833 is over, running session count 0
+[2022-08-06 07:56:43,906][ INFO][session_context.cc:41  ] session context finish se id:b163b8d7-0f95-4754-96d3-50ae01068833
