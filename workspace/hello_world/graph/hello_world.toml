@@ -1,0 +1,27 @@
+# Copyright (C) 2020 Huawei Technologies Co., Ltd. All rights reserved.
+
+[driver]
+dir = ["${HILENS_APP_ROOT}/etc/flowunit",
+"${HILENS_APP_ROOT}/etc/flowunit/cpp",
+"${HILENS_APP_ROOT}/model",
+"${HILENS_MB_SDK_PATH}/flowunit"]
+skip-default = true
+[profile]
+profile=false
+trace=false
+dir="${HILENS_DATA_DIR}/mb_profile"
+[graph]
+format = "graphviz"
+graphconf = """digraph hello_world {
+    node [shape=Mrecord]
+    queue_size = 4
+    batch_size = 1
+    input1[type=input,flowunit=input,device=cpu,deviceid=0]
+    httpserver_sync_receive[type=flowunit, flowunit=httpserver_sync_receive_v2, device=cpu, deviceid=0, time_out_ms=5000, endpoint="http://0.0.0.0:1234/v1/hello", max_requests=100]
+    httpserver_sync_reply[type=flowunit, flowunit=httpserver_sync_reply_v2, device=cpu, deviceid=0]
+    
+    input1:input -> httpserver_sync_receive:in_url
+    httpserver_sync_receive:out_request_info -> httpserver_sync_reply:in_reply_info
+}"""
+[flow]
+desc = "hello_world run in modelbox-rk-aarch64"
