@@ -16,8 +16,8 @@ graphconf = """digraph car_det {
     node [shape=Mrecord]
     queue_size = 4
     batch_size = 1
-    input1[type=input,flowunit=input,device=cpu,deviceid=0]
-    
+    input1[type=input]
+
     data_source_parser[type=flowunit, flowunit=data_source_parser, device=cpu, deviceid=0]
     video_demuxer[type=flowunit, flowunit=video_demuxer, device=cpu, deviceid=0]
     video_decoder[type=flowunit, flowunit=video_decoder, device=rknpu, deviceid=0, pix_fmt=bgr]
@@ -26,7 +26,7 @@ graphconf = """digraph car_det {
     yolox_post[type=flowunit, flowunit=yolox_post, device=cpu, deviceid=0]
     draw_car_bbox[type=flowunit, flowunit=draw_car_bbox, device=cpu, deviceid=0]
     video_out[type=flowunit, flowunit=video_out, device=rknpu, deviceid=0]
-    
+
     input1:input -> data_source_parser:in_data
     data_source_parser:out_video_url -> video_demuxer:in_video_url
     video_demuxer:out_video_packet -> video_decoder:in_video_packet

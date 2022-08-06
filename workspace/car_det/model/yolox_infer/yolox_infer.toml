@@ -1,4 +1,4 @@
-# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+# Copyright (C) 2022 Huawei Technologies Co., Ltd. All rights reserved.
 
 [base]
 name = "yolox_infer"
@@ -11,12 +11,14 @@ virtual_type = "rknpu2" # inference engine type: rockchip now support rknpu, rkn
 group_type = "Inference"  # flowunit group attribution, do not change
 is_input_contiguous = "false"  # input data attribution, do not change
 
+# input port description, suporrt multiple input ports
 [input]
 [input.input1]
 name = "input"
 type = "uint8"
 device = "rknpu"
 
+# output port description, suporrt multiple output ports
 [output]
 [output.output1]
 name = "output"
