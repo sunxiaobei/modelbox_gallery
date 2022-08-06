@@ -1,0 +1,32 @@
+# Copyright (C) 2022 Huawei Technologies Co., Ltd. All rights reserved.
+
+# Basic config
+[base]
+name = "draw_car_bbox" # The FlowUnit name
+device = "cpu" # The device the flowunit runs on，cpu，cuda，ascend。
+version = "1.0.0" # The version of the flowunit
+description = "description" # The description of the flowunit
+entry = "draw_car_bbox@draw_car_bboxFlowUnit" # Python flowunit entry function
+type = "python" # Fixed value
+group_type = "python"  # flowunit group attribution, change as input/output/image ...
+
+# Flowunit Type
+stream = false # Whether the flowunit is a stream flowunit
+condition  = false # Whether the flowunit is a condition flowunit
+collapse = false # Whether the flowunit is a collapse flowunit
+collapse_all = false # Whether the flowunit will collapse all the data
+expand = false #  Whether the flowunit is a expand flowunit
+
+[input]
+[input.input1]
+name = "in_image"
+type = "uint8"
+
+[input.input2]
+name = "in_bbox"
+type = "string"
+
+[output]
+[output.output1]
+name = "out_image"
+type = "uint8"

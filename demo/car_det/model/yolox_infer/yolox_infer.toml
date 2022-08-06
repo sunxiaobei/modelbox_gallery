@@ -1,0 +1,23 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+[base]
+name = "yolox_infer"
+device = "rknpu"
+version = "1.0.0"
+description = "car detection"
+entry = "./yolox_nano_288x512.rknn"  # model file path, use relative path
+type = "inference" 
+virtual_type = "rknpu2" # inference engine type: rockchip now support rknpu, rknpu2(if exist)
+group_type = "Inference"  # flowunit group attribution, do not change
+is_input_contiguous = "false"  # input data attribution, do not change
+
+[input]
+[input.input1]
+name = "input"
+type = "uint8"
+device = "rknpu"
+
+[output]
+[output.output1]
+name = "output"
+type = "float"

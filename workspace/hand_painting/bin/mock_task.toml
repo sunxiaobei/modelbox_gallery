@@ -1,0 +1,19 @@
+# 用于本地mock文件读取任务，脚本中已经配置了IVA_SVC_CONFIG环境变量, 添加了此文件路径
+########### 请确定使用linux的路径类型，比如在windows上要用  D:/xxx/xxx  不能用D:\xxx\xxx  ###########
+# 任务的参数为一个压缩并转义后的json字符串
+# 直接写需要转义双引号， 也可以用 content_file 添加一个json文件
+[common]
+content = "{\"param_str\":\"string param\",\"param_int\":10,\"param_float\":10.5}"
+
+# 任务输入,mock模拟目前仅支持一路rtsp或者本地url
+# rtsp摄像头，type = "rtsp", url里面写入rtsp地址
+# 其它用"url"，比如可以是本地文件地址, 或者httpserver的地址，(摄像头 url = "0")
+[input]
+type = "url"
+url = "../data/car_test_video.mp4"
+
+# 任务输出,目前仅支持"webhook", 和本地输出"local"(输出到屏幕,url="0", 输出到rtsp，填写rtsp地址)
+# (local 还可以输出到本地文件，这个时候注意，文件可以是相对路径，是相对这个mock_task.toml文件本身)
+[output]
+type = "local"
+url = "../hilens_data_dir/car_test_result.mp4"
