@@ -1,0 +1,11 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
+
+[config]
+net_h = 288
+net_w = 512
+num_classes = 3
+strides = ["8", "16", "32"]
+anchors = ["12","12", "24","26", "36","37",   "64","64", "76","82", "96","104",  "124","132", "156","198", "208","224"]
+conf_threshold = 0.3
+iou_threshold = 0.4
+flag_hwc = "true"
