@@ -5,7 +5,7 @@ name = "hand_detection"
 device = "rknpu"
 version = "1.0.0"
 description = "your description"
-entry = "./yolox_hand.rknn"  # model file path, use relative path
+entry = "./yolox_hand_qat.rknn"  # model file path, use relative path
 type = "inference" 
 virtual_type = "rknpu2" # inference engine type: rockchip now support rknpu, rknpu2(if exist)
 group_type = "Inference"  # flowunit group attribution, do not change
@@ -15,7 +15,7 @@ is_input_contiguous = "false" # rk do not support memory combine, fix, do not ch
 [input]
 [input.input1] # Input port number, the format is input.input[N]
 name = "input" # Input port name
-type = "int"  # input port data type ,e.g. float or uint8
+type = "uint8"  # input port data type ,e.g. float or uint8
 device = "rknpu"  # input buffer type
 
 # Output ports description
