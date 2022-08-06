@@ -23,16 +23,30 @@ graphconf = """digraph hand_painting {
     resize4 [ type=flowunit flowunit=resize device=rknpu deviceid="0" image_width=320, image_height=320]
     resize5 [ type=flowunit flowunit=resize device=cpu deviceid="0" image_width=256, image_height=256]
     data_source_parser6 [ type=flowunit flowunit=data_source_parser device=cpu deviceid="0"]
+    # video_decoder7 [ type=flowunit flowunit=video_decoder device=rknpu, deviceid="0", pix_fmt=bgr]
+    # video_demuxer8 [ type=flowunit flowunit=video_demuxer device=cpu deviceid="0"]
+    
     local_camera[type=flowunit, flowunit=local_camera, device=rknpu, deviceid=0, pix_fmt=bgr, cam_width=1280, cam_height=720]
+    
     video_out9 [ type=flowunit flowunit=video_out device=rknpu deviceid="0"]
     hand_detection11 [ type=flowunit flowunit=hand_detection device=rknpu deviceid="0"]
     pose_detection12 [ type=flowunit flowunit=pose_detection device=rknpu deviceid="0"]
     input1 -> data_source_parser6:"in_data"
+
+    # data_source_parser6:"out_video_url" -> video_demuxer8:"in_video_url"
+    # video_demuxer8:"out_video_packet" -> video_decoder7:"in_video_packet"
+    # video_decoder7:"out_video_frame" -> resize4:"in_image"
+
     data_source_parser6:"out_video_url" -> local_camera:in_camera_packet
     local_camera:out_camera_frame -> resize4:"in_image"
+
     resize4:"out_image" -> hand_detection11:"input"
     hand_detection11:"output" -> yolox_post3:"in_feat"
+
+    # video_decoder7:"out_video_frame" -> yolox_post3:"in_image"
+
     local_camera:"out_camera_frame" -> yolox_post3:"in_image"
+    
     yolox_post3:"no_hand" -> video_out9:"in_video_frame"
     yolox_post3:"has_hand" -> extract_roi1:"in_data"
     extract_roi1:"roi_image" -> resize5:"in_image"
