@@ -19,21 +19,22 @@ expand = false #  Whether the flowunit is a expand flowunit
 
 # The default Flowunit config
 [config]
-item = "value"
+heatmap_h = 64
+heatmap_w = 64
+kps = 21
 
 # Input ports description
 [input]
 [input.input1] # Input port number, the format is input.input[N]
 name = "in_pose" # Input port name
-type = "uint8"  # input port data type ,e.g. float or uint8
-device = "cpu"  # input buffer type
-[input.input2] # Input port number, the format is input.input[N]
-name = "in_image" # Input port name
-type = "uint8"  # input port data type ,e.g. float or uint8
-device = "cpu"  # input buffer type
+type = "string" # Input port type
+
+[input.input2]
+name = "in_image"
+type = "uint8"
 
 # Output ports description
 [output]
 [output.output1] # Output port number, the format is output.output[N]
 name = "out_paint" # Output port name
-type = "float"  # output port data type ,e.g. float or uint8
+type = "uint8" # Output port type
