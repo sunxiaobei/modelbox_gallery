@@ -19,16 +19,21 @@ expand = false #  Whether the flowunit is a expand flowunit
 
 # The default Flowunit config
 [config]
-item = "value"
+net_h = 320
+net_w = 320
 
 # Input ports description
 [input]
 [input.input1] # Input port number, the format is input.input[N]
-name = "in_1" # Input port name
-type = "string" # Input port type
+name = "in_image" # Input port name
+type = "uint8" # Input port type
 
 # Output ports description
 [output]
 [output.output1] # Output port number, the format is output.output[N]
-name = "out_1" # Output port name
-type = "string" # Output port type
+name = "out_image" # Output port name
+type = "uint8" # Output port type
+
+[output.output2] # Output port number, the format is output.output[N]
+name = "resized_image" # Output port name
+type = "uint8" # Output port type

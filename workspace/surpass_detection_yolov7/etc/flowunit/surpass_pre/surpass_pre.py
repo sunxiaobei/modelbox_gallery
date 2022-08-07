@@ -3,47 +3,71 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import _flowunit as modelbox
+import numpy as np
+import cv2
+import json
+
 
 class surpass_preFlowUnit(modelbox.FlowUnit):
-    # Derived from modelbox.FlowUnit
     def __init__(self):
         super().__init__()
 
     def open(self, config):
-        # Open the flowunit to obtain configuration information
+        self.net_h = config.get_int('net_h', 320)
+        self.net_w = config.get_int('net_w', 320)
         return modelbox.Status.StatusCode.STATUS_SUCCESS
 
     def process(self, data_context):
-        # Process the data
-        in_data = data_context.input("in_1")
-        out_data = data_context.output("out_1")
 
-        # surpass_pre process code.
-        # Remove the following code and add your own code here.
-        for buffer in in_data:
-            response = "Hello World " + buffer.as_object()
-            result = response.encode('utf-8').strip()
-            add_buffer = modelbox.Buffer(self.get_bind_device(), result)
-            out_data.push_back(add_buffer)
+        in_image = data_context.input("in_image")
+        out_image = data_context.output("out_image")
+        resized_out = data_context.output("resized_image")
+
+        for buffer_img in in_image:
+            
+            width = buffer_img.get('width')
+            height = buffer_img.get('height')
+            channel = buffer_img.get('channel')
+
+            img_data = np.array(buffer_img.as_object(), copy=False)
+            img_data = img_data.reshape((height, width, channel))
+
+            resized_image, ratio, (dw, dh) = self.letterbox(img_data)
+
+            h, w, c = resized_image.shape
+            resized_image = resized_image.flatten()
+            img_buffer = modelbox.Buffer(self.get_bind_device(), resized_image)
+            img_buffer.copy_meta(buffer_img)
+            img_buffer.set("pix_fmt", "bgr")
+            img_buffer.set("width", w)
+            img_buffer.set("height", h)
+            img_buffer.set("width_stride", w * 3)
+            img_buffer.set("height_stride", h)
+            resized_out.push_back(img_buffer)
+
+            buffer_meta = {"ratio": ratio, "dh": dh, "dw": dw, "net_h": self.net_h, "net_w": self.net_w}
+            buffer_img.set("buffer_meta", json.dumps(buffer_meta))
+            out_image.push_back(buffer_img)
 
         return modelbox.Status.StatusCode.STATUS_SUCCESS
 
+    def letterbox(self, img, color=(114, 114, 114)):
+        shape = img.shape[:2]
+        new_shape = (self.net_h, self.net_w)
+        r = min(new_shape[0] / shape[0], new_shape[1] / shape[1])
+
+        new_unpad = int(round(shape[1] * r)), int(round(shape[0] * r))
+        dw, dh = new_shape[1] - new_unpad[0], new_shape[0] - new_unpad[1] 
+
+        dw /= 2
+        dh /= 2
+
+        if shape[::-1] != new_unpad: 
+            img = cv2.resize(img, new_unpad, interpolation=cv2.INTER_LINEAR)
+        top, bottom = int(round(dh - 0.1)), int(round(dh + 0.1))
+        left, right = int(round(dw - 0.1)), int(round(dw + 0.1))
+        img = cv2.copyMakeBorder(img, top, bottom, left, right, cv2.BORDER_CONSTANT, value=color)
+        return img, r, (dw, dh)
+
     def close(self):
-        # Close the flowunit
-        return modelbox.Status()
-
-    def data_pre(self, data_context):
-        # Before streaming data starts
-        return modelbox.Status()
-
-    def data_post(self, data_context):
-        # After streaming data ends
-        return modelbox.Status()
-
-    def data_group_pre(self, data_context):
-        # Before all streaming data starts
-        return modelbox.Status()
-
-    def data_group_post(self, data_context):
-        # After all streaming data ends
         return modelbox.Status()

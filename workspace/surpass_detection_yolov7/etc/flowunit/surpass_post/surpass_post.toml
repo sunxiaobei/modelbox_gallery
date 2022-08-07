@@ -19,16 +19,31 @@ expand = false #  Whether the flowunit is a expand flowunit
 
 # The default Flowunit config
 [config]
-item = "value"
+class_path = "data/classes.txt"
+strides = ["8", "16", "32"]
+masks = ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
+anchors = ["12", "16", "19", "36", "40", "28", "36", "75", "76", "55", "72", "146", "142", "110", "192", "243", "459", "401"]
+conf_threshold = 0.4
+iou_threshold = 0.45
 
-# Input ports description
 [input]
-[input.input1] # Input port number, the format is input.input[N]
-name = "in_1" # Input port name
-type = "string" # Input port type
+[input.input1]
+name = "in_feat1"
+type = "float"
 
-# Output ports description
+[input.input2]
+name = "in_feat2"
+type = "float"
+
+[input.input3]
+name = "in_feat3"
+type = "float"
+
+[input.input4]
+name = "in_image"
+type = "uint8"
+
 [output]
-[output.output1] # Output port number, the format is output.output[N]
-name = "out_1" # Output port name
-type = "string" # Output port type
+[output.output1]
+name = "out_image"
+type = "uint8"
