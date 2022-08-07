@@ -557,4 +557,488 @@
 [2022-08-07 00:43:00,694][ INFO][    iva_plugin.cc:46  ] IvaPlugin Stop success.
 [2022-08-07 00:43:00,695][ INFO][  stack_plugin.cc:85  ] StackPlugin Stop success.
 [2022-08-07 00:43:00,695][ INFO][          main.cc:382 ] exit modelbox process
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [2022-08-07 00:56:14,305][ INFO][          main.cc:374 ] modelbox config path : /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../graph/modelbox.conf
+[2022-08-07 00:56:14,306][ INFO][        server.cc:110 ] plugin list:
+[2022-08-07 00:56:14,306][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-08-07 00:56:14,306][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-08-07 00:56:14,643][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-08-07 00:56:14,643][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-08-07 00:56:14,643][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-08-07 00:56:14,648][ INFO][    iva_config.cc:225 ] load env config success
+[2022-08-07 00:56:14,648][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-08-07 00:56:14,648][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-08-07 00:56:14,648][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-08-07 00:56:14,648][ INFO][    iva_config.cc:146 ] load config success
+[2022-08-07 00:56:14,648][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../graph/multi_person_pose_lightweight_openpose.toml
+[2022-08-07 00:56:14,648][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-08-07 00:56:14,648][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-08-07 00:56:14,649][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-08-07 00:56:14,649][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-08-07 00:56:14,649][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-08-07 00:56:14,649][ INFO][mock_communicate.cc:395 ] MockCommunicate Init . 
+[2022-08-07 00:56:14,749][ INFO][mock_communicate.cc:454 ] mock communicate init success.
+[2022-08-07 00:56:14,750][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-08-07 00:56:14,781][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-08-07 00:56:14,785][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-08-07 00:56:14,785][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-08-07 00:56:14,785][ WARN][        driver.cc:370 ] /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-08-07 00:56:14,786][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-08-07 00:56:14,808][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../model/pose_infer/pose_infer.toml success
+[2022-08-07 00:56:14,822][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../etc/flowunit/draw_pose_light/draw_pose_light.toml success
+[2022-08-07 00:56:14,828][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../etc/flowunit/pose_post_light/pose_post_light.toml success
+[2022-08-07 00:56:14,857][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-08-07 00:56:14,871][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-08-07 00:56:14,916][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-08-07 00:56:16,690][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:56:16,690][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:56:16,697][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:56:16,697][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:56:16,705][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-08-07 00:56:16,705][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-08-07 00:56:16,705][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-08-07 00:56:16,705][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-08-07 00:56:16,706][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-08-07 00:56:16,706][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-08-07 00:56:16,706][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-08-07 00:56:16,706][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-08-07 00:56:16,712][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-08-07 00:56:16,712][ INFO][        server.cc:59  ] app server start
+[2022-08-07 00:56:16,712][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-08-07 00:56:16,712][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-08-07 00:56:16,714][ INFO][         graph.cc:121 ] Build graph name:MODULENAME, id:57c0a31f-afc8-46c7-b2a1-130109cb01e3
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : draw_pose_light
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_pose
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : input
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : pose_detection
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : input
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_heatmaps
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_pafs
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : pose_post_light
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_heatmaps
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_pafs
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_pose
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : video_decoder
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:222 ] input port : in_video_packet
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:228 ] output port : out_video_frame
+[2022-08-07 00:56:16,714][ INFO][ graph_manager.cc:217 ] node name : video_demuxer
+[2022-08-07 00:56:16,715][ INFO][ graph_manager.cc:222 ] input port : in_video_url
+[2022-08-07 00:56:16,715][ INFO][ graph_manager.cc:228 ] output port : out_video_packet
+[2022-08-07 00:56:16,715][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-08-07 00:56:16,715][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-08-07 00:56:16,715][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-08-07 00:56:16,720][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-08-07 00:56:16,720][ INFO][         graph.cc:690 ] begin build node draw_pose_light
+[2022-08-07 00:56:16,727][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:56:16,727][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:56:16,727][ INFO][         graph.cc:697 ] build node draw_pose_light success
+[2022-08-07 00:56:16,727][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-08-07 00:56:16,729][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-08-07 00:56:16,729][ INFO][         graph.cc:690 ] begin build node input1
+[2022-08-07 00:56:16,729][ INFO][         graph.cc:697 ] build node input1 success
+[2022-08-07 00:56:16,729][ INFO][         graph.cc:690 ] begin build node pose_detection
+[2022-08-07 00:56:16,736][ INFO][         graph.cc:697 ] build node pose_detection success
+[2022-08-07 00:56:16,736][ INFO][         graph.cc:690 ] begin build node pose_post_light
+[2022-08-07 00:56:16,743][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:56:16,743][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:56:16,744][ INFO][         graph.cc:697 ] build node pose_post_light success
+[2022-08-07 00:56:16,744][ INFO][         graph.cc:690 ] begin build node video_decoder
+[2022-08-07 00:56:16,744][ INFO][         graph.cc:697 ] build node video_decoder success
+[2022-08-07 00:56:16,744][ INFO][         graph.cc:690 ] begin build node video_demuxer
+[2022-08-07 00:56:16,744][ INFO][         graph.cc:697 ] build node video_demuxer success
+[2022-08-07 00:56:16,744][ INFO][         graph.cc:690 ] begin build node video_out
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:697 ] build node video_out success
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, draw_pose_light:out_image -> video_out:in_video_frame
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, image_resize:out_image -> pose_detection:input
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, input1:input1 -> data_source_parser:in_data
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, pose_detection:out_pafs -> pose_post_light:in_pafs
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, pose_post_light:out_pose -> draw_pose_light:in_pose
+[2022-08-07 00:56:16,745][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> draw_pose_light:in_image
+[2022-08-07 00:56:16,746][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> image_resize:in_image
+[2022-08-07 00:56:16,746][ INFO][         graph.cc:373 ] add link, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-08-07 00:56:16,748][ INFO][flowunit_group.cc:418 ] node: image_resize get batch size is 1
+[2022-08-07 00:56:16,864][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : obs
+[2022-08-07 00:56:16,887][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : restful
+[2022-08-07 00:56:16,900][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : url
+[2022-08-07 00:56:16,921][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : vis
+[2022-08-07 00:56:16,924][ INFO][flowunit_group.cc:418 ] node: data_source_parser get batch size is 1
+[2022-08-07 00:56:16,926][ INFO][video_decoder_flowunit.cc:24  ] RKNPU video_decoder with bgr
+[2022-08-07 00:56:16,928][ INFO][flowunit_group.cc:418 ] node: video_decoder get batch size is 1
+[2022-08-07 00:56:16,931][ INFO][flowunit_group.cc:418 ] node: video_demuxer get batch size is 1
+[2022-08-07 00:56:16,931][ INFO][flowunit_group.cc:418 ] node: video_out get batch size is 1
+[2022-08-07 00:56:16,954][ INFO][flowunit_group.cc:418 ] node: pose_detection get batch size is 1
+[2022-08-07 00:56:19,345][ INFO][flowunit_group.cc:418 ] node: draw_pose_light get batch size is 1
+[2022-08-07 00:56:19,347][ INFO][flowunit_group.cc:418 ] node: pose_post_light get batch size is 1
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: data_source_parser #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: draw_pose_light #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: image_resize #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: input1 #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: pose_detection #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: pose_post_light #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: video_decoder #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: video_demuxer #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:930 ] node: video_out #0
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 0, input1
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 1, data_source_parser
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 2, video_demuxer
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 3, video_decoder
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 4, image_resize
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 5, pose_detection
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 6, pose_post_light
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 7, draw_pose_light
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1135] topo index: 8, video_out
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: data_source_parser port: in_data priority: 1
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: video_demuxer port: in_video_url priority: 2
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: video_decoder port: in_video_packet priority: 3
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: image_resize port: in_image priority: 4
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: pose_detection port: input priority: 5
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: pose_post_light port: in_heatmaps priority: 6
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: pose_post_light port: in_pafs priority: 6
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: draw_pose_light port: in_image priority: 7
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: draw_pose_light port: in_pose priority: 7
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:951 ] set priority. node: video_out port: in_video_frame priority: 8
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, input1:input1 -> data_source_parser:in_data
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> draw_pose_light:in_image
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, pose_post_light:out_pose -> draw_pose_light:in_pose
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> image_resize:in_image
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, image_resize:out_image -> pose_detection:input
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, pose_detection:out_pafs -> pose_post_light:in_pafs
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-08-07 00:56:19,349][ INFO][         graph.cc:1156] port connect, draw_pose_light:out_image -> video_out:in_video_frame
+[2022-08-07 00:56:19,351][ INFO][ graph_checker.cc:715 ] node: draw_pose_light, key: match_node, value: video_decoder
+[2022-08-07 00:56:19,351][ INFO][ graph_checker.cc:715 ] node: pose_post_light, key: match_node, value: pose_detection
+[2022-08-07 00:56:19,351][ INFO][flow_scheduler.cc:69  ] init scheduler with 18 threads, max 576
+[2022-08-07 00:56:19,352][ INFO][mock_communicate.cc:462 ] mock communicate start.
+[2022-08-07 00:56:19,353][ INFO][iva_task_manager.cc:831 ] IvaUpload Start success.
+[2022-08-07 00:56:19,353][ INFO][   iva_manager.cc:210 ] IvaManager::Start: Start end . 
+[2022-08-07 00:56:19,353][ INFO][    iva_plugin.cc:36  ] IvaPlugin Start success.
+[2022-08-07 00:56:19,353][ INFO][  stack_plugin.cc:76  ] StackPlugin Start . 
+[2022-08-07 00:56:19,354][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T00:56:19Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-08-07 00:56:20,362][ INFO][mock_communicate.cc:276 ] {"streams":[{"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}]}],"taskId":"e1f66cd3-171c-42b8-9c50-96ef95ef1c49"}
+[2022-08-07 00:56:20,362][ INFO][iva_task_manager.cc:33  ] IvaMicroTask::Parse, {"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}]}
+[2022-08-07 00:56:20,363][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"}
+[2022-08-07 00:56:20,363][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type url
+[2022-08-07 00:56:20,363][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:1
+[2022-08-07 00:56:20,363][ INFO][iva_task_manager.cc:49  ] IvaMicroTask::Parse, parse input success finished.
+[2022-08-07 00:56:20,363][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}
+[2022-08-07 00:56:20,363][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type webhook
+[2022-08-07 00:56:20,363][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:0
+[2022-08-07 00:56:20,363][ INFO][iva_task_manager.cc:62  ] IvaMicroTask::Parse, parse outputs success.
+[2022-08-07 00:56:20,363][ INFO][iva_task_manager.cc:162 ] Parse, stream group success
+[2022-08-07 00:56:20,363][ INFO][iva_task_manager.cc:179 ] Parse, task group success
+[2022-08-07 00:56:20,364][ INFO][session_context.cc:37  ] session context start se id:f9f6f2cd-3e00-4821-987c-797ea0fcf579
+[2022-08-07 00:56:20,364][ INFO][      iva_task.cc:604 ] IvaTask Run CreateTask . task_name_: e1f66cd3-171c-42b8-9c50-96ef95ef1c49_1659833780 modelbox_task_id: f9f6f2cd-3e00-4821-987c-797ea0fcf579
+[2022-08-07 00:56:20,365][ INFO][      iva_task.cc:229 ] source_type: url
+[2022-08-07 00:56:20,368][ INFO][      iva_task.cc:230 ] input_cfg: {"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4","url_type":"file"}
+[2022-08-07 00:56:20,369][ INFO][      iva_task.cc:262 ] output_cfg: {"brokers":[{"cfg":"{\"headers\":null,\"url\":\"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4\"}","name":"webhook","type":"webhook"}]}
+[2022-08-07 00:56:20,370][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 00:56:20,370][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 00:56:20,370][ INFO][      iva_task.cc:356 ] common:{"param_float":10.5,"param_int":10,"param_str":"string param"}
+[2022-08-07 00:56:20,370][ INFO][      iva_task.cc:357 ] svc_config:{"algorithm":{"multiTask":"no","algType":"mock"},"mockFile":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/mock_task.toml","svcInstanceId":"modelbox-instance-mock"}
+[2022-08-07 00:56:20,371][ INFO][      iva_task.cc:358 ] input:{"auth":null,"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"}
+[2022-08-07 00:56:20,371][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 00:56:20,371][ INFO][      iva_task.cc:360 ] output:{"auth":null,"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}
+[2022-08-07 00:56:20,371][ INFO][      iva_task.cc:362 ] task_id:e1f66cd3-171c-42b8-9c50-96ef95ef1c49
+[2022-08-07 00:56:20,372][ INFO][      iva_task.cc:628 ] IvaTask Run success.. task_name_: e1f66cd3-171c-42b8-9c50-96ef95ef1c49_1659833780modelbox_task_id: f9f6f2cd-3e00-4821-987c-797ea0fcf579
+[2022-08-07 00:56:20,372][ INFO][iva_task_manager.cc:215 ] TaskGroup::CreateIvaTasks , task Run, TaskName: e1f66cd3-171c-42b8-9c50-96ef95ef1c49_1659833780
+[2022-08-07 00:56:20,372][ INFO][iva_task_manager.cc:224 ] CreateIvaTasks complete
+[2022-08-07 00:56:20,372][ INFO][iva_task_manager.cc:574 ] create iva task success. taskid: e1f66cd3-171c-42b8-9c50-96ef95ef1c49
+[2022-08-07 00:56:20,372][ INFO][mock_communicate.cc:381 ] mock task: finish. httpStatus: 201 body:{}
+[2022-08-07 00:56:20,372][ INFO][iva_task_manager.cc:464 ] CreateTaskPostProcess begin
+[2022-08-07 00:56:20,373][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-07T00:56:20Z","curRunningNumber":1,"failStreamNumber":0,"id":"e1f66cd3-171c-42b8-9c50-96ef95ef1c49","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-07 00:56:20,373][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-08-07T00:56:20Z","curRunningNumber":1,"failStreamNumber":0,"id":"e1f66cd3-171c-42b8-9c50-96ef95ef1c49","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}
+[2022-08-07 00:56:20,373][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-08-07 00:56:20,373][ INFO][mock_communicate.cc:391 ] mock task success. 
+[2022-08-07 00:56:20,374][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T00:56:20Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-07T00:56:20Z","curRunningNumber":1,"failStreamNumber":0,"id":"e1f66cd3-171c-42b8-9c50-96ef95ef1c49","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-07 00:56:20,374][ INFO][  match_stream.cc:512 ] node data_source_parser, port in_data, inherit backward level 0
+[2022-08-07 00:56:20,376][ INFO][data_source_parser_flowunit.cc:94  ] Try parse input config url for f9f6f2cd-3e00-4821-987c-797ea0fcf579
+[2022-08-07 00:56:20,379][ INFO][data_source_parser_flowunit.cc:111 ] parse input config ok for f9f6f2cd-3e00-4821-987c-797ea0fcf579
+[2022-08-07 00:56:20,381][ INFO][          node.cc:678 ] node: data_source_parser, sess id: f9f6f2cd-3e00-4821-987c-797ea0fcf579, data ctx finished
+[2022-08-07 00:56:20,381][ INFO][  match_stream.cc:512 ] node video_demuxer, port in_video_url, inherit backward level 0
+[2022-08-07 00:56:20,388][ INFO][ ffmpeg_reader.cc:113 ] Source url:/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4, reconnect:true, rw_timeout:30s
+[2022-08-07 00:56:20,448][ INFO][ ffmpeg_reader.cc:78  ] Open source /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4 success, format QuickTime / MOV : mov,mp4,m4a,3gp,3g2,mj2
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:259 ] Stream /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4 creation time is null
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:277 ] Stream /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4 rotate is null
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:308 ] extra_data: 1:64:0:1e:ff:e1:0:1a:67:64:0:1e:ac:d9:40:50:5:bb:1:10:0:0:3:0:10:0:0:3:3:20:f1:62:d9:60:1:0:5:68:ea:e2:f2:c0:
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:329 ] try get bsf for Fourcc:avc1, CodecId:27
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:69  ] demux info:
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:70  ] source url: /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:71  ] key frame only: 0
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:72  ] codec id: 27
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:73  ] profile id: 100
+[2022-08-07 00:56:20,609][ INFO][ffmpeg_video_demuxer.cc:74  ] creation time: 0
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:75  ] time base: 0.078125
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:76  ] frame width: 1280
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:77  ] frame height: 720
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:78  ] frame rate: 25/1
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:80  ] frame rotate: 0
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:81  ] frame count: 565
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:82  ] video duration: 22
+[2022-08-07 00:56:20,610][ INFO][ffmpeg_video_demuxer.cc:88  ] bsf_name:h264_mp4toannexb,
+[2022-08-07 00:56:20,614][ INFO][  match_stream.cc:512 ] node video_decoder, port in_video_packet, inherit backward level 0
+[2022-08-07 00:56:20,614][ INFO][video_decoder_flowunit.cc:44  ] Video Decode DataPre
+[2022-08-07 00:56:20,733][ INFO][  match_stream.cc:512 ] node image_resize, port in_image, inherit backward level 0
+[2022-08-07 00:56:20,752][ INFO][  match_stream.cc:512 ] node pose_detection, port input, inherit backward level 0
+[2022-08-07 00:56:21,006][ INFO][  match_stream.cc:512 ] node pose_post_light, port in_pafs, inherit backward level 0
+[2022-08-07 00:56:21,006][ INFO][  match_stream.cc:512 ] node pose_post_light, port in_heatmaps, inherit backward level 0
+[2022-08-07 00:56:21,624][ INFO][  match_stream.cc:512 ] node draw_pose_light, port in_pose, inherit backward level 0
+[2022-08-07 00:56:21,624][ INFO][  match_stream.cc:512 ] node draw_pose_light, port in_image, inherit backward level 0
+[2022-08-07 00:56:22,309][ INFO][  match_stream.cc:512 ] node video_out, port in_video_frame, inherit backward level 0
+[2022-08-07 00:56:22,313][ INFO][video_out_flowunit.cc:305 ] video_out url is /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4
+[2022-08-07 00:56:22,314][ INFO][video_out_flowunit.cc:266 ] videoout url=/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4
+[2022-08-07 00:56:22,355][ INFO][ ffmpeg_writer.cc:55  ] Open url /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4, format mp4 success
+[2022-08-07 00:57:20,375][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T00:57:20Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-07T00:57:20Z","curRunningNumber":1,"failStreamNumber":0,"id":"e1f66cd3-171c-42b8-9c50-96ef95ef1c49","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-07 01:01:40,099][ INFO][          main.cc:374 ] modelbox config path : /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../graph/modelbox.conf
+[2022-08-07 01:01:40,100][ INFO][        server.cc:110 ] plugin list:
+[2022-08-07 01:01:40,100][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-08-07 01:01:40,100][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-08-07 01:01:40,454][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-08-07 01:01:40,454][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-08-07 01:01:40,454][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-08-07 01:01:40,460][ INFO][    iva_config.cc:225 ] load env config success
+[2022-08-07 01:01:40,461][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-08-07 01:01:40,461][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-08-07 01:01:40,461][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-08-07 01:01:40,461][ INFO][    iva_config.cc:146 ] load config success
+[2022-08-07 01:01:40,461][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../graph/multi_person_pose_lightweight_openpose.toml
+[2022-08-07 01:01:40,461][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-08-07 01:01:40,461][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-08-07 01:01:40,461][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-08-07 01:01:40,461][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-08-07 01:01:40,461][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-08-07 01:01:40,461][ INFO][mock_communicate.cc:395 ] MockCommunicate Init . 
+[2022-08-07 01:01:40,564][ INFO][mock_communicate.cc:454 ] mock communicate init success.
+[2022-08-07 01:01:40,566][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-08-07 01:01:40,608][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-08-07 01:01:40,612][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-08-07 01:01:40,613][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-08-07 01:01:40,613][ WARN][        driver.cc:370 ] /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-08-07 01:01:40,613][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-08-07 01:01:40,643][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../model/pose_infer/pose_infer.toml success
+[2022-08-07 01:01:40,657][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../etc/flowunit/draw_pose_light/draw_pose_light.toml success
+[2022-08-07 01:01:40,662][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../etc/flowunit/pose_post_light/pose_post_light.toml success
+[2022-08-07 01:01:40,694][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-08-07 01:01:40,708][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-08-07 01:01:40,750][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-08-07 01:01:42,508][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 01:01:42,508][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 01:01:42,518][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 01:01:42,518][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 01:01:42,527][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-08-07 01:01:42,527][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-08-07 01:01:42,527][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-08-07 01:01:42,527][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-08-07 01:01:42,527][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-08-07 01:01:42,528][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-08-07 01:01:42,528][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-08-07 01:01:42,528][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-08-07 01:01:42,534][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-08-07 01:01:42,534][ INFO][        server.cc:59  ] app server start
+[2022-08-07 01:01:42,534][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-08-07 01:01:42,534][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-08-07 01:01:42,536][ INFO][         graph.cc:121 ] Build graph name:MODULENAME, id:a486e548-e441-4998-8bf3-0c96ac53e53c
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : draw_pose_light
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_pose
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : input
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : pose_detection
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : input
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_heatmaps
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_pafs
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : pose_post_light
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_heatmaps
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_pafs
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_pose
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : video_decoder
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_video_packet
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:228 ] output port : out_video_frame
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:217 ] node name : video_demuxer
+[2022-08-07 01:01:42,536][ INFO][ graph_manager.cc:222 ] input port : in_video_url
+[2022-08-07 01:01:42,537][ INFO][ graph_manager.cc:228 ] output port : out_video_packet
+[2022-08-07 01:01:42,537][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-08-07 01:01:42,537][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-08-07 01:01:42,537][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-08-07 01:01:42,542][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-08-07 01:01:42,542][ INFO][         graph.cc:690 ] begin build node draw_pose_light
+[2022-08-07 01:01:42,549][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 01:01:42,549][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 01:01:42,549][ INFO][         graph.cc:697 ] build node draw_pose_light success
+[2022-08-07 01:01:42,549][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-08-07 01:01:42,551][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-08-07 01:01:42,551][ INFO][         graph.cc:690 ] begin build node input1
+[2022-08-07 01:01:42,551][ INFO][         graph.cc:697 ] build node input1 success
+[2022-08-07 01:01:42,551][ INFO][         graph.cc:690 ] begin build node pose_detection
+[2022-08-07 01:01:42,557][ INFO][         graph.cc:697 ] build node pose_detection success
+[2022-08-07 01:01:42,558][ INFO][         graph.cc:690 ] begin build node pose_post_light
+[2022-08-07 01:01:42,565][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 01:01:42,565][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 01:01:42,565][ INFO][         graph.cc:697 ] build node pose_post_light success
+[2022-08-07 01:01:42,565][ INFO][         graph.cc:690 ] begin build node video_decoder
+[2022-08-07 01:01:42,566][ INFO][         graph.cc:697 ] build node video_decoder success
+[2022-08-07 01:01:42,566][ INFO][         graph.cc:690 ] begin build node video_demuxer
+[2022-08-07 01:01:42,566][ INFO][         graph.cc:697 ] build node video_demuxer success
+[2022-08-07 01:01:42,566][ INFO][         graph.cc:690 ] begin build node video_out
+[2022-08-07 01:01:42,566][ INFO][         graph.cc:697 ] build node video_out success
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, draw_pose_light:out_image -> video_out:in_video_frame
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, image_resize:out_image -> pose_detection:input
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, input1:input1 -> data_source_parser:in_data
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, pose_detection:out_pafs -> pose_post_light:in_pafs
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, pose_post_light:out_pose -> draw_pose_light:in_pose
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> draw_pose_light:in_image
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> image_resize:in_image
+[2022-08-07 01:01:42,567][ INFO][         graph.cc:373 ] add link, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-08-07 01:01:42,568][ INFO][flowunit_group.cc:418 ] node: image_resize get batch size is 1
+[2022-08-07 01:01:42,681][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : obs
+[2022-08-07 01:01:42,703][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : restful
+[2022-08-07 01:01:42,715][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : url
+[2022-08-07 01:01:42,734][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : vis
+[2022-08-07 01:01:42,734][ INFO][flowunit_group.cc:418 ] node: data_source_parser get batch size is 1
+[2022-08-07 01:01:42,735][ INFO][video_decoder_flowunit.cc:24  ] RKNPU video_decoder with bgr
+[2022-08-07 01:01:42,735][ INFO][flowunit_group.cc:418 ] node: video_decoder get batch size is 1
+[2022-08-07 01:01:42,736][ INFO][flowunit_group.cc:418 ] node: video_demuxer get batch size is 1
+[2022-08-07 01:01:42,736][ INFO][flowunit_group.cc:418 ] node: video_out get batch size is 1
+[2022-08-07 01:01:42,768][ INFO][flowunit_group.cc:418 ] node: pose_detection get batch size is 1
+[2022-08-07 01:01:45,194][ INFO][flowunit_group.cc:418 ] node: draw_pose_light get batch size is 1
+[2022-08-07 01:01:45,195][ INFO][flowunit_group.cc:418 ] node: pose_post_light get batch size is 1
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: data_source_parser #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: draw_pose_light #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: image_resize #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: input1 #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: pose_detection #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: pose_post_light #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: video_decoder #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: video_demuxer #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:930 ] node: video_out #0
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 0, input1
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 1, data_source_parser
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 2, video_demuxer
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 3, video_decoder
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 4, image_resize
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 5, pose_detection
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 6, pose_post_light
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 7, draw_pose_light
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1135] topo index: 8, video_out
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: data_source_parser port: in_data priority: 1
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: video_demuxer port: in_video_url priority: 2
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: video_decoder port: in_video_packet priority: 3
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: image_resize port: in_image priority: 4
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: pose_detection port: input priority: 5
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: pose_post_light port: in_heatmaps priority: 6
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: pose_post_light port: in_pafs priority: 6
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: draw_pose_light port: in_image priority: 7
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: draw_pose_light port: in_pose priority: 7
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:951 ] set priority. node: video_out port: in_video_frame priority: 8
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1156] port connect, input1:input1 -> data_source_parser:in_data
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> draw_pose_light:in_image
+[2022-08-07 01:01:45,198][ INFO][         graph.cc:1156] port connect, pose_post_light:out_pose -> draw_pose_light:in_pose
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> image_resize:in_image
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, image_resize:out_image -> pose_detection:input
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, pose_detection:out_pafs -> pose_post_light:in_pafs
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-08-07 01:01:45,199][ INFO][         graph.cc:1156] port connect, draw_pose_light:out_image -> video_out:in_video_frame
+[2022-08-07 01:01:45,200][ INFO][ graph_checker.cc:715 ] node: draw_pose_light, key: match_node, value: video_decoder
+[2022-08-07 01:01:45,200][ INFO][ graph_checker.cc:715 ] node: pose_post_light, key: match_node, value: pose_detection
+[2022-08-07 01:01:45,201][ INFO][flow_scheduler.cc:69  ] init scheduler with 18 threads, max 576
+[2022-08-07 01:01:45,201][ INFO][mock_communicate.cc:462 ] mock communicate start.
+[2022-08-07 01:01:45,202][ INFO][iva_task_manager.cc:831 ] IvaUpload Start success.
+[2022-08-07 01:01:45,202][ INFO][   iva_manager.cc:210 ] IvaManager::Start: Start end . 
+[2022-08-07 01:01:45,202][ INFO][    iva_plugin.cc:36  ] IvaPlugin Start success.
+[2022-08-07 01:01:45,202][ INFO][  stack_plugin.cc:76  ] StackPlugin Start . 
+[2022-08-07 01:01:45,203][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T01:01:45Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-08-07 01:01:46,210][ INFO][mock_communicate.cc:276 ] {"streams":[{"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}]}],"taskId":"44b769b0-23b4-481f-bc18-7d3e473e970c"}
+[2022-08-07 01:01:46,210][ INFO][iva_task_manager.cc:33  ] IvaMicroTask::Parse, {"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}]}
+[2022-08-07 01:01:46,210][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"}
+[2022-08-07 01:01:46,211][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type url
+[2022-08-07 01:01:46,211][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:1
+[2022-08-07 01:01:46,211][ INFO][iva_task_manager.cc:49  ] IvaMicroTask::Parse, parse input success finished.
+[2022-08-07 01:01:46,211][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}
+[2022-08-07 01:01:46,211][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type webhook
+[2022-08-07 01:01:46,211][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:0
+[2022-08-07 01:01:46,211][ INFO][iva_task_manager.cc:62  ] IvaMicroTask::Parse, parse outputs success.
+[2022-08-07 01:01:46,211][ INFO][iva_task_manager.cc:162 ] Parse, stream group success
+[2022-08-07 01:01:46,211][ INFO][iva_task_manager.cc:179 ] Parse, task group success
+[2022-08-07 01:01:46,212][ INFO][session_context.cc:37  ] session context start se id:0c783b6e-3831-4f61-9df2-3d06170c2580
+[2022-08-07 01:01:46,212][ INFO][      iva_task.cc:604 ] IvaTask Run CreateTask . task_name_: 44b769b0-23b4-481f-bc18-7d3e473e970c_1659834106 modelbox_task_id: 0c783b6e-3831-4f61-9df2-3d06170c2580
+[2022-08-07 01:01:46,212][ INFO][      iva_task.cc:229 ] source_type: url
+[2022-08-07 01:01:46,216][ INFO][      iva_task.cc:230 ] input_cfg: {"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4","url_type":"file"}
+[2022-08-07 01:01:46,217][ INFO][      iva_task.cc:262 ] output_cfg: {"brokers":[{"cfg":"{\"headers\":null,\"url\":\"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4\"}","name":"webhook","type":"webhook"}]}
+[2022-08-07 01:01:46,217][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 01:01:46,217][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 01:01:46,217][ INFO][      iva_task.cc:356 ] common:{"param_float":10.5,"param_int":10,"param_str":"string param"}
+[2022-08-07 01:01:46,217][ INFO][      iva_task.cc:357 ] svc_config:{"algorithm":{"multiTask":"no","algType":"mock"},"mockFile":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/mock_task.toml","svcInstanceId":"modelbox-instance-mock"}
+[2022-08-07 01:01:46,218][ INFO][      iva_task.cc:358 ] input:{"auth":null,"data":{"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4"},"type":"url"}
+[2022-08-07 01:01:46,218][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 01:01:46,219][ INFO][      iva_task.cc:360 ] output:{"auth":null,"data":{"headers":{},"url":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4"},"type":"webhook"}
+[2022-08-07 01:01:46,219][ INFO][      iva_task.cc:362 ] task_id:44b769b0-23b4-481f-bc18-7d3e473e970c
+[2022-08-07 01:01:46,219][ INFO][      iva_task.cc:628 ] IvaTask Run success.. task_name_: 44b769b0-23b4-481f-bc18-7d3e473e970c_1659834106modelbox_task_id: 0c783b6e-3831-4f61-9df2-3d06170c2580
+[2022-08-07 01:01:46,219][ INFO][iva_task_manager.cc:215 ] TaskGroup::CreateIvaTasks , task Run, TaskName: 44b769b0-23b4-481f-bc18-7d3e473e970c_1659834106
+[2022-08-07 01:01:46,219][ INFO][iva_task_manager.cc:224 ] CreateIvaTasks complete
+[2022-08-07 01:01:46,219][ INFO][iva_task_manager.cc:574 ] create iva task success. taskid: 44b769b0-23b4-481f-bc18-7d3e473e970c
+[2022-08-07 01:01:46,219][ INFO][mock_communicate.cc:381 ] mock task: finish. httpStatus: 201 body:{}
+[2022-08-07 01:01:46,219][ INFO][iva_task_manager.cc:464 ] CreateTaskPostProcess begin
+[2022-08-07 01:01:46,220][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-07T01:01:46Z","curRunningNumber":1,"failStreamNumber":0,"id":"44b769b0-23b4-481f-bc18-7d3e473e970c","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-07 01:01:46,220][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-08-07T01:01:46Z","curRunningNumber":1,"failStreamNumber":0,"id":"44b769b0-23b4-481f-bc18-7d3e473e970c","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}
+[2022-08-07 01:01:46,220][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-08-07 01:01:46,220][ INFO][mock_communicate.cc:391 ] mock task success. 
+[2022-08-07 01:01:46,221][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T01:01:46Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-07T01:01:46Z","curRunningNumber":1,"failStreamNumber":0,"id":"44b769b0-23b4-481f-bc18-7d3e473e970c","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-07 01:01:46,222][ INFO][  match_stream.cc:512 ] node data_source_parser, port in_data, inherit backward level 0
+[2022-08-07 01:01:46,224][ INFO][data_source_parser_flowunit.cc:94  ] Try parse input config url for 0c783b6e-3831-4f61-9df2-3d06170c2580
+[2022-08-07 01:01:46,226][ INFO][data_source_parser_flowunit.cc:111 ] parse input config ok for 0c783b6e-3831-4f61-9df2-3d06170c2580
+[2022-08-07 01:01:46,227][ INFO][          node.cc:678 ] node: data_source_parser, sess id: 0c783b6e-3831-4f61-9df2-3d06170c2580, data ctx finished
+[2022-08-07 01:01:46,228][ INFO][  match_stream.cc:512 ] node video_demuxer, port in_video_url, inherit backward level 0
+[2022-08-07 01:01:46,235][ INFO][ ffmpeg_reader.cc:113 ] Source url:/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4, reconnect:true, rw_timeout:30s
+[2022-08-07 01:01:46,294][ INFO][ ffmpeg_reader.cc:78  ] Open source /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4 success, format QuickTime / MOV : mov,mp4,m4a,3gp,3g2,mj2
+[2022-08-07 01:01:46,455][ INFO][ffmpeg_video_demuxer.cc:259 ] Stream /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4 creation time is null
+[2022-08-07 01:01:46,455][ INFO][ffmpeg_video_demuxer.cc:277 ] Stream /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4 rotate is null
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:308 ] extra_data: 1:64:0:1e:ff:e1:0:1a:67:64:0:1e:ac:d9:40:50:5:bb:1:10:0:0:3:0:10:0:0:3:3:20:f1:62:d9:60:1:0:5:68:ea:e2:f2:c0:
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:329 ] try get bsf for Fourcc:avc1, CodecId:27
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:69  ] demux info:
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:70  ] source url: /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../data/multi_person_pose.mp4
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:71  ] key frame only: 0
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:72  ] codec id: 27
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:73  ] profile id: 100
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:74  ] creation time: 0
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:75  ] time base: 0.078125
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:76  ] frame width: 1280
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:77  ] frame height: 720
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:78  ] frame rate: 25/1
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:80  ] frame rotate: 0
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:81  ] frame count: 565
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:82  ] video duration: 22
+[2022-08-07 01:01:46,456][ INFO][ffmpeg_video_demuxer.cc:88  ] bsf_name:h264_mp4toannexb,
+[2022-08-07 01:01:46,461][ INFO][  match_stream.cc:512 ] node video_decoder, port in_video_packet, inherit backward level 0
+[2022-08-07 01:01:46,461][ INFO][video_decoder_flowunit.cc:44  ] Video Decode DataPre
+[2022-08-07 01:01:46,594][ INFO][  match_stream.cc:512 ] node image_resize, port in_image, inherit backward level 0
+[2022-08-07 01:01:46,613][ INFO][  match_stream.cc:512 ] node pose_detection, port input, inherit backward level 0
+[2022-08-07 01:01:46,937][ INFO][  match_stream.cc:512 ] node pose_post_light, port in_pafs, inherit backward level 0
+[2022-08-07 01:01:46,937][ INFO][  match_stream.cc:512 ] node pose_post_light, port in_heatmaps, inherit backward level 0
+[2022-08-07 01:01:47,643][ INFO][  match_stream.cc:512 ] node draw_pose_light, port in_pose, inherit backward level 0
+[2022-08-07 01:01:47,644][ INFO][  match_stream.cc:512 ] node draw_pose_light, port in_image, inherit backward level 0
+[2022-08-07 01:01:48,156][ INFO][  match_stream.cc:512 ] node video_out, port in_video_frame, inherit backward level 0
+[2022-08-07 01:01:48,159][ INFO][video_out_flowunit.cc:305 ] video_out url is /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4
+[2022-08-07 01:01:48,160][ INFO][video_out_flowunit.cc:266 ] videoout url=/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4
+[2022-08-07 01:01:48,186][ INFO][ ffmpeg_writer.cc:55  ] Open url /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../hilens_data_dir/multi_person_pose_result.mp4, format mp4 success
