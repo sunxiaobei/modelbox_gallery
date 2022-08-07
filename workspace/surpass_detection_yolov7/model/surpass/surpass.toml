@@ -5,21 +5,27 @@ name = "surpass"
 device = "rknpu"
 version = "1.0.0"
 description = "your description"
-entry = "./model.rknn"  # model file path, use relative path
+entry = "./yolov7_tiny_320x320.rknn"  # model file path, use relative path
 type = "inference" 
 virtual_type = "rknpu2" # inference engine type: rockchip now support rknpu, rknpu2(if exist)
 group_type = "Inference"  # flowunit group attribution, do not change
 is_input_contiguous = "false" # rk do not support memory combine, fix, do not change
 
-# Input ports description
 [input]
-[input.input1]  # input port number, Format is input.input[N]
-name = "Input"  # input port name
-type = "uint8"  # input port data type ,e.g. float or uint8
-device = "rknpu"  # input buffer type: use rknpu for zero-copy, cpu also allow
+[input.input1]
+name = "input"
+type = "uint8"
+device = "cpu"
 
-# Output ports description
 [output]
-[output.output1] # output port number, Format is output.output[N]
-name = "Output"  # output port name
-type = "float"   # output port data type ,e.g. float or uint8
+[output.output1]
+name = "output1"
+type = "float"
+
+[output.output2]
+name = "output2"
+type = "float"
+
+[output.output3]
+name = "output3"
+type = "float"
