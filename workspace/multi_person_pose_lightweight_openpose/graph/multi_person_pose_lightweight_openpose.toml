@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Huawei Technologies Co., Ltd. All rights reserved.
+# Copyright (c) Huawei Technologies Co., Ltd. 2022. All rights reserved.
 
 [driver]
 dir = ["${HILENS_APP_ROOT}/etc/flowunit",
@@ -12,16 +12,31 @@ trace=false
 dir="${HILENS_DATA_DIR}/mb_profile"
 [graph]
 format = "graphviz"
-graphconf = """digraph multi_person_pose_lightweight_openpose {
+graphconf = """digraph MODULENAME {
     node [shape=Mrecord]
     queue_size = 4
     batch_size = 1
+	
     input1[type=input,flowunit=input,device=cpu,deviceid=0]
-    httpserver_sync_receive[type=flowunit, flowunit=httpserver_sync_receive_v2, device=cpu, deviceid=0, time_out_ms=5000, endpoint="http://0.0.0.0:1234/v1/hello", max_requests=100]
-    httpserver_sync_reply[type=flowunit, flowunit=httpserver_sync_reply_v2, device=cpu, deviceid=0]
+    data_source_parser[type=flowunit, flowunit=data_source_parser, device=cpu, deviceid=0]
+    video_demuxer[type=flowunit, flowunit=video_demuxer, device=cpu, deviceid=0]
+    video_decoder[type=flowunit, flowunit=video_decoder, device=rknpu, deviceid=0, pix_fmt=bgr]
+    image_resize[type=flowunit, flowunit=resize, device=rknpu, deviceid=0, image_width=512, image_height=288]
+    pose_detection[type=flowunit, flowunit=pose_infer, device=rknpu, deviceid=0]
+    pose_post_light[type=flowunit, flowunit=pose_post_light, device=cpu, deviceid=0]
+    draw_pose_light[type=flowunit, flowunit=draw_pose_light, device=cpu, deviceid=0]
+    video_out[type=flowunit, flowunit=video_out, device=rknpu, deviceid=0]
     
-    input1:input -> httpserver_sync_receive:in_url
-    httpserver_sync_receive:out_request_info -> httpserver_sync_reply:in_reply_info
+    input1:input -> data_source_parser:in_data
+    data_source_parser:out_video_url -> video_demuxer:in_video_url
+    video_demuxer:out_video_packet -> video_decoder:in_video_packet
+    video_decoder:out_video_frame -> image_resize:in_image
+    image_resize:out_image -> pose_detection:input
+    pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+    pose_detection:out_pafs -> pose_post_light:in_pafs
+    video_decoder:out_video_frame -> draw_pose_light:in_image
+    pose_post_light:out_pose -> draw_pose_light:in_pose
+    draw_pose_light:out_image -> video_out:in_video_frame
 }"""
 [flow]
-desc = "multi_person_pose_lightweight_openpose run in modelbox-rk-aarch64"
+desc = "MODULENAME run in SDKNAME"
