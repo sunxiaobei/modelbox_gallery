@@ -278,3 +278,283 @@
 [2022-08-07 00:39:28,580][ INFO][    iva_plugin.cc:46  ] IvaPlugin Stop success.
 [2022-08-07 00:39:28,580][ INFO][  stack_plugin.cc:85  ] StackPlugin Stop success.
 [2022-08-07 00:39:28,580][ INFO][          main.cc:382 ] exit modelbox process
+[2022-08-07 00:42:47,286][ INFO][          main.cc:374 ] modelbox config path : /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../graph/modelbox.conf
+[2022-08-07 00:42:47,286][ INFO][        server.cc:110 ] plugin list:
+[2022-08-07 00:42:47,286][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-08-07 00:42:47,286][ INFO][        server.cc:112 ]  /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-08-07 00:42:47,391][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-08-07 00:42:47,392][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-08-07 00:42:47,392][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-08-07 00:42:47,392][ INFO][    iva_config.cc:225 ] load env config success
+[2022-08-07 00:42:47,392][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-08-07 00:42:47,392][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-08-07 00:42:47,392][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-08-07 00:42:47,392][ INFO][    iva_config.cc:146 ] load config success
+[2022-08-07 00:42:47,392][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../graph/multi_person_pose_lightweight_openpose.toml
+[2022-08-07 00:42:47,392][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-08-07 00:42:47,392][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-08-07 00:42:47,393][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-08-07 00:42:47,393][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-08-07 00:42:47,393][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-08-07 00:42:47,393][ INFO][mock_communicate.cc:395 ] MockCommunicate Init . 
+[2022-08-07 00:42:47,485][ INFO][mock_communicate.cc:454 ] mock communicate init success.
+[2022-08-07 00:42:47,485][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-08-07 00:42:47,504][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-08-07 00:42:47,510][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-08-07 00:42:47,510][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-08-07 00:42:47,510][ WARN][        driver.cc:370 ] /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-08-07 00:42:47,511][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-08-07 00:42:47,530][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../model/pose_infer/pose_infer.toml success
+[2022-08-07 00:42:47,541][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../etc/flowunit/draw_pose_light/draw_pose_light.toml success
+[2022-08-07 00:42:47,546][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/../etc/flowunit/pose_post_light/pose_post_light.toml success
+[2022-08-07 00:42:47,573][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-08-07 00:42:47,576][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-08-07 00:42:47,592][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-08-07 00:42:48,329][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:42:48,330][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:42:48,336][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:42:48,336][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:42:48,343][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-08-07 00:42:48,343][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-08-07 00:42:48,343][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-08-07 00:42:48,343][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-08-07 00:42:48,343][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-08-07 00:42:48,343][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-08-07 00:42:48,343][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-08-07 00:42:48,343][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-08-07 00:42:48,347][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-08-07 00:42:48,347][ INFO][        server.cc:59  ] app server start
+[2022-08-07 00:42:48,347][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-08-07 00:42:48,347][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-08-07 00:42:48,350][ INFO][         graph.cc:121 ] Build graph name:MODULENAME, id:cfce1806-67fb-44bc-8ddc-2ea9233008b2
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : draw_pose_light
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_pose
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : input
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : pose_detection
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : input
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_heatmaps
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_pafs
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : pose_post_light
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_heatmaps
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_pafs
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_pose
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : video_decoder
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_video_packet
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_video_frame
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : video_demuxer
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_video_url
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:228 ] output port : out_video_packet
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-08-07 00:42:48,350][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-08-07 00:42:48,350][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-08-07 00:42:48,352][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-08-07 00:42:48,352][ INFO][         graph.cc:690 ] begin build node draw_pose_light
+[2022-08-07 00:42:48,358][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:42:48,358][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:42:48,358][ INFO][         graph.cc:697 ] build node draw_pose_light success
+[2022-08-07 00:42:48,358][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-08-07 00:42:48,360][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-08-07 00:42:48,360][ INFO][         graph.cc:690 ] begin build node input1
+[2022-08-07 00:42:48,360][ INFO][         graph.cc:697 ] build node input1 success
+[2022-08-07 00:42:48,360][ INFO][         graph.cc:690 ] begin build node pose_detection
+[2022-08-07 00:42:48,366][ INFO][         graph.cc:697 ] build node pose_detection success
+[2022-08-07 00:42:48,366][ INFO][         graph.cc:690 ] begin build node pose_post_light
+[2022-08-07 00:42:48,372][ WARN][      flowunit.cc:111 ] python is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-08-07 00:42:48,372][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is python, the right group_type is a or a/b , for instance input or input/http.
+[2022-08-07 00:42:48,373][ INFO][         graph.cc:697 ] build node pose_post_light success
+[2022-08-07 00:42:48,373][ INFO][         graph.cc:690 ] begin build node video_decoder
+[2022-08-07 00:42:48,373][ INFO][         graph.cc:697 ] build node video_decoder success
+[2022-08-07 00:42:48,373][ INFO][         graph.cc:690 ] begin build node video_demuxer
+[2022-08-07 00:42:48,374][ INFO][         graph.cc:697 ] build node video_demuxer success
+[2022-08-07 00:42:48,374][ INFO][         graph.cc:690 ] begin build node video_out
+[2022-08-07 00:42:48,374][ INFO][         graph.cc:697 ] build node video_out success
+[2022-08-07 00:42:48,374][ INFO][         graph.cc:373 ] add link, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, draw_pose_light:out_image -> video_out:in_video_frame
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, image_resize:out_image -> pose_detection:input
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, input1:input1 -> data_source_parser:in_data
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, pose_detection:out_pafs -> pose_post_light:in_pafs
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, pose_post_light:out_pose -> draw_pose_light:in_pose
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> draw_pose_light:in_image
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> image_resize:in_image
+[2022-08-07 00:42:48,375][ INFO][         graph.cc:373 ] add link, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-08-07 00:42:48,378][ INFO][flowunit_group.cc:418 ] node: image_resize get batch size is 1
+[2022-08-07 00:42:48,410][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : obs
+[2022-08-07 00:42:48,425][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : restful
+[2022-08-07 00:42:48,428][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : url
+[2022-08-07 00:42:48,432][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : vis
+[2022-08-07 00:42:48,432][ INFO][flowunit_group.cc:418 ] node: data_source_parser get batch size is 1
+[2022-08-07 00:42:48,433][ INFO][video_decoder_flowunit.cc:24  ] RKNPU video_decoder with bgr
+[2022-08-07 00:42:48,433][ INFO][flowunit_group.cc:418 ] node: video_decoder get batch size is 1
+[2022-08-07 00:42:48,433][ INFO][flowunit_group.cc:418 ] node: video_demuxer get batch size is 1
+[2022-08-07 00:42:48,433][ INFO][flowunit_group.cc:418 ] node: video_out get batch size is 1
+[2022-08-07 00:42:48,450][ INFO][flowunit_group.cc:418 ] node: pose_detection get batch size is 1
+[2022-08-07 00:42:49,550][ INFO][flowunit_group.cc:418 ] node: draw_pose_light get batch size is 1
+[2022-08-07 00:42:49,551][ INFO][flowunit_group.cc:418 ] node: pose_post_light get batch size is 1
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: data_source_parser #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: draw_pose_light #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: image_resize #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: input1 #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: pose_detection #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: pose_post_light #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: video_decoder #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: video_demuxer #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:930 ] node: video_out #0
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:1135] topo index: 0, input1
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:1135] topo index: 1, data_source_parser
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:1135] topo index: 2, video_demuxer
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:1135] topo index: 3, video_decoder
+[2022-08-07 00:42:49,553][ INFO][         graph.cc:1135] topo index: 4, image_resize
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1135] topo index: 5, pose_detection
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1135] topo index: 6, pose_post_light
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1135] topo index: 7, draw_pose_light
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1135] topo index: 8, video_out
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: data_source_parser port: in_data priority: 1
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: video_demuxer port: in_video_url priority: 2
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: video_decoder port: in_video_packet priority: 3
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: image_resize port: in_image priority: 4
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: pose_detection port: input priority: 5
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: pose_post_light port: in_heatmaps priority: 6
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: pose_post_light port: in_pafs priority: 6
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: draw_pose_light port: in_image priority: 7
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: draw_pose_light port: in_pose priority: 7
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:951 ] set priority. node: video_out port: in_video_frame priority: 8
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, input1:input1 -> data_source_parser:in_data
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> draw_pose_light:in_image
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, pose_post_light:out_pose -> draw_pose_light:in_pose
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> image_resize:in_image
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, image_resize:out_image -> pose_detection:input
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, pose_detection:out_heatmaps -> pose_post_light:in_heatmaps
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, pose_detection:out_pafs -> pose_post_light:in_pafs
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-08-07 00:42:49,554][ INFO][         graph.cc:1156] port connect, draw_pose_light:out_image -> video_out:in_video_frame
+[2022-08-07 00:42:49,555][ INFO][ graph_checker.cc:715 ] node: draw_pose_light, key: match_node, value: video_decoder
+[2022-08-07 00:42:49,555][ INFO][ graph_checker.cc:715 ] node: pose_post_light, key: match_node, value: pose_detection
+[2022-08-07 00:42:49,556][ INFO][flow_scheduler.cc:69  ] init scheduler with 18 threads, max 576
+[2022-08-07 00:42:49,557][ INFO][mock_communicate.cc:462 ] mock communicate start.
+[2022-08-07 00:42:49,558][ INFO][iva_task_manager.cc:831 ] IvaUpload Start success.
+[2022-08-07 00:42:49,558][ INFO][   iva_manager.cc:210 ] IvaManager::Start: Start end . 
+[2022-08-07 00:42:49,558][ INFO][    iva_plugin.cc:36  ] IvaPlugin Start success.
+[2022-08-07 00:42:49,558][ INFO][  stack_plugin.cc:76  ] StackPlugin Start . 
+[2022-08-07 00:42:49,559][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T00:42:49Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-08-07 00:42:50,565][ INFO][mock_communicate.cc:276 ] {"streams":[{"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"NONE_VALUE"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"NONE_VALUE"},"type":"webhook"}]}],"taskId":"d6246334-a244-4984-8581-4c18a8d38f64"}
+[2022-08-07 00:42:50,565][ INFO][iva_task_manager.cc:33  ] IvaMicroTask::Parse, {"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"NONE_VALUE"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"NONE_VALUE"},"type":"webhook"}]}
+[2022-08-07 00:42:50,565][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"url":"NONE_VALUE"},"type":"url"}
+[2022-08-07 00:42:50,565][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type url
+[2022-08-07 00:42:50,565][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:1
+[2022-08-07 00:42:50,565][ INFO][iva_task_manager.cc:49  ] IvaMicroTask::Parse, parse input success finished.
+[2022-08-07 00:42:50,565][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"headers":{},"url":"NONE_VALUE"},"type":"webhook"}
+[2022-08-07 00:42:50,565][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type webhook
+[2022-08-07 00:42:50,565][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:0
+[2022-08-07 00:42:50,565][ INFO][iva_task_manager.cc:62  ] IvaMicroTask::Parse, parse outputs success.
+[2022-08-07 00:42:50,565][ INFO][iva_task_manager.cc:162 ] Parse, stream group success
+[2022-08-07 00:42:50,565][ INFO][iva_task_manager.cc:179 ] Parse, task group success
+[2022-08-07 00:42:50,566][ INFO][session_context.cc:37  ] session context start se id:3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:42:50,566][ INFO][      iva_task.cc:604 ] IvaTask Run CreateTask . task_name_: d6246334-a244-4984-8581-4c18a8d38f64_1659832970 modelbox_task_id: 3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:42:50,566][ INFO][      iva_task.cc:229 ] source_type: url
+[2022-08-07 00:42:50,567][ INFO][      iva_task.cc:230 ] input_cfg: {"url":"NONE_VALUE","url_type":"file"}
+[2022-08-07 00:42:50,569][ INFO][      iva_task.cc:262 ] output_cfg: {"brokers":[{"cfg":"{\"headers\":null,\"url\":\"NONE_VALUE\"}","name":"webhook","type":"webhook"}]}
+[2022-08-07 00:42:50,569][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 00:42:50,569][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 00:42:50,569][ INFO][      iva_task.cc:356 ] common:{"param_float":10.5,"param_int":10,"param_str":"string param"}
+[2022-08-07 00:42:50,569][ INFO][      iva_task.cc:357 ] svc_config:{"algorithm":{"multiTask":"no","algType":"mock"},"mockFile":"/home/rock/ModelBox/modelbox/workspace/multi_person_pose_lightweight_openpose/bin/mock_task.toml","svcInstanceId":"modelbox-instance-mock"}
+[2022-08-07 00:42:50,570][ INFO][      iva_task.cc:358 ] input:{"auth":null,"data":{"url":"NONE_VALUE"},"type":"url"}
+[2022-08-07 00:42:50,570][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-08-07 00:42:50,570][ INFO][      iva_task.cc:360 ] output:{"auth":null,"data":{"headers":{},"url":"NONE_VALUE"},"type":"webhook"}
+[2022-08-07 00:42:50,570][ INFO][      iva_task.cc:362 ] task_id:d6246334-a244-4984-8581-4c18a8d38f64
+[2022-08-07 00:42:50,571][ INFO][      iva_task.cc:628 ] IvaTask Run success.. task_name_: d6246334-a244-4984-8581-4c18a8d38f64_1659832970modelbox_task_id: 3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:42:50,571][ INFO][iva_task_manager.cc:215 ] TaskGroup::CreateIvaTasks , task Run, TaskName: d6246334-a244-4984-8581-4c18a8d38f64_1659832970
+[2022-08-07 00:42:50,571][ INFO][iva_task_manager.cc:224 ] CreateIvaTasks complete
+[2022-08-07 00:42:50,571][ INFO][iva_task_manager.cc:574 ] create iva task success. taskid: d6246334-a244-4984-8581-4c18a8d38f64
+[2022-08-07 00:42:50,571][ INFO][mock_communicate.cc:381 ] mock task: finish. httpStatus: 201 body:{}
+[2022-08-07 00:42:50,571][ INFO][iva_task_manager.cc:464 ] CreateTaskPostProcess begin
+[2022-08-07 00:42:50,572][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-07T00:42:50Z","curRunningNumber":1,"failStreamNumber":0,"id":"d6246334-a244-4984-8581-4c18a8d38f64","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-07 00:42:50,572][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-08-07T00:42:50Z","curRunningNumber":1,"failStreamNumber":0,"id":"d6246334-a244-4984-8581-4c18a8d38f64","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}
+[2022-08-07 00:42:50,572][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-08-07 00:42:50,572][ INFO][mock_communicate.cc:391 ] mock task success. 
+[2022-08-07 00:42:50,573][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-08-07T00:42:50Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-08-07T00:42:50Z","curRunningNumber":1,"failStreamNumber":0,"id":"d6246334-a244-4984-8581-4c18a8d38f64","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-08-07 00:42:50,573][ INFO][  match_stream.cc:512 ] node data_source_parser, port in_data, inherit backward level 0
+[2022-08-07 00:42:50,576][ INFO][data_source_parser_flowunit.cc:94  ] Try parse input config url for 3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:42:50,578][ INFO][data_source_parser_flowunit.cc:111 ] parse input config ok for 3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:42:50,579][ INFO][          node.cc:678 ] node: data_source_parser, sess id: 3d14db16-7441-4cb3-be60-d25c9ca76b32, data ctx finished
+[2022-08-07 00:42:50,580][ INFO][  match_stream.cc:512 ] node video_demuxer, port in_video_url, inherit backward level 0
+[2022-08-07 00:42:50,582][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:50,583][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:50,583][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:50,583][ INFO][video_demuxer_flowunit.cc:231 ] failed init Demuxer
+[2022-08-07 00:42:51,585][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:51,586][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:51,586][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:52,589][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:52,590][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:52,590][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:53,594][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:53,595][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:53,595][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:54,599][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:54,600][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:54,600][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:55,603][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:55,604][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:55,604][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:56,609][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:56,610][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:56,610][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:57,613][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:57,614][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:57,615][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:58,618][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:58,619][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:58,619][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:42:59,623][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:42:59,624][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:42:59,624][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:43:00,627][ INFO][ ffmpeg_reader.cc:113 ] Source url:NONE_VALUE, reconnect:true, rw_timeout:30s
+[2022-08-07 00:43:00,628][ERROR][ ffmpeg_reader.cc:73  ] avformat open input[NONE_VALUE] failed, err No such file or directory
+[2022-08-07 00:43:00,629][ INFO][video_demuxer_flowunit.cc:259 ] Open reader falied, set DEMUX_STATUS failed
+[2022-08-07 00:43:00,631][ INFO][url_source_parser.cc:94  ] retry_enable_: 1 retry_times: 11 retry_max_times_: 10
+[2022-08-07 00:43:00,632][ INFO][flowunit_group.cc:155 ] flowunit video_demuxer process return: Fault
+[2022-08-07 00:43:00,632][ INFO][          node.cc:678 ] node: video_demuxer, sess id: 3d14db16-7441-4cb3-be60-d25c9ca76b32, data ctx finished
+[2022-08-07 00:43:00,635][ INFO][  match_stream.cc:512 ] node video_decoder, port in_video_packet, inherit backward level 0
+[2022-08-07 00:43:00,638][ INFO][          node.cc:678 ] node: video_decoder, sess id: 3d14db16-7441-4cb3-be60-d25c9ca76b32, data ctx finished
+[2022-08-07 00:43:00,639][ INFO][  match_stream.cc:512 ] node image_resize, port in_image, inherit backward level 0
+[2022-08-07 00:43:00,643][ INFO][  match_stream.cc:512 ] node pose_detection, port input, inherit backward level 0
+[2022-08-07 00:43:00,647][ INFO][  match_stream.cc:512 ] node pose_post_light, port in_pafs, inherit backward level 0
+[2022-08-07 00:43:00,648][ INFO][  match_stream.cc:512 ] node pose_post_light, port in_heatmaps, inherit backward level 0
+[2022-08-07 00:43:00,651][ INFO][  match_stream.cc:512 ] node draw_pose_light, port in_pose, inherit backward level 0
+[2022-08-07 00:43:00,651][ INFO][  match_stream.cc:512 ] node draw_pose_light, port in_image, inherit backward level 0
+[2022-08-07 00:43:00,653][ INFO][  match_stream.cc:512 ] node video_out, port in_video_frame, inherit backward level 0
+[2022-08-07 00:43:00,653][ INFO][          node.cc:678 ] node: video_out, sess id: 3d14db16-7441-4cb3-be60-d25c9ca76b32, data ctx finished
+[2022-08-07 00:43:00,654][ INFO][       session.cc:99  ] session 3d14db16-7441-4cb3-be60-d25c9ca76b32 is over, running session count 0
+[2022-08-07 00:43:00,654][ INFO][session_context.cc:41  ] session context finish se id:3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:43:00,654][ INFO][      iva_task.cc:529 ] ModelBoxTaskStatusCallback: Recvie Callback,   task_name_: d6246334-a244-4984-8581-4c18a8d38f64_1659832970 modelbox task id: 3d14db16-7441-4cb3-be60-d25c9ca76b32 status: 5
+[2022-08-07 00:43:00,655][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-07T00:43:00Z","curRunningNumber":0,"failStreamNumber":0,"id":"d6246334-a244-4984-8581-4c18a8d38f64","okStreamNumber":1,"state":"SUCCEEDED","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-07 00:43:00,655][ INFO][mock_communicate.cc:492 ] Task SUCCEEDED, Mock will exit application
+[2022-08-07 00:43:00,655][ INFO][        server.cc:91  ] app server stop
+[2022-08-07 00:43:00,655][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-08-07T00:43:00Z","curRunningNumber":0,"failStreamNumber":0,"id":"d6246334-a244-4984-8581-4c18a8d38f64","okStreamNumber":1,"state":"SUCCEEDED","sumStreamNumber":1,"taskUUID":""}}
+[2022-08-07 00:43:00,655][ INFO][mock_communicate.cc:482 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-08-07T00:43:00Z","curRunningNumber":0,"failStreamNumber":0,"id":"d6246334-a244-4984-8581-4c18a8d38f64","okStreamNumber":1,"state":"SUCCEEDED","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-08-07 00:43:00,655][ INFO][mock_communicate.cc:492 ] Task SUCCEEDED, Mock will exit application
+[2022-08-07 00:43:00,656][ INFO][iva_task_manager.cc:788 ] task finish. d6246334-a244-4984-8581-4c18a8d38f64
+[2022-08-07 00:43:00,657][ INFO][iva_task_manager.cc:825 ] IvaUpload thread Stop.
+[2022-08-07 00:43:00,661][ INFO][iva_task_manager.cc:852 ] IvaUpload Stop notify.
+[2022-08-07 00:43:00,661][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-08-07 00:43:00,662][ INFO][      iva_task.cc:564 ] ModelBoxTaskStatusCallback: Callback Finish,   task_name_: d6246334-a244-4984-8581-4c18a8d38f64_1659832970 modelbox task id: 3d14db16-7441-4cb3-be60-d25c9ca76b32
+[2022-08-07 00:43:00,664][ INFO][mock_communicate.cc:475 ] mock communicate stop.
+[2022-08-07 00:43:00,664][ INFO][flow_scheduler.cc:397 ] shutdown flow scheduler.
+[2022-08-07 00:43:00,664][ERROR][flow_scheduler.cc:377 ] the scheduler caught an error : Stop operation
+[2022-08-07 00:43:00,673][ INFO][rknpu2_inference_flowunit.cc:73  ] rknn2 inference close
+[2022-08-07 00:43:00,694][ INFO][   job_manager.cc:82  ] delete job : IVA_JOB
+[2022-08-07 00:43:00,694][ INFO][    iva_plugin.cc:46  ] IvaPlugin Stop success.
+[2022-08-07 00:43:00,695][ INFO][  stack_plugin.cc:85  ] StackPlugin Stop success.
+[2022-08-07 00:43:00,695][ INFO][          main.cc:382 ] exit modelbox process
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
