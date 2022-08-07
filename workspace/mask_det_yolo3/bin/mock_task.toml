@@ -1,8 +1,7 @@
 # 用于本地mock文件读取任务，脚本中已经配置了IVA_SVC_CONFIG环境变量, 添加了此文件路径
 ########### 请确定使用linux的路径类型，比如在windows上要用  D:/xxx/xxx  不能用D:\xxx\xxx  ###########
 # 任务的参数为一个压缩并转义后的json字符串
-# 直接写需要转义双引号， 也可以用 content_file 添加一个json文件，如果content和content_file都存在content会被覆盖
-# content_file支持绝对路径或者相对路径，不支持解析环境变量(包括${HILENS_APP_ROOT}、${HILENS_DATA_DIR}等)
+# 直接写需要转义双引号， 也可以用 content_file 添加一个json文件
 [common]
 content = "{\"param_str\":\"string param\",\"param_int\":10,\"param_float\":10.5}"
 
@@ -11,12 +10,10 @@ content = "{\"param_str\":\"string param\",\"param_int\":10,\"param_float\":10.5
 # 其它用"url"，比如可以是本地文件地址, 或者httpserver的地址，(摄像头 url = "0")
 [input]
 type = "url"
-# url = "../data/mask_test.mp4" 
-url = "0"
+url = "../data/multi_person_pose.mp4"
 
 # 任务输出,目前仅支持"webhook", 和本地输出"local"(输出到屏幕,url="0", 输出到rtsp，填写rtsp地址)
 # (local 还可以输出到本地文件，这个时候注意，文件可以是相对路径，是相对这个mock_task.toml文件本身)
 [output]
 type = "local"
-# url = "../hilens_data_dir/mask_test_result.mp4"  
-url = "rtsp://192.168.3.3:8554/outstream"
+url = "../hilens_data_dir/multi_person_pose_result.mp4"
