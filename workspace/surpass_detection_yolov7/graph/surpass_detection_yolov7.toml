@@ -7,21 +7,34 @@ dir = ["${HILENS_APP_ROOT}/etc/flowunit",
 "${HILENS_MB_SDK_PATH}/flowunit"]
 skip-default = true
 [profile]
-profile=false
-trace=false
+profile=true
+trace=true
 dir="${HILENS_DATA_DIR}/mb_profile"
 [graph]
 format = "graphviz"
-graphconf = """digraph surpass_detection_yolov7 {
+graphconf = """digraph surpass_detection {
     node [shape=Mrecord]
     queue_size = 4
-    batch_size = 1
+    batch_size = 4
     input1[type=input,flowunit=input,device=cpu,deviceid=0]
-    httpserver_sync_receive[type=flowunit, flowunit=httpserver_sync_receive_v2, device=cpu, deviceid=0, time_out_ms=5000, endpoint="http://0.0.0.0:1234/v1/hello", max_requests=100]
-    httpserver_sync_reply[type=flowunit, flowunit=httpserver_sync_reply_v2, device=cpu, deviceid=0]
+    data_source_parser[type=flowunit, flowunit=data_source_parser, device=cpu, deviceid=0]
+    video_demuxer[type=flowunit, flowunit=video_demuxer, device=cpu, deviceid=0]
+    video_decoder[type=flowunit, flowunit=video_decoder, device=rknpu, deviceid=0, pix_fmt=bgr]
+    surpass_pre[type=flowunit, flowunit=surpass_pre, device=cpu, deviceid=0]
+    surpass[type=flowunit, flowunit=surpass, device=rknpu, deviceid=0, batch_size=1]
+    surpass_post[type=flowunit, flowunit=surpass_post, device=cpu, deviceid=0]
+    video_out[type=flowunit, flowunit=video_out, device=rknpu, deviceid=0]
     
-    input1:input -> httpserver_sync_receive:in_url
-    httpserver_sync_receive:out_request_info -> httpserver_sync_reply:in_reply_info
+    input1:input -> data_source_parser:in_data
+    data_source_parser:out_video_url -> video_demuxer:in_video_url
+    video_demuxer:out_video_packet -> video_decoder:in_video_packet
+    video_decoder:out_video_frame -> surpass_pre:in_image
+    surpass_pre:resized_image -> surpass:input
+    surpass:output1 -> surpass_post:in_feat1
+    surpass:output2 -> surpass_post:in_feat2
+    surpass:output3 -> surpass_post:in_feat3
+    surpass_pre:out_image -> surpass_post:in_image
+    surpass_post:out_image -> video_out:in_video_frame
 }"""
 [flow]
-desc = "surpass_detection_yolov7 run in modelbox-rk-aarch64"
+desc = "surpass_detection run in modelbox-rk-aarch64"
